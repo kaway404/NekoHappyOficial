@@ -171,7 +171,7 @@ hr{
    transition: 1s;
 }
 
-.header{
+.headerta{
 	width: 100%;
 	height: 75px;
 	position: fixed;
@@ -182,7 +182,7 @@ hr{
 	z-index: 100000;
 }
 
-.header .logo{
+.headerta .logo{
 	position: relative;
 	width: 60px;
 	top: 10px;
@@ -190,19 +190,19 @@ hr{
 	cursor: pointer;
 }
 
-.header .align{
+.headerta .align{
 	position: relative;
 	margin: 0px auto;
 	width: 70%;
 }
 
-.header .boxcenter{
+.headerta .boxcenter{
 	display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header .boxcenter .busca{
+.headerta .boxcenter .busca{
 	background: #fafafa;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
