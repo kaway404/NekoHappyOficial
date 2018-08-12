@@ -17,10 +17,15 @@ else{
 else{
 	if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	require './autoload/user/user.php';
-	require './view/dashboard/home.php';
+	if(isset($_GET['ajustes'])){
+		require './view/dashboard/ajustes.php';
 	}
 	else{
-			if(isset($_GET['cadastro'])){
+	require './view/dashboard/home.php';
+	}
+	}
+	else{
+		if(isset($_GET['cadastro'])){
 		require './view/account/cadastro.php';
 	}
 	else if(isset($_GET['login'])){

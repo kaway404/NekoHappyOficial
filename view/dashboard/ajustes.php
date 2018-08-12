@@ -1,5 +1,5 @@
 <div class="okay">
-	<div class="config" style="top: 200%; position: absolute;">
+	<div class="config" style="top: 0%; position: absolute;">
 		<div class="menu">
 			<div class="options">
 			<p>Configuração de usuario</p>
