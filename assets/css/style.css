@@ -177,8 +177,9 @@ hr{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #fff;
+	background: #39f;
 	border-bottom: 1px solid rgba(0,0,0,.0975);
+	z-index: 100000;
 }
 
 .header .logo{
@@ -214,4 +215,57 @@ hr{
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+
+.align{
+	position: relative;
+	margin: 0px auto;
+	width: 70%;
+}
+
+.flex{
+	display: flex;
+}
+
+.feed{
+ 	align-items: flex-start;
+ 	position: relative;
+ 	top: 100px;
+ 	width: 64%;
+ 	height: auto;
+}
+
+.status{
+ 	position: relative;
+ 	top: 100px;
+ 	width: 35%;
+ 	height: auto;
+  	display: flex;
+  	align-items: flex-end;
+  	float: right;
+  	right: -15px;
+}
+
+.feed .post{
+	width: 100%;
+	height: 200px;
+	background: #fff;
+	border: 1px solid #efefef;
+	margin-top: 10px;
+}
+
+.status .avatar{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	position: absolute;
+	left: 10px;
+}
+
+.status .user{
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	font-weight: bold;
 }
