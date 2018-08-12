@@ -17,6 +17,7 @@ else{
 else{
 	if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	require './autoload/user/user.php';
+	require './view/dashboard/menu.php';
 	if(isset($_GET['ajustes'])){
 		require './view/dashboard/ajustes.php';
 	}
