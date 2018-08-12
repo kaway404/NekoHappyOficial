@@ -384,3 +384,57 @@ hr{
 	position: relative;
 	left: 10px;
 }
+
+.buscar{
+	position: absolute;
+	width: 45%;
+	background-color: rgb(47, 49, 54);
+	height: 200px;
+	top: 40%;
+	color: #fff;
+	text-align: center;
+	z-index: 9000000;
+	-webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   margin: 0px auto;
+   left: 0;
+   right: 0;
+   transition: 1s;
+   border-radius: 4px;
+   -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.2), 0 0 0 1px rgba(28,36,43,60%);
+    align-items: stretch;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2), 0 0 0 1px rgba(28,36,43,.6);
+}
+
+.buscar h1{
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+	bottom: 28px;
+}
+
+.buscar .diag{
+    position: absolute;
+    bottom: 80px;
+    left: -70px;
+    -webkit-animation: arrow-pulse .82s ease-in-out infinite;
+    animation: arrow-pulse .82s ease-in-out infinite;
+}
+
+
+@keyframes arrow-pulse {
+    50% {-webkit-transform: translate3d(3px,0,0);
+    transform: translate3d(3px,0px,0px);}
+}
+
+
+.buscar .buscara_{
+	width: 90%;
+	height: 30px;
+	background-color: #72767d;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}

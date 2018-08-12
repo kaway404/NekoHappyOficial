@@ -37,6 +37,17 @@
 			<h1 class="close" id="fechara" uk-tooltip="title: Fechar; pos: bottom"><span class="settings" uk-icon="icon: close"></span></h1>
 	</div>
 
+
+<div class="over" id="okaya" style="position: fixed; width: 100%; height: 100%;     background-color: rgb(47, 49, 54); z-index: 10000; top: 0; left: 0; opacity: 0.85; display: none;">
+<div class="buscar">
+<h1>Procure algum amigo, ou uma conversa.</h1>
+<img class="diag" id="anima" src="https://discordapp.com/assets/7c5e2c588b7325c8433db1ac2a03a6b6.svg"/>
+<img class="diag" style="right: 100px !important; bottom: 140px;" id="anima" src="https://discordapp.com/assets/7c5e2c588b7325c8433db1ac2a03a6b6.svg"/>
+<input type="text" class="buscara_" placeholder=""/>
+<p>Pressione esc para sair</p>
+</div>
+</div>
+
 	</div>
 
 
@@ -80,4 +91,14 @@
 		$('#amigos').css('top', '200%');
 		window.history.pushState("Cadastro", "NekoHappy", "/");
 	});
+
+	$( ".amigosg" ).click(function() {
+	$('#okaya').css('display', 'block');
+	});
+
+jQuery(document).on('keyup',function(evt) {
+    if (evt.keyCode == 27) {
+      $('#okaya').css('display', 'none');
+    }
+});
 </script>
