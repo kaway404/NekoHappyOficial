@@ -1,0 +1,366 @@
+*{
+	font-family: 'Ubuntu', sans-serif !important;
+}
+
+body{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.main{
+	background: linear-gradient(#18191c, #1d1c1c);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.main .logo{
+	width: 140px;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+	left: 20px;
+}
+
+.main .header{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	z-index: 10000;
+}
+
+.main .bluebar{
+	background-color: transparent;
+}
+
+.main .hora{
+	position: absolute;
+	width: 60%;
+	background: transparent;
+	height: 200px;
+	top: 50%;
+	color: #fff;
+	text-align: center;
+	z-index: 1000;
+	-webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   margin: 0px auto;
+    left: 0;
+   right: 0;
+   transition: 1s;
+}
+
+.main .hora h1{
+	color: #fff;
+	font-weight: 700;
+	font-size: 34px;
+	transition: 0.3s;
+}
+
+.main .hora p{
+	color: hsla(0,0%,100%,.9);
+	transition: 0.5s;
+}
+
+.main .hora h1{
+    position: relative;
+    left: 0;
+}
+
+.main .hora .btn{
+	background-color: #7289da;
+	padding: 10px;
+	width: 20%;
+	position: relative;
+	margin: 0px auto;
+	top: 30px;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 30px;
+	border-radius: 3px;
+}
+
+.main .hora .login{
+	background: #fff;
+	color: #000;
+}
+
+.main .hora .btn:active{
+	-webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.main .back{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(/assets/img/back.jpg);
+	z-index: 0;
+	background-size: cover;
+	transition: 0s;
+}
+
+.main .back .after{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.30)
+}
+
+.hora .input{
+	width: 50%;
+	background: hsla(0,0%,100%,.9);
+	border: none;
+	padding: 10px;
+	color: #000;
+	border-radius: 20px;
+	margin-top: 10px;
+	outline: 0;
+}
+
+#registro{
+	background: #36393f;
+	padding: 50px;
+	border-radius: 3px;
+	height: 400px;
+	webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    -webkit-box-sizing: border-box;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+#loginte{
+	background: #36393f;
+	padding: 50px;
+	border-radius: 3px;
+	height: 330px;
+	webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    -webkit-box-sizing: border-box;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+hr{
+      border: none;
+    width: 95%;
+    border-top: 3px solid #efedea;
+    margin-bottom: -1px;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.02);
+    z-index: 2;
+    position: relative;
+}
+
+.hora .error{
+	position: fixed;
+	top: 0;
+	background: #da3636;
+	-webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   left: 0;
+   top: 0;
+   border-radius: 3px;
+   padding: 5px;
+   transition: 1s;
+}
+
+.header-a{
+	width: calc(100% - 70px);
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	background: #292929;
+	right: 0;
+}
+
+.left-menu{
+	float: left;
+	position: fixed;
+	background: #1f2021;
+	width: 70px;
+	height: 100%;
+}
+
+.header-a p{
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+	bottom: 48px;
+	left: 60px;
+}
+
+.left-menu li{
+	list-style: none;
+	left: -20px;
+	position: relative;
+	background: #313030;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+.header-a .avatar{
+	width: 40px;
+	border-radius: 50%;
+	top: 5px;
+	position: relative;
+	left: 10px;
+	transform: scale(0.9);
+	cursor: pointer;
+}
+
+.left-menu .amigos{
+	background-image: url(/assets/img/friends.png);
+	width: 48px;
+	height: 48px;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.okay{
+	background: #333435 !important;
+	position: absolute;
+	width: calc(100% - 70px);
+	height: calc(100% - 50px);
+	float: right;
+	right: 0;
+	overflow: hidden;
+}
+
+.header-a span{
+	position: relative;
+}
+
+.header-a .settings{
+	left: 40px;
+	cursor: pointer;
+}
+
+.config{
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+}
+
+.config .menu{
+	width: 20%;
+	position: relative;
+	height: 100%;
+	background: #252424;
+}
+
+.config .menu li{
+	list-style: none;
+	color: #fff;
+	left: 0%;
+	position: relative;
+	bottom: 10px;
+	font-size: 15px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 4px;
+	max-width: 180px;
+	margin-top: 5px;
+}
+
+.config .menu .desa:hover{
+	background: #555;
+}
+
+.config .menu .ativo{
+	background-color: #7289da;
+}
+
+.config .menu{
+	color: #fff;
+}
+
+.config .menu p{
+	left: 10%;
+	position: relative;
+	color: #a0a0a0;
+	font-size: 18px;
+}
+
+.config .menu .options{
+	position: relative;
+	top: 40px;
+}
+
+.config a:hover{
+	text-decoration: none !important;
+}
+
+.config .centro{
+	position: absolute;
+	width: calc(100% - 25%);
+	float: right;
+	right: 0;
+	top: 40px;
+}
+
+.config .centro h1{
+	color: #fff;
+	font-size: 24px;
+}
+
+.config .centro .account{
+	border: 1px solid rgba(0,0,0,.50);
+	width: 70%;
+	height: 150px;
+	background: #1f2021;
+}
+
+.config .centro .account .avatar{
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	position: relative;
+	top: 15px;
+	left: 20px;
+	transform: scale(0.95);
+}
+
+.config .centro .close{
+	float: right;
+	position: absolute;
+	top: -50px;
+	right: 9%;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.config .centro svg{
+	font-size: 30px;
+}
+
+.config .centro .account h2{
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 80px;
+	font-size: 18px;
+	left: 180px;
+	color: #a0a0a0;
+}
+
+.config .centro .account .email{
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 30px;
+	font-size: 18px;
+	left: 180px;
+	color: #a0a0a0;
+}
+
+.config .centro .account .editar{
+	background-color: #7289da;
+	color: #fff;
+	width: 80px;
+	text-align: center;
+	position: relative;
+	float: right;
+	right: 10px;
+	top: 10px;
+	padding: 5px;
+	border-radius: 5px;
+}
