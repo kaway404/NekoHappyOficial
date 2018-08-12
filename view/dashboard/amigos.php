@@ -1,5 +1,5 @@
 <div class="okay">
-	<div class="config" id="config" style="top: 0%; position: absolute;">
+	<div class="config" id="config" style="top: 200%; position: absolute;">
 		<div class="menu">
 			<div class="options">
 			<p>Configuração de usuario</p>
@@ -23,7 +23,7 @@
 
 	</div>
 
-		<div class="config" id="amigos" style="top: 200%; position: absolute;">
+		<div class="config" id="amigos" style="top: 0%; position: absolute;">
 		<div class="menu" style="width: 18%">
 			<div class="options">
 			<div class="amigosg" type="text" placeholder="Encontre amigos">

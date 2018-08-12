@@ -7,6 +7,10 @@ body{
 	overflow-x: hidden;
 }
 
+input{
+	outline: 0;
+}
+
 .main{
 	background: linear-gradient(#18191c, #1d1c1c);
 	width: 100%;
@@ -364,4 +368,19 @@ hr{
 	padding: 5px;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+#amigos .amigosg{
+	border: none;
+	width: 100%;
+	background: rgb(72, 72, 72);
+	position: relative;
+	color: #fff;
+	height: 30px;
+	cursor: pointer;
+}
+
+#amigos .amigosg p{
+	position: relative;
+	left: 10px;
 }

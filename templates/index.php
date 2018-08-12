@@ -20,6 +20,9 @@ else{
 	if(isset($_GET['ajustes'])){
 		require './view/dashboard/ajustes.php';
 	}
+	else if(isset($_GET['amigos'])){
+		require './view/dashboard/amigos.php';
+	}
 	else{
 	require './view/dashboard/home.php';
 	}

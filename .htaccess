@@ -8,4 +8,5 @@ RewriteRule ^logando /php/account/logando.php
 RewriteRule ^registro /php/account/registro.php
 RewriteRule ^logout /php/logout.php
 RewriteRule ^ajustes /index.php?ajustes [L]
+RewriteRule ^amigos /index.php?amigos [L]
 </IfModule>
