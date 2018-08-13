@@ -414,7 +414,7 @@ hr{
 	font-size: 19px;
 }
 
-#sugeridos a{
+#sugeridos .haha{
 	background: rgba(0,0,0,.80);
 }
 
@@ -422,6 +422,16 @@ hr{
 	width: 150px;
 	height: 150px;
 	border-radius: 0px;
+}
+
+#sugeridos li{
+	width: 150px !important;
+	height: 150px !important;
+}
+
+#sugeridos .ok{
+	width: 150px !important;
+	height: 150px !important;
 }
 
 .saudacao{
