@@ -5,6 +5,7 @@
 body{
 	overflow-y: auto;
 	overflow-x: hidden;
+	background: #000 !important;
 }
 
 html{
@@ -31,7 +32,7 @@ input{
 }
 
 .main .header{
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: auto;
 	z-index: 10000;

@@ -5,8 +5,6 @@
 
 // ----------------------
 
-require './config/config.php';
-
 if(isset($_COOKIE['cry']) ){
 if(empty($_COOKIE['iduser']) ){
     $cry = $_COOKIE['cry'];

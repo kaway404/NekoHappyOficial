@@ -2,6 +2,13 @@
 // NekoHappy
 // Feito por kaway404
 // Feito por um unico membro
+require './config/config.php';
+
+if(!$conn){
+  	require './view/nodb/index.php';
+}
+else{
+
 if(isset($_COOKIE['cry']) ){
 if(empty($_COOKIE['iduser']) ){
 	require './autoload/user/user.php';
@@ -31,5 +38,5 @@ else{
 		echo '';
 	}
 	}
-	
+}
 }
