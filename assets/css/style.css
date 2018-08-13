@@ -403,3 +403,17 @@ hr{
 	right: 40px;
 }
 
+#sugeridos{
+	position: relative;
+	top: 50px;
+	color: #737070;
+}
+
+#sugeridos span{
+	padding: 5px;
+	font-size: 19px;
+}
+
+#sugeridos a{
+	background: rgba(0,0,0,.80);
+}
