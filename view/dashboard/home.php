@@ -14,6 +14,31 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){?>
 	<p>Seja bem vindo(a) ao NekoHappy</p>
 </div>
 
+<div class="saudacao">
+<?php
+$hora = date("H");
+if($hora >= 0 and $hora <6){
+?>
+<div style="background-image: url(/assets/img/saudacao/noite.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
+    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa madrugada</h1></center>
+</div>
+<?php } elseif ($hora >= 6 and $hora < 12) {
+ ?>
+ <div style="background-image: url(/assets/img/saudacao/dia.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
+    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Bom dia</h1></center>
+</div>
+
+<?php } elseif ($hora>= 12 and $hora < 18) {?>
+<div style="background-image: url(/assets/img/saudacao/dia.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
+    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa tarde</h1></center>
+</div>
+
+<?php } else {?>
+<div style="background-image: url(/assets/img/saudacao/noite.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
+    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa noite</h1></center>
+</div>
+<?php } ?>
+</div>
 
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="sugeridos">
 <span>Amigos sugeridos</span>

@@ -417,3 +417,8 @@ hr{
 #sugeridos a{
 	background: rgba(0,0,0,.80);
 }
+
+.saudacao{
+	position: relative;
+	top: 50px;
+}
