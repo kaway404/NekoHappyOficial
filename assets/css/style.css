@@ -177,7 +177,7 @@ hr{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #39f;
+	background: #7289da;
 	border-bottom: 1px solid rgba(0,0,0,.0975);
 	z-index: 100000;
 }
@@ -215,6 +215,14 @@ hr{
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 3px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.headerta .boxcenter .busca:focus{
+	width: 300px;
+	text-align: left;
+	transition: 1s;
 }
 
 .align{
@@ -236,14 +244,17 @@ hr{
 }
 
 .status{
- 	position: relative;
- 	top: 100px;
- 	width: 35%;
- 	height: auto;
+ 	position: fixed;
+ 	top: 85px;
+ 	width: 15%;
+ 	height: 100px;
   	display: flex;
   	align-items: flex-end;
   	float: right;
-  	right: -15px;
+  	right: 22%;
+  	background: #fff;
+  	border: 1px solid #efefef;
+  	padding: 5px;
 }
 
 .feed .post{
@@ -252,6 +263,8 @@ hr{
 	background: #fff;
 	border: 1px solid #efefef;
 	margin-top: 10px;
+	top: 50px;
+	position: relative;
 }
 
 .status .avatar{
@@ -268,4 +281,96 @@ hr{
 	top: 0px;
 	left: 60px;
 	font-weight: bold;
+}
+
+.boxleft{
+	position: absolute;
+	float: right;
+	right: 0;
+}
+
+.boxleft .avatar{
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	position: relative;
+	top: 20px;
+	border-radius: 10%;
+}
+
+.boxleft .user{
+	position: relative;
+	top: 20px;
+}
+
+.boxleft .okaysr:active{
+	-webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.boxleft .okaysr{
+	background: #677cca;
+	padding: 20px;
+	position: relative;
+	bottom: 105px;
+	height: 100px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.50);
+	cursor: pointer;
+}
+
+.boxleft .okaysr a{
+	color: #fff;
+}
+
+.notice{
+	width: 100%;
+	height: 40px;
+	background: #677cca;
+	border-radius: 4px;
+	margin-top: 20px;
+	top: 40px;
+	position: relative;
+}
+
+.notice p{
+	text-align: center;
+	color: #fff;
+	padding: 7px;
+}
+
+.menuoptionsfeed{
+	width: 45%;
+	height: 40px;
+	background: #7289da;
+	position: fixed;
+	z-index: 1000000;
+	top: 75px;
+}
+
+.menuoptionsfeed a{
+	text-align: center;
+	color: #fff;
+	padding: 11px;
+	top: 8px;
+	position: relative;
+	border-right: 0px solid #fff;
+	left: 0px;
+	text-transform: uppercase;
+}
+
+.menuoptionsfeed a:hover{
+	color: #fff;
+	text-decoration: none;
+	background: #5b73c7;
+}
+
+.logout{
+	width: 90%;
+	padding: 5px;
+	background: #7289da;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	left: 5px;
 }
