@@ -432,6 +432,7 @@ hr{
 #sugeridos .ok{
 	width: 150px !important;
 	height: 150px !important;
+	margin-left: 5px;
 }
 
 .saudacao{
