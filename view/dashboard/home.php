@@ -5,6 +5,7 @@
 <div class="menuoptionsfeed">
 	<a>Fazer uma postagem</a>
 	<a>Meu perfil</a>
+	<a>Amigos</a>
 </div>
 
 <div class="notice">
