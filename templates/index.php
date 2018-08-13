@@ -30,9 +30,6 @@ else{
 	if(empty($_COOKIE['iduser']) ){
 		echo '';
 	}
-	else{
-		require './view/home/index.php';
-	}
 	}
 	
 }
