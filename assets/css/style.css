@@ -418,6 +418,12 @@ hr{
 	background: rgba(0,0,0,.80);
 }
 
+#sugeridos img{
+	width: 150px;
+	height: 150px;
+	border-radius: 0px;
+}
+
 .saudacao{
 	position: relative;
 	top: 50px;

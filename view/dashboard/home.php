@@ -17,7 +17,7 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){?>
 <div class="saudacao">
 <?php
 $hora = date("H");
-if($hora >= 0 and $hora <6){
+if($hora >= 0 and $hora >6){
 ?>
 <div style="background-image: url(/assets/img/saudacao/noite.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
     <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa madrugada</h1></center>
