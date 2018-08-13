@@ -25,10 +25,10 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){?>
 	    $people = mysqli_fetch_assoc($resultado_people);
     	foreach ($resultado_people as $resultado_people => $resultado_peoples) {
     	?>
-        <li uk-tooltip="<?php echo $resultado_peoples['usuario'];?>">
+        <a href="/profile/<?php echo $resultado_peoples['id'];?>"><li uk-tooltip="<?php echo $resultado_peoples['usuario'];?>">
             <img src="/assets/img/user/<?php echo $resultado_peoples['avatar'];?>" alt="">
             <div class="uk-position-center uk-panel"></div>
-        </li>
+        </li></a>
     <?php } ?>
     </ul>
 
