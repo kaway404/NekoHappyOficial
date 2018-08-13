@@ -108,6 +108,18 @@ input{
 	transition: 0s;
 }
 
+.main #two{
+	background-image: url("/assets/img/back2.jpg") !important;
+}
+
+.main #thirt{
+	background-image: url("/assets/img/back_old.jpg") !important;
+}
+
+.main #back4{
+	background-image: url("/assets/img/back4.png") !important;
+}
+
 .main .back .after{
 	position: absolute;
 	width: 100%;
@@ -390,3 +402,4 @@ hr{
 	position: relative;
 	right: 40px;
 }
+
