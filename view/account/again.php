@@ -1,3 +1,7 @@
+<?php
+if(isset($_COOKIE['cry']) ){
+if(empty($_COOKIE['iduser']) ){
+?>
 <div class="main">
 <div class="header bluebar">
 	<img id="logo" class="logo" src="/assets/img/logo.png"/>
@@ -30,3 +34,4 @@
          return false;
 	});
 </script>
+<?php } ?>

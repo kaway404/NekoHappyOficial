@@ -1,3 +1,5 @@
+<?php
+if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){?>
 <div class="align">
 <div class="flex">
 <div class="feed">
@@ -42,3 +44,4 @@
 
 </div>
 </div>
+<?php } ?>
