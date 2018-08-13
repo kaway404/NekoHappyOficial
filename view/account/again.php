@@ -34,4 +34,4 @@ if(empty($_COOKIE['iduser']) ){
          return false;
 	});
 </script>
-<?php } ?>
+<?php } } ?>
