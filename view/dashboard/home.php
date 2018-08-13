@@ -50,7 +50,8 @@ if($hora >= 0 and $hora >6){
 	    $people = mysqli_fetch_assoc($resultado_people);
     	foreach ($resultado_people as $resultado_people => $resultado_peoples) {
     	?>
-        <a href="/profile/<?php echo $resultado_peoples['id'];?>"><li uk-tooltip="<?php echo $resultado_peoples['usuario'];?>">
+        <a href="/profile/<?php echo $resultado_peoples['id'];?>">
+        	<li uk-tooltip="<?php echo $resultado_peoples['usuario'];?>">
             <img src="/assets/img/user/<?php echo $resultado_peoples['avatar'];?>" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li></a>
@@ -86,7 +87,7 @@ if($hora >= 0 and $hora >6){
 <p class="user"><?php echo $user['usuario'];?></p>
 </a>
 <hr style="position: absolute; top: 40px">
-<a href="/logout" class="logout">Sair</a>
+<a href="/logout" uk-tooltip="Sair da conta" class="logout">Sair</a>
 
 </div>
 
