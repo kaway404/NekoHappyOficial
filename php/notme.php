@@ -2,5 +2,5 @@
 setcookie("iduser" , "");
 setcookie("inisession" , "");
 setcookie("cry" , "");
-header("location: /");
+header("location: /login");
 ?>
