@@ -8,7 +8,6 @@
 		<div class="okaysr">
 		<a href="/profile/<?php echo $user['id'];?>">
 		<img class="avatar" src="/assets/img/user/<?php echo $user['avatar'];?>"/>
-		<p class="user"><?php echo $user['usuario'];?></p>
 		</a>
 		</div>
 	</div>
