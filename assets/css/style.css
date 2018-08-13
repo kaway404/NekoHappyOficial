@@ -381,3 +381,12 @@ hr{
     transform: translateY(2px);
     text-decoration: none;
 }
+
+#loginte .avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fff;
+	position: relative;
+	right: 40px;
+}

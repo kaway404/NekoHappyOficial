@@ -7,13 +7,13 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 
 else{
 
-if(isset($_POST['email'])){
-	$email = $_POST['email'];
+if(isset($_POST['senha'])){
+	$cry = $_COOKIE['cry'];
 	
 	$password = sha1($_POST['senha']);
-	
+    	
 
-		$result_usuario = "SELECT * FROM user WHERE email = '$email' && password = '$password' LIMIT 1";
+		$result_usuario = "SELECT * FROM user WHERE cry = '$cry' && password = '$password' LIMIT 1";
         $resultado_usuario = mysqli_query($conn, $result_usuario);
         $resultado = mysqli_fetch_assoc($resultado_usuario);
         if(isset($resultado)){
@@ -23,7 +23,7 @@ if(isset($_POST['email'])){
             echo '<script>location.href="/";</script>';
         }
         else{
-        	echo 'Email ou senha incorretos';
+        	echo 'Senha incorreta';
         }	
 }
 }

@@ -6,7 +6,9 @@ RewriteRule ^cadastro /index.php?cadastro [L]
 RewriteRule ^login /index.php?login [L]
 RewriteRule ^logando /php/account/logando.php
 RewriteRule ^registro /php/account/registro.php
+RewriteRule ^verificando /php/account/verificar.php
 RewriteRule ^logout /php/logout.php
+RewriteRule ^notme /php/notme.php
 RewriteRule ^ajustes /index.php?ajustes [L]
 RewriteRule ^amigos /index.php?amigos [L]
 </IfModule>
