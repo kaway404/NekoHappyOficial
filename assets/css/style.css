@@ -374,3 +374,10 @@ hr{
 	position: relative;
 	left: 5px;
 }
+
+.logout:hover{
+	color: #fff;
+	-webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    text-decoration: none;
+}
