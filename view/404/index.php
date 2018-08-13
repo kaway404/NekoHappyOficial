@@ -22,7 +22,7 @@
 <div class="hora" id="lang" style="left: 0%;">
 	<h1>Página não encontrada</h1>
 	<p>Se você tentou digitar a url a mão, recomendo que clique no botão abaixo.</p>
-	<a href="/"><div class="btn login" id="cadastro">Voltar</div></a>
+	<a href="/"><div class="btn login" id="cadastro">Página inicial</div></a>
 </div>
 
 <div class="back"><div class="after"></div></div>
