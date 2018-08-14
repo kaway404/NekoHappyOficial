@@ -3,6 +3,8 @@
 // Feito por kaway404
 // Feito por um unico membro
 require './config/config.php';
+// Iniciar variaves globals
+require './config/globals.php';
 
 if(!$conn){
   	require './view/nodb/index.php';
@@ -30,8 +32,14 @@ else{
 else{
 	if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	require './autoload/user/user.php';
+	if($user['config'] == 0){
+	require './view/dashboard/menu.php';
+	require './view/dashboard/config.php';
+	}
+	else{
 	require './view/dashboard/menu.php';
 	require './view/dashboard/home.php';
+	}
 	}
 	if(isset($_COOKIE['cry']) ){
 	if(empty($_COOKIE['iduser']) ){

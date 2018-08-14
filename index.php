@@ -9,6 +9,4 @@
 require './config/config.php';
 // Iniciar projeto
 require './config/_autoload.php';
-// Iniciar variaves globals
-require './config/globals.php';
 ?>

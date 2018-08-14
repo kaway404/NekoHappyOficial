@@ -8,7 +8,7 @@ if(isset($_POST['email'])){
 	$password = $_POST['senha'];
 	$user = $_POST['user'];
 	$passwordcry = sha1($_POST['senha']);
-	$crying = "nekohapy_" . sha1($_POST['email']);
+	$crying = "nekohappy_" . sha1($_POST['email']);
 	$avatar = 'default.jpg';
 	if(empty($_POST['email'])){
 		echo ('Preencha o campo email <br>');

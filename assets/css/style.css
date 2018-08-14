@@ -438,4 +438,83 @@ hr{
 .saudacao{
 	position: relative;
 	top: 50px;
+	width: 100%;
+}
+
+.configusa h1{
+	font-size: 22px;
+}
+
+.configusa p{
+	font-size: 17px;
+}
+
+.configusa .change:hover{
+	background: rgba(0,0,0,.50);
+	transition: 0.9s;
+}
+
+.configusa .avatar{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.configusa input{
+	width: 50%;
+	background: hsla(0,0%,100%,.9);
+	border: none;
+	padding: 10px;
+	color: #000;
+	border-radius: 20px;
+	margin-top: 10px;
+	outline: 0;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.50);
+}
+
+.configusa .btn{
+	background-color: #7289da;
+	padding: 10px;
+	width: 20%;
+	position: relative;
+	margin: 0px auto;
+	top: 0px;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 30px;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.configusa .btn:hover{
+	-webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.progress{
+	width: 100%;
+	height: 30px;
+	background: #eee;
+	position: relative;
+	top: 10px;
+	border-radius: 20px;
+}
+
+.subprogress{
+	height: 100%;
+	background: #7289da;
+	transition: 0.5s;
+	border-radius: 20px;
+	width: 0%;
+}
+
+.configusa .error{
+	background: #7289da;
+	color: #fff;
+	padding: 5px;
+	top: 10px;
+	position: relative;
 }

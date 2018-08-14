@@ -1,3 +1,4 @@
+<?php if(isset($template)){?>
 <?php if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){ ?>
 <div class="main">
 <div class="header bluebar">
@@ -102,3 +103,4 @@
 	});
 </script>
 <?php } ?>
+<?Php } else{ include '../404/index.php';}?>

@@ -1,0 +1,2 @@
+<?php
+$template = 1;

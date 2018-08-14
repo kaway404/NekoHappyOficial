@@ -1,3 +1,4 @@
+<?php if(isset($template)){?>
 <div class="main">
 <div class="header bluebar">
 	<img id="logo" class="logo" src="/assets/img/logo.png"/>
@@ -21,3 +22,4 @@
 		window.history.pushState("Cadastro", "NekoHappy", "/");
 	});
 </script>
+<?Php } else{ include '../404/index.php';}?>

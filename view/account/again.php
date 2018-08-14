@@ -1,3 +1,4 @@
+<?php if(isset($template)){?>
 <?php
 if(isset($_COOKIE['cry']) ){
 if(empty($_COOKIE['iduser']) ){
@@ -10,7 +11,7 @@ if(empty($_COOKIE['iduser']) ){
 <div class="hora" id="loginte" style="left: 0%;">
 	<h1>Faça o login novamente</h1>
 	<hr>
-	<img class="avatar" src="/assets/img/user/<?php echo $userc['avatar'];?>"/>
+	<img class="avatar" src="/img/user/<?php echo $userc['avatar'];?>"/>
 	<input class="input" id="senha-a" type="password" name="senha" placeholder="Senha"/>
 	<br>
 	<div class="btn" id="verificar">Login</div>
@@ -35,3 +36,4 @@ if(empty($_COOKIE['iduser']) ){
 	});
 </script>
 <?php } } ?>
+<?Php } else{ include '../404/index.php';}?>
