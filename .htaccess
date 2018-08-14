@@ -14,6 +14,11 @@ RewriteRule ^configurando /php/config/config.php
 RewriteRule ^logout /php/logout.php
 RewriteRule ^changephoto /photochange.php
 RewriteRule ^notme /php/notme.php
+RewriteRule ^esquecer /php/account/esqueci.php
+RewriteRule ^validar /php/account/validar.php
+RewriteRule ^novasenha /php/account/novasenha.php
 RewriteRule ^ajustes /index.php?ajustes [L]
+RewriteRule ^changepassword /index.php?changepassword [L]
 RewriteRule ^amigos /index.php?amigos [L]
+RewriteRule ^esqueci /index.php?esqueci [L]
 </IfModule>

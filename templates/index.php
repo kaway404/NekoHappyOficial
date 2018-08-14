@@ -18,12 +18,35 @@ if(empty($_COOKIE['iduser']) ){
 }
 }
 
+if(isset($_COOKIE['iduser']) ){
+	if(empty($_COOKIE['cry']) ){
+	if(empty($_COOKIE['passwordchange']) ){
+		require './autoload/user/user.php';
+		require './view/account/alter.php';
+	}
+}
+}
+
+if(isset($_COOKIE['iduser']) ){
+	if(empty($_COOKIE['cry']) ){
+	if(isset($_COOKIE['passwordchange']) ){
+		require './autoload/user/user.php';
+		require './view/account/nova.php';
+	}
+}
+}
+
+
+
 if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){
 if(isset($_GET['cadastro'])){
 	require './view/account/cadastro.php';
 }
 else if(isset($_GET['login'])){
 	require './view/account/login.php';
+}
+else if(isset($_GET['esqueci'])){
+	require './view/account/forgot.php';
 }
 else{
 	require './view/home/index.php';

@@ -5,12 +5,42 @@
 
 // ----------------------
 
+if(isset($_COOKIE['iduser']) ){
+if(empty($_COOKIE['cry']) ){
+    $iduser = $_COOKIE['iduser'];
+    $result_usuariod = "SELECT * FROM user WHERE id = '$iduser' LIMIT 1";
+    $resultado_usuariod = mysqli_query($conn, $result_usuariod);
+    $userd = mysqli_fetch_assoc($resultado_usuariod);
+}
+}
+
 if(isset($_COOKIE['cry']) ){
 if(empty($_COOKIE['iduser']) ){
     $cry = $_COOKIE['cry'];
     $result_usuarioc = "SELECT * FROM user WHERE cry = '$cry' LIMIT 1";
     $resultado_usuarioc = mysqli_query($conn, $result_usuarioc);
     $userc = mysqli_fetch_assoc($resultado_usuarioc);
+}
+}
+
+if(isset($_COOKIE['iduser']) ){
+if(empty($_COOKIE['cry']) ){
+if(isset($_COOKIE['passwordchange']) ){
+$crypass = $_COOKIE['passwordchange'];
+    $passwordchanges = "SELECT * FROM passwordchange WHERE iduser = '$iduser' && cry = '$crypass' LIMIT 1";
+    $passwordchangee = mysqli_query($conn, $passwordchanges);
+    $passwordchange = mysqli_fetch_assoc($passwordchangee);
+
+    if(isset($passwordchange)){
+        echo '';
+    }
+    else{
+        setcookie("iduser", "", time()+7200);
+        setcookie("cry", "", time()+7200);
+        setcookie("passwordchange", "", time()+7200);
+        echo '<script>location.href="/login";</script>';
+    }
+}
 }
 }
 
