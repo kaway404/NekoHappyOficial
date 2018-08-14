@@ -10,6 +10,9 @@ if(isset($_POST['email'])){
 	$passwordcry = sha1($_POST['senha']);
 	$crying = "nekohappy_" . sha1($_POST['email']);
 	$avatar = 'default.jpg';
+	$ip=$_SERVER['REMOTE_ADDR'];
+	$n = sha1(rand (0, 100000));
+	$nani = 'nekohappy_' . sha1($n);
 	if(empty($_POST['email'])){
 		echo ('Preencha o campo email <br>');
 		$status_email = "0";
@@ -42,9 +45,8 @@ if(isset($_POST['email'])){
 		}
 		else{
 		
-
-		$sql = "INSERT INTO user (cry, email, password, usuario,admin, avatar)
-			VALUES ('".$crying."', '".$email."', '".$passwordcry."', '".$user."', '".$admin."', '".$avatar."')";
+		$sql = "INSERT INTO user (cry, email, password, usuario,admin, avatar, ip, nani)
+			VALUES ('".$crying."', '".$email."', '".$passwordcry."', '".$user."', '".$admin."', '".$avatar."', '".$ip."', '".$nani."')";
 		if (mysqli_query($conn, $sql)) {
 		    echo "Cadastrado com sucesso<br>";
 			$result_usuario = "SELECT * FROM user WHERE email = '$email' && password = '$passwordcry' LIMIT 1";
@@ -53,6 +55,7 @@ if(isset($_POST['email'])){
 		    if(isset($resultado)){
 		        setcookie("iduser", $resultado['id'], time() + (86400 * 30), "/");
 	            setcookie("cry", $resultado['cry'], time() + (86400 * 30), "/");
+	            setcookie("verificar" , "");
 	            echo 'Estamos redirecionando você <br>';
 	            echo '<script>location.href="/";</script>';
 	        }

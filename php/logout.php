@@ -1,5 +1,9 @@
 <?php
 setcookie("iduser" , "");
 setcookie("inisession" , "");
-header("location: /");
+setcookie("cry" , "");
+setcookie("passwordchange" , "");
+setcookie("verificar" , "");
+setcookie("nani" , "");
+header("location: /login");
 ?>
