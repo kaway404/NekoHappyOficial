@@ -8,7 +8,6 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['passwordchange']) )){
 		}
 		else{
 		$sql = "UPDATE user SET password= '$password' WHERE id='$iduser'";
-		$sql = "DELETE FROM passwordchange WHERE iduser=$iduser";
 		if ($conn->query($sql) === TRUE) {
 			echo 'Redirecionando';
 			setcookie("iduser" , "");
