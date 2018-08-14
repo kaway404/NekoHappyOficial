@@ -66,8 +66,14 @@ else{
 	require './view/dashboard/config.php';
 	}
 	else{
+	if(isset($_GET['profile'])){
+	require './view/dashboard/menu.php';
+	require './view/profile/user.php';
+	}
+	else{
 	require './view/dashboard/menu.php';
 	require './view/dashboard/home.php';
+	}
 	}
 	}
 	if(isset($_COOKIE['cry']) ){

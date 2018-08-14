@@ -21,4 +21,5 @@ RewriteRule ^changepassword /index.php?changepassword [L]
 RewriteRule ^checksession /index.php?checksession [L]
 RewriteRule ^esqueci /index.php?esqueci [L]
 RewriteRule ^verify /php/account/sessao.php
+RewriteRule ^profile/(.*)$ /index.php?id=$1&profile=1 [L]
 </IfModule>

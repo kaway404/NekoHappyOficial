@@ -2,7 +2,7 @@
 <?php if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){ ?>
 <div class="headerta">
 	<div class="align">
-		<img class="logo" src="/assets/img/friends.png"/>
+		<a href="/"><img class="logo" src="/assets/img/friends.png"/></a>
 	<div class="boxcenter">
 		<input class="busca" type="text" placeholder="Buscar amigos"/>
 	</div>
