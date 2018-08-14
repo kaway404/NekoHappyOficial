@@ -13,10 +13,10 @@
 	<p>Seja bem vindo(a) ao NekoHappy</p>
 </div>
 
-<div class="saudacao">
+<!-- <div class="saudacao">
 <?php
 $hora = date("H");
-if($hora >= 0 and $hora >6){
+if($hora >= 0 and $hora <6){
 ?>
 <div style="background-image: url(/assets/img/saudacao/noite.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
     <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa madrugada</h1></center>
@@ -37,7 +37,7 @@ if($hora >= 0 and $hora >6){
     <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa noite</h1></center>
 </div>
 <?php } ?>
-</div>
+</div> -->
 
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="sugeridos">
 <span>Amigos sugeridos</span>
@@ -51,7 +51,7 @@ if($hora >= 0 and $hora >6){
     	?>
         <a class="ok" href="/profile/<?php echo $resultado_peoples['id'];?>">
         	<li uk-tooltip="<?php echo $resultado_peoples['usuario'];?>">
-            <img src="/assets/img/user/<?php echo $resultado_peoples['avatar'];?>" alt="">
+            <img src="/img/user/<?php echo $resultado_peoples['avatar'];?>" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li></a>
     <?php } ?>

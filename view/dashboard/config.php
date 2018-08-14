@@ -3,7 +3,7 @@
 <div class="flex">
 
 <div class="feed">
-<div class="configusa" style="position: relative; top: -40px;">
+<div class="configusa" style="position: relative; top: -20px;">
 <h1>Configurando seu perfil</h1>
 <p>Seja bem vindo <?php echo $user['usuario'];?>, essa é a sua primeira etapa aqui no NekoHappy. Configure seu perfil de acordo com seu gosto.</p>
 <hr>
