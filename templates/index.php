@@ -27,6 +27,15 @@ if(isset($_COOKIE['iduser']) ){
 }
 }
 
+if(isset($_COOKIE['iduser']) ){
+	if(empty($_COOKIE['cry']) ){
+	if(isset($_COOKIE['passwordchange']) ){
+		require './autoload/user/user.php';
+		require './view/account/nova.php';
+	}
+}
+}
+
 if(isset($_COOKIE['verificar']) ){
 if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){
 	require './autoload/user/user.php';
