@@ -40,6 +40,7 @@ if(isset($_POST['email'])){
 		if(isset($resultadod)){
 		    echo 'Esse usuario ja existe<br>';
 		}
+		else{
 		
 
 		$sql = "INSERT INTO user (cry, email, password, usuario,admin, avatar)
@@ -59,6 +60,7 @@ if(isset($_POST['email'])){
 		    echo "Error: " .$sql. "<br>" . mysqli_error($conn);
 		}
 	}
+}
 }
 
 ?>
