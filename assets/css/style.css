@@ -43,7 +43,7 @@ input{
 
 .main .hora{
 	position: absolute;
-	width: 60%;
+	width: 600px;
 	background: transparent;
 	height: 200px;
 	top: 50%;
