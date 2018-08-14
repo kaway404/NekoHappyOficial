@@ -30,6 +30,8 @@
 	<input class="input" id="email-l" type="email" name="email" placeholder="E-mail"/>
 	<input class="input" id="senha-l" type="password" name="senha" placeholder="Senha"/>
 	<br>
+	<br>
+	<a href="/esqueci" style="position: relative;top: 10px; color: #7289da;">Esqueci minha senha</a>
 	<div class="btn" id="logar">Login</div>
 	<div class="btn login" id="cancel_lo">Cancelar</div>
 	<div class="error" id="error2"></div>
