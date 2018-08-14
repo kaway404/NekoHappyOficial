@@ -8,6 +8,10 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 else{
 
 if(isset($_POST['pincode'])){
+    if(empty($_POST['pincode'])){
+        echo 'Preencha o pincode';
+    }
+    else{
     $iduser = $_COOKIE['iduser'];
 	$pincode = $_POST['pincode'];
 		$result_usuario = "SELECT * FROM user WHERE id = '$iduser' and pincode = '$pincode' LIMIT 1";
@@ -30,6 +34,7 @@ if(isset($_POST['pincode'])){
         else{
         	echo 'Pincode incorreto';
         }	
+}
 }
 }
 }
