@@ -227,7 +227,7 @@ hr{
 }
 
 .headerta .boxcenter .busca{
-	background: #fafafa;
+	background: rgba(0,0,0,.13);
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -237,16 +237,17 @@ hr{
     position: relative;
     padding: 5px;
     text-align: center;
-    border: 1px solid #ccc;
     border-radius: 3px;
-    width: 200px;
-    transition: 0.5s;
+    width: 40%;
+    transition: 1.2s;
+    height: 20px;
 }
 
 .headerta .boxcenter .busca:focus{
-	width: 300px;
 	text-align: left;
 	transition: 1s;
+	width: 45%;
+	background: #fff;
 }
 
 .align{
@@ -306,7 +307,7 @@ hr{
 	top: 0px;
 	left: 60px;
 	font-weight: bold;
-	color: #444;
+	color: #444 !important;
 }
 
 .boxleft{
