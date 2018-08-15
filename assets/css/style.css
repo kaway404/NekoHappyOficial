@@ -8,7 +8,19 @@ body{
 }
 
 html{
-	background-color: #fafafa !important;
+	background-color: #36465d !important;
+}
+
+p{
+	color: hsla(0,0%,100%,.6);
+}
+
+span{
+	color: hsla(0,0%,100%,.6);
+}
+
+h1{
+	color: hsla(0,0%,100%,.6);
 }
 
 input{
@@ -76,7 +88,7 @@ input{
 }
 
 .main .hora .btn{
-	background-color: #7289da;
+	background-color: #36465d !important;
 	padding: 10px;
 	width: 20%;
 	position: relative;
@@ -189,8 +201,8 @@ hr{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #7289da;
-	border-bottom: 1px solid rgba(0,0,0,.0975);
+	background: #36465d;
+	border-bottom: 1px solid hsla(0,0%,100%,.2);;
 	z-index: 100000;
 }
 
@@ -272,11 +284,12 @@ hr{
 .feed .post{
 	width: 100%;
 	height: 200px;
-	background: #fff;
+	background: #fff !important;
 	border: 1px solid #efefef;
 	margin-top: 10px;
 	top: 50px;
 	position: relative;
+	border-radius: 4px;
 }
 
 .status .avatar{
@@ -321,13 +334,11 @@ hr{
 }
 
 .boxleft .okaysr{
-	background: #677cca;
-	padding: 20px;
+	background: #36465d;
 	position: relative;
 	bottom: 105px;
-	height: 100px;
+	height: 90px;
 	border-radius: 20px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.50);
 	cursor: pointer;
 }
 
@@ -338,23 +349,22 @@ hr{
 .notice{
 	width: 100%;
 	height: 40px;
-	background: #677cca;
+	background: #2e3d52 !important;
 	border-radius: 4px;
 	margin-top: 20px;
-	top: 40px;
+	top: 20px;
 	position: relative;
 }
 
 .notice p{
-	text-align: center;
-	color: #fff;
+	text-align: left;
 	padding: 7px;
 }
 
 .menuoptionsfeed{
 	width: 44.8%;
 	height: 40px;
-	background: #7289da;
+	background: #36465d !important;
 	position: fixed;
 	z-index: 1000000;
 	top: 75px;
@@ -380,7 +390,7 @@ hr{
 .logout{
 	width: 90%;
 	padding: 5px;
-	background: #7289da;
+	background: #36465d !important;
 	color: #fff;
 	text-align: center;
 	position: relative;
@@ -406,12 +416,16 @@ hr{
 #sugeridos{
 	position: relative;
 	top: 50px;
-	color: #737070;
+	background: #fff;
+	padding: 10px;
 }
 
 #sugeridos span{
 	padding: 5px;
+	color: #444;
 	font-size: 19px;
+	position: relative;
+	bottom: 5px;
 }
 
 #sugeridos .haha{
@@ -475,7 +489,7 @@ hr{
 }
 
 .configusa .btn{
-	background-color: #7289da;
+	background-color: #36465d !important;
 	padding: 10px;
 	width: 20%;
 	position: relative;
@@ -506,16 +520,43 @@ hr{
 
 .subprogress{
 	height: 100%;
-	background: #7289da;
+	background: #36465d !important;
 	transition: 0.5s;
 	border-radius: 20px;
 	width: 0%;
 }
 
 .configusa .error{
-	background: #7289da;
+	background: #36465d !important;
 	color: #fff;
 	padding: 5px;
 	top: 10px;
 	position: relative;
+}
+
+.postar{
+	width: calc(100% - 100px);;
+	background: #fff;
+	height: 100px;
+	top: 0px;
+	position: absolute;
+	border-radius: 3px;
+	float: right;
+	right: 0;
+}
+
+.postaaa .avatar{
+	width: 90px;
+	height: 90px;
+	background: 
+	border-radius: 3px;
+	background: #36465d !important;
+}
+
+.postaaa .avatar img{
+	height: 75px;
+	width: 75px;
+	position: relative;
+	left: 10px;
+	transform: scale(0.9);
 }

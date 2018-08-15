@@ -3,10 +3,13 @@
 <div class="flex">
 <div class="feed">
 
-<div class="menuoptionsfeed">
-	<a>Fazer uma postagem</a>
-	<a>Meu perfil</a>
-	<a>Amigos</a>
+<div class="postaaa">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+<div class="postar">
+
 </div>
 
 <div class="notice">
@@ -62,18 +65,6 @@ if($hora >= 0 and $hora <6){
 
 </div>
 
-<div class="post">
-
-</div>
-<div class="post">
-
-</div>
-<div class="post">
-
-</div>
-<div class="post">
-
-</div>
 <div class="post">
 
 </div>
