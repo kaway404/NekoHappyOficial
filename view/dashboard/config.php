@@ -13,7 +13,7 @@
 <p>Qual seu filme favorito?</p>
 <input type="" id="filme" name="" placeholder="Exemplo: A rede social">
 <hr>
-<p>Qual vai ser seu pin-code? <span uk-tooltip="Irá ser usado para proteger sua conta de invasores e também será usado para recuperar sua conta." style="color: #677cca; cursor: pointer;">Para que serve?</span></p>
+<p>Qual vai ser seu pin-code? <span uk-tooltip="Irá ser usado para proteger sua conta de invasores e também será usado para recuperar sua conta." style="color: #fff !important; cursor: pointer;">Para que serve?</span></p>
 <input type="" id="pin" name="" placeholder="Exemplo: 4002">
 <hr>
 <p>Edite sua foto perfil</p>
