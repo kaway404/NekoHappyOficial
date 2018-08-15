@@ -283,7 +283,7 @@ hr{
 }
 
 .feed .post{
-	width: 100%;
+	width: calc(100% - 100px);
 	height: 200px;
 	background: #fff !important;
 	border: 1px solid #efefef;
@@ -291,6 +291,7 @@ hr{
 	top: 50px;
 	position: relative;
 	border-radius: 4px;
+	left: 98px;
 }
 
 .status .avatar{
@@ -424,7 +425,7 @@ hr{
 
 #sugeridos span{
 	padding: 5px;
-	color: #444;
+	color: #444 !important;
 	font-size: 19px;
 	position: relative;
 	bottom: 5px;
@@ -538,7 +539,7 @@ hr{
 }
 
 .postar{
-	width: calc(100% - 100px);;
+	width: calc(100% - 100px);
 	background: #fff;
 	height: 100px;
 	top: 0px;
@@ -553,7 +554,6 @@ hr{
 	height: 90px;
 	background: 
 	border-radius: 3px;
-	background: #36465d !important;
 }
 
 .postaaa .avatar img{

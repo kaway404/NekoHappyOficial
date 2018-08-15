@@ -66,7 +66,27 @@ if($hora >= 0 and $hora <6){
 </div>
 
 <div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
 
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
 </div>
 
 </div>
