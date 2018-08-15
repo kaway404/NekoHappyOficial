@@ -518,6 +518,7 @@ hr{
 	position: relative;
 	top: 10px;
 	border-radius: 20px;
+	border: 1px solid #f2f2f2;
 }
 
 .subprogress{
