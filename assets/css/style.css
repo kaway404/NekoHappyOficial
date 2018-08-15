@@ -101,7 +101,7 @@ input{
 }
 
 .main .hora .login{
-	background: #fff;
+	background: #fff !important;
 	color: #000;
 }
 
