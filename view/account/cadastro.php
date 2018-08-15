@@ -7,7 +7,7 @@
 
 <div class="hora" id="lang" style="left: -200%;">
 	<h1>É hora de largar o Facebook e o Twitter.</h1>
-	<p>Uma rede social para geek, crie sua conta e faça amigos. Aqui tem rank, seja o top 1.</p>
+	<p>Uma rede social para gamers/otakus, nós somos o número 1, venha conferir.</p>
 	<div class="btn" id="cadastro">Cadastrar</div>
 	<div class="btn login" id="login">Login</div>
 </div>
