@@ -12,15 +12,15 @@ html{
 }
 
 p{
-	color: hsla(0,0%,100%,.6);
+	color: hsla(0,0%,100%,.6) !important;
 }
 
 span{
-	color: hsla(0,0%,100%,.6);
+	color: hsla(0,0%,100%,.6) !important;
 }
 
 h1{
-	color: hsla(0,0%,100%,.6);
+	color: hsla(0,0%,100%,.6) !important;
 }
 
 input{
