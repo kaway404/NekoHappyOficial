@@ -47,7 +47,7 @@ if($hora >= 0 and $hora <6){
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
     	<?php
     	$iduser = $user['id'];
-    	$result_people = "SELECT * FROM user WHERE id <> '$iduser' LIMIT 40";
+    	$result_people = "SELECT * FROM user WHERE id <> '$iduser' ORDER BY RAND() LIMIT 40";
 	    $resultado_people = mysqli_query($conn, $result_people);
 	    $people = mysqli_fetch_assoc($resultado_people);
     	foreach ($resultado_people as $resultado_people => $resultado_peoples) {
@@ -65,6 +65,352 @@ if($hora >= 0 and $hora <6){
 
 </div>
 
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
+
+<div class="post">
+<div class="postaaa" style="left: -100px; position: relative;">
+<div class="avatar">
+<img src="/img/user/<?php echo $user['avatar'];?>"/>
+</div>
+</div>
+</div>
 <div class="post">
 <div class="postaaa" style="left: -100px; position: relative;">
 <div class="avatar">

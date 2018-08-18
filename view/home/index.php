@@ -1,5 +1,5 @@
 <?php if(isset($template)){?>
-<?php if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){ ?>
+<?php if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){?>
 <div class="main">
 <div class="header bluebar">
 	<img id="logo" class="logo" src="/assets/img/logo.png"/>

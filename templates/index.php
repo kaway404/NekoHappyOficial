@@ -45,6 +45,7 @@ if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){
 else{
 
 if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){
+require './php/main/randback.php';
 if(isset($_GET['cadastro'])){
 	require './view/account/cadastro.php';
 }
