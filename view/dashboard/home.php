@@ -88,12 +88,14 @@ if($people){
          $(".novas").after(data);
          }
          , "html");
+         document.getElementById('title').value='';
+         document.getElementById('texto').value='';
          return false;
     });
 </script>
 <?php
 $iduser = $user['id'];
-$post = "SELECT * FROM postagem WHERE id";
+$post = "SELECT * FROM postagem WHERE id ORDER BY ID DESC";
 $posta = mysqli_query($conn, $post);
 $postar = mysqli_fetch_assoc($posta);
 foreach ($posta as $posta => $postas) {
