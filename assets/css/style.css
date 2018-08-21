@@ -290,7 +290,7 @@ hr{
 
 .feed .post{
 	width: calc(100% - 100px);
-	height: 200px;
+	height: auto;
 	background: #fff !important;
 	border: 1px solid #efefef;
 	margin-top: 10px;
@@ -560,7 +560,6 @@ hr{
 .postaaa .avatar{
 	width: 90px;
 	height: 90px;
-	background: 
 	border-radius: 3px;
 }
 

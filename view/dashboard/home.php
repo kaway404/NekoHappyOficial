@@ -23,42 +23,19 @@
 <div class="texto">
 <p><?php echo $user['usuario'];?></p>
 <div class="width">
-<input type="text" name="title" placeholder="Título">
-<textarea class="pensando" placeholder="O seu texto aqui"></textarea>
+<form>
+<input id="title" type="text" name="title" placeholder="Título">
+<textarea id="texto" class="pensando" placeholder="O seu texto aqui"></textarea>
 
-<button class="fazer">Publicar</button>
+<button class="fazer" id="fazer">Publicar</button>
+</form>
+
+</div>
 
 </div>
 
 </div>
 
-</div>
-
-<!-- <div class="saudacao">
-<?php
-$hora = date("H");
-if($hora >= 0 and $hora <6){
-?>
-<div style="background-image: url(/assets/img/saudacao/noite.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
-    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa madrugada</h1></center>
-</div>
-<?php } elseif ($hora >= 6 and $hora < 12) {
- ?>
- <div style="background-image: url(/assets/img/saudacao/dia.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
-    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Bom dia</h1></center>
-</div>
-
-<?php } elseif ($hora>= 12 and $hora < 18) {?>
-<div style="background-image: url(/assets/img/saudacao/dia.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
-    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa tarde</h1></center>
-</div>
-
-<?php } else {?>
-<div style="background-image: url(/assets/img/saudacao/noite.png); background-size: cover; border-radius: 10px; height: 287px; width: 100%;">
-    <center><h1 style="color: #fff;padding: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,.60);">Boa noite</h1></center>
-</div>
-<?php } ?>
-</div> -->
 <?php
 $iduser = $user['id'];
 $result_people = "SELECT * FROM user WHERE id <> '$iduser' ORDER BY RAND() LIMIT 40";
@@ -90,18 +67,57 @@ if($people){
 </div>
 <?php } ?>
 
+
 <div class="oksrs">
 <div class="notice">
     <p>Feed de nóticias</p>
 </div>
 
-<div class="post">
-<div class="postaaa" style="left: -100px; position: relative;">
-<div class="avatar">
+<div class="novas">
+
+</div>
+
+<script type="text/javascript">
+        $( "#fazer" ).click(function() {
+        var title = $("#title");
+        var titlePost = title.val();
+        var texto = $("#texto");
+        var textoPost = texto.val();
+        $.post("/publish", {title: titlePost, texto: textoPost},
+        function(data){
+         $(".novas").after(data);
+         }
+         , "html");
+         return false;
+    });
+</script>
+<?php
+$iduser = $user['id'];
+$post = "SELECT * FROM postagem WHERE id";
+$posta = mysqli_query($conn, $post);
+$postar = mysqli_fetch_assoc($posta);
+foreach ($posta as $posta => $postas) {
+?>
+
+<?php
+$quem = $postas['iduser'];
+$result_peopledt = "SELECT * FROM user WHERE id = $quem LIMIT 1";
+ $resultado_peoplede = mysqli_query($conn, $result_peopledt);
+$peoplesa = mysqli_fetch_assoc($resultado_peoplede);
+foreach ($resultado_peoplede as $resultado_peoplede => $resultado_peopledes) {
+?>
+
+<div class="post">  
+<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;"><?php echo $resultado_peopledes['usuario'];?></p>
+<h1 style="color: #151515 !important; top: -20px; position: relative; left: 10px; font-size: 28px;"><?php echo $postas['title'];?></h1>
+<span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px;"><?php echo $postas['texto'];?></span>
+<div class="postaaa" style="left: -100px; position: absolute;">
+<div class="avatar" style="top: -130px; position: absolute;">
 <img src="/img/user/<?php echo $user['avatar'];?>"/>
 </div>
 </div>
 </div>
+<?Php } } ?>
 
 
 </div>

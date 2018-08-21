@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 21-Ago-2018 às 20:12
+-- Generation Time: 21-Ago-2018 às 21:39
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -99,6 +99,27 @@ INSERT INTO `passwordchange` (`id`, `iduser`, `cry`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `postagem`
+--
+
+CREATE TABLE `postagem` (
+  `id` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL,
+  `cry` varchar(2555) NOT NULL,
+  `title` text NOT NULL,
+  `texto` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `postagem`
+--
+
+INSERT INTO `postagem` (`id`, `iduser`, `cry`, `title`, `texto`) VALUES
+(4, 34, 'd3fbc988f598f1278e11aa23e9d4ee91b4952431', 'OlÃ¡ pessoal, tudo certo?', 'Tudo sim, e ai?');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `user`
 --
 
@@ -129,7 +150,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `cry`, `wtf`, `cool`, `baby`, `very`, `nani`, `email`, `password`, `usuario`, `admin`, `avatar`, `background`, `cover`, `config`, `game`, `movie`, `pincode`, `ip`) VALUES
-(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_9bc18a0ed7f1a266a9ece4d74ef4eaa2f603e17e0730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '::1');
+(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_9bc18a0ed7f1a266a9ece4d74ef4eaa2f603e17e0730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '::1'),
+(35, 'nekohappy_f7310e76f2d7ff0e840b570fbaf07e19bfe2f23f', '2e9ca66b0d5b55d5d19acf5d09a4c3db551093ba', 'nekohappy_89d6af6459064d78e88f573a184241ac7f9eda81', '1ad721207f4e1b32f5791728e0ee6115', '0165d10b483b47b285e3c5496793f271ebf8ab3a', 'nekohappy_7855972c424277e550ed3ed58b63dc08655f5fcc', 'kaway404@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway404', 0, 'nekohappy_9d6773aae2b0a4f9e8f33d27d1ec85119f215331bca643e9251f5302bb298c72b96764022db37303.png', '', '', 1, 'CSGO', 'A rede', '4002', '::1');
 
 --
 -- Indexes for dumped tables
@@ -145,6 +167,12 @@ ALTER TABLE `background`
 -- Indexes for table `passwordchange`
 --
 ALTER TABLE `passwordchange`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `postagem`
+--
+ALTER TABLE `postagem`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -170,10 +198,16 @@ ALTER TABLE `passwordchange`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `postagem`
+--
+ALTER TABLE `postagem`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -22,4 +22,5 @@ RewriteRule ^checksession /index.php?checksession [L]
 RewriteRule ^esqueci /index.php?esqueci [L]
 RewriteRule ^verify /php/account/sessao.php
 RewriteRule ^profile/(.*)$ /index.php?id=$1&profile=1 [L]
+RewriteRule ^publish /php/post/fazer.php
 </IfModule>
