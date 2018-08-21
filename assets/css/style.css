@@ -546,7 +546,7 @@ hr{
 }
 
 .postar{
-	width: auto;
+	width: calc(100% - 100px);
 	background: #fff;
 	height: auto;
 	top: 0px;
