@@ -108,7 +108,7 @@ foreach ($resultado_peoplede as $resultado_peoplede => $resultado_peopledes) {
 ?>
 
 <div class="post">  
-<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;"><?php echo $resultado_peopledes['usuario'];?></p>
+<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;"><?php echo $resultado_peopledes['usuario'];?> - publicou</p>
 <h1 style="color: #151515 !important; top: -20px; position: relative; left: 10px; font-size: 28px;"><?php echo $postas['title'];?></h1>
 <span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px;"><?php echo $postas['texto'];?></span>
 <div class="postaaa" style="left: -100px; position: absolute;">
