@@ -11,15 +11,7 @@ html{
 	background-color: #36465d !important;
 }
 
-p{
-	color: hsla(0,0%,100%,.6) !important;
-}
-
-span{
-	color: hsla(0,0%,100%,.6) !important;
-}
-
-h1{
+p, span, h1{
 	color: hsla(0,0%,100%,.6) !important;
 }
 
@@ -71,14 +63,14 @@ input{
 }
 
 .main .hora h1{
-	color: #fff;
+	color: hsla(0,0%,100%,.8) !important;
 	font-weight: 700;
 	font-size: 34px;
 	transition: 0.3s;
 }
 
 .main .hora p{
-	color: hsla(0,0%,100%,.9);
+	color: hsla(0,0%,100%,.8) !important;
 	transition: 0.5s;
 }
 

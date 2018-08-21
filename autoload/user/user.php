@@ -76,8 +76,12 @@ $crypass = $_COOKIE['passwordchange'];
 if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	$iduser = $_COOKIE['iduser'];
 	$cry = $_COOKIE['cry'];
+    $wtf = $_COOKIE['wtf'];
+    $cool = $_COOKIE['cool'];
+    $baby = $_COOKIE['baby'];
+    $very = $_COOKIE['very'];
 
-	$result_usuario = "SELECT * FROM user WHERE id = '$iduser' && cry = '$cry' LIMIT 1";
+	$result_usuario = "SELECT * FROM user WHERE id = '$iduser' && cry = '$cry' and wtf = '$wtf' and cool = '$cool' and baby = '$baby' and very = '$very'  LIMIT 1";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
     $user = mysqli_fetch_assoc($resultado_usuario);
 

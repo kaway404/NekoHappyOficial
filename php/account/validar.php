@@ -19,7 +19,8 @@ if(isset($_POST['pincode'])){
         $resultado = mysqli_fetch_assoc($resultado_usuario);
         if(isset($resultado)){
         $n = sha1(rand (0, 10000000));
-        $crya = $n;
+        $nekohappy = sha1('nekhappy') . $n;
+        $crya = $nekohappy . $n;
         $sql = "INSERT INTO passwordchange (iduser, cry)
             VALUES ('".$iduser."', '".$crya."')";
         if (mysqli_query($conn, $sql)) {

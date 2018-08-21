@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 18-Ago-2018 às 18:05
+-- Generation Time: 21-Ago-2018 às 20:12
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -88,6 +88,14 @@ CREATE TABLE `passwordchange` (
   `cry` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Extraindo dados da tabela `passwordchange`
+--
+
+INSERT INTO `passwordchange` (`id`, `iduser`, `cry`) VALUES
+(2, 32, 'bbd123185b4717aeebd9b7f2b930b6e7a937944b'),
+(3, 32, '61a22c6a80f2c5ab21eaa6768ee691511c0d9f6b808f7ccff4a92b14c25cf966f55c2d2634dc531f808f7ccff4a92b14c25cf966f55c2d2634dc531f');
+
 -- --------------------------------------------------------
 
 --
@@ -97,6 +105,10 @@ CREATE TABLE `passwordchange` (
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `cry` varchar(255) NOT NULL,
+  `wtf` varchar(2555) NOT NULL,
+  `cool` varchar(2555) NOT NULL,
+  `baby` varchar(2555) NOT NULL,
+  `very` varchar(2555) NOT NULL,
   `nani` varchar(255) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -116,14 +128,8 @@ CREATE TABLE `user` (
 -- Extraindo dados da tabela `user`
 --
 
-INSERT INTO `user` (`id`, `cry`, `nani`, `email`, `password`, `usuario`, `admin`, `avatar`, `background`, `cover`, `config`, `game`, `movie`, `pincode`, `ip`) VALUES
-(23, 'nekohappy_dfd22d81d69d38cc3026a4ef11517a41341c7ed1', 'nekohappy_f4f59e822581d785ba910fbf3f268eca79db8204', 'xande@hotmail.com', '43a3844c5fcedefbaf4af4a953fbbfa5dcfd4b49', 'xande', 0, 'nekohappy_df44fbc1d827dd65e5a47fc20de86b6a897bdf598452df2c902261073a842835cbc4ca723d31bd22.png', '', '', 0, '', '', '4002', '9090'),
-(25, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'nekohappy_30f71f43b12ca95f367ff0db537c4f7a32ecb36d', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_bd15ec20c7428c94a3efaa6b174d638c8b37c6def64e03165a1f09934b53dd2271a580cb4407eb56.png', '', '', 1, 'Counter Strike Global Offensive', 'A rede social', '5151', '::1'),
-(26, 'nekohappy_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', 'nekohappy_f474c370f979a7a9679d509d3eebcf3edd3c3b1a', 'anelise@hotmail.com', 'c3cdda1f9e5d093622cda7ca2de3cd116f6d5aa0', 'esnupp404', 0, 'nekohappy_567de9c84abf07be2b7d288e20478e937e8b9fa9bdb1890f72dc8c9b51d5f35fbb7c516d6e542ccf.png', '', '', 1, '', '', '2006', '::1'),
-(27, 'nekohappy_ebacd2ece17e8a0dbc480e019651779b055e328b', 'nekohappy_fda16b119e2adf8f360f68e0dae47e2d456af4cf', 'felisbina@hotmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'felisbina', 0, 'default.jpg', '', '', 1, '', '', '5151', '::1'),
-(28, 'nekohappy_9e1bde28872c89feff8f5f8acc7d461c615dea27', 'nekohappy_c811172c23634448276398a709a5b2c50ab05474', 'naruto@hotmail.com', '20beed61f5d64368b9aba66e91a1d2a090a0d4ae', 'Naruto Uzumaki', 0, 'nekohappy_f467b04f6bd12253137393d1972e5817ac063afac871a24d693ebf111378c135c9996ded26e28ad6.png', '', '', 1, '', '', '404', '::1'),
-(29, 'nekohappy_ad7d63c9e2e8b580eeeff5b54815ba85c83982b6', 'nekohappy_f1492cd6cfb968d8b51b3746a3ae08f28aa3cd68', 'nani@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'xande123', 0, 'nekohappy_e126b961d9a5ea4f93cd0ce85ad61e78ba3677f0bca643e9251f5302bb298c72b96764022db37303.png', '', '', 1, 'League Of Legends', 'It a coisa', '5151', '::1'),
-(30, 'nekohappy_728ad755c4454333e40354fe8250249f4c29f9e7', 'nekohappy_4925d1205b5f83cd1ffd4ef64f3f85fa5386cd99', 'emailqualquer@outlook.com', '7751a23fa55170a57e90374df13a3ab78efe0e99', 'onwint', 0, 'nekohappy_63a8bbe91c6b232b9afa30e6bb0f02a51a9066114dc4c858d144de4fc298472d2d88e76ea7556d0d.png', '', '', 1, 'league of legends', 'novinhas na cama 2', '123', '177.95.88.74');
+INSERT INTO `user` (`id`, `cry`, `wtf`, `cool`, `baby`, `very`, `nani`, `email`, `password`, `usuario`, `admin`, `avatar`, `background`, `cover`, `config`, `game`, `movie`, `pincode`, `ip`) VALUES
+(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_9bc18a0ed7f1a266a9ece4d74ef4eaa2f603e17e0730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '::1');
 
 --
 -- Indexes for dumped tables
@@ -161,13 +167,13 @@ ALTER TABLE `background`
 -- AUTO_INCREMENT for table `passwordchange`
 --
 ALTER TABLE `passwordchange`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

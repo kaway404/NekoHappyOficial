@@ -39,6 +39,10 @@ if(isset($_POST['email'])){
             if ($conn->query($sql) === TRUE) {
             setcookie("iduser", $resultado['id'], time() + (86400 * 30), "/");
             setcookie("cry", $resultado['cry'], time() + (86400 * 30), "/");
+            setcookie("wtf", $resultado['wtf'], time() + (86400 * 30), "/");
+            setcookie("cool", $resultado['cool'], time() + (86400 * 30), "/");
+            setcookie("baby", $resultado['baby'], time() + (86400 * 30), "/");
+            setcookie("very", $resultado['very'], time() + (86400 * 30), "/");
             setcookie("verificar" , "");
             echo '<script>location.href="/";</script>';
         }
