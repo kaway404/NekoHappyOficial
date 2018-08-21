@@ -1,3 +1,4 @@
+<div style="color: #36465d !important;">
 <?php
 // NekoHappy
 // Feito por kaway404
@@ -73,7 +74,8 @@ $crypass = $_COOKIE['passwordchange'];
 }
 
 // Configurações do usuario
-if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
+if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) ) ){
+
 	$iduser = $_COOKIE['iduser'];
 	$cry = $_COOKIE['cry'];
     $wtf = $_COOKIE['wtf'];
@@ -81,7 +83,7 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
     $baby = $_COOKIE['baby'];
     $very = $_COOKIE['very'];
 
-	$result_usuario = "SELECT * FROM user WHERE id = '$iduser' && cry = '$cry' and wtf = '$wtf' and cool = '$cool' and baby = '$baby' and very = '$very'  LIMIT 1";
+	$result_usuario = "SELECT * FROM user WHERE id = '$iduser' && cry = '$cry' and wtf = '$wtf' and cool = '$cool' and baby = '$baby' and very = '$very' LIMIT 1";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
     $user = mysqli_fetch_assoc($resultado_usuario);
 
@@ -92,6 +94,14 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
     else{
     	setcookie("iduser", "", time()+7200);
      	setcookie("cry", "", time()+7200);
+        setcookie("nani" , "", time()+7200);
+        setcookie("wtf" , "", time()+7200);
+        setcookie("cool" , "", time()+7200);
+        setcookie("baby" , "", time()+7200);
+        setcookie("very" , "", time()+7200);
     	echo '<script>location.href="/login";</script>';
     }
 }
+?>
+
+</div>
