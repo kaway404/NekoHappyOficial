@@ -624,6 +624,7 @@ hr{
 	left: 0px;
 	font-size: 1.4em;
 	color: #565656;
+	width: 100%;
 }
 
 .postar .texto textarea{
