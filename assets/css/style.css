@@ -19,6 +19,32 @@ input{
 	outline: 0;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #555;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #555;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #555;
+}
+
+.pensando::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #777 !important;
+    opacity: 1; /* Firefox */
+}
+
+.pensando:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #777 !important;
+}
+
+.pensando::-ms-input-placeholder { /* Microsoft Edge */
+    color: #777 !important;
+}
+
 .main{
 	background: linear-gradient(#18191c, #1d1c1c);
 	width: 100%;
@@ -520,14 +546,15 @@ hr{
 }
 
 .postar{
-	width: calc(100% - 100px);
+	width: auto;
 	background: #fff;
-	height: 100px;
+	height: auto;
 	top: 0px;
 	position: absolute;
 	border-radius: 3px;
-	float: right;
-	right: 0;
+	float: left;
+	left: 100px;
+	padding: 2px;
 }
 
 .postaaa .avatar{
@@ -545,4 +572,96 @@ hr{
 	transform: scale(0.9);
 	border-radius: 3px;
 	cursor: pointer;
+}
+
+.postar .tipo{
+	width: 80px;
+	height: 100%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.postar .tipo:hover{
+	-webkit-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+.postar .tipo h1{
+	color: #565656 !important;
+	padding: 20px;
+	font-size: 2.5em;
+}
+
+.postar .tipo p{
+	color: #555 !important;
+	position: relative;
+	top: -45px;
+	left: 23px;
+	font-size: 1.0em;
+}
+
+.postar .tipo img{
+	width: 45px;
+}
+
+.postar .tipos{
+	display: none;
+}
+
+.postar .texto{
+	display: block;
+}
+
+.postar .texto p{
+	color: #565656 !important;
+	padding: 10px;
+}
+
+.postar .texto input{
+	border: none;
+	position: relative;
+	bottom: 30px;
+	left: 0px;
+	font-size: 1.4em;
+	color: #565656;
+}
+
+.postar .texto textarea{
+	border: none;
+	position: relative;
+	bottom: 20px;
+	left: 0px;
+	font-size: 1.4em;
+	color: #565656;
+	resize: none;
+	width: 100%;
+	font-size: 1em;
+	outline: none;
+	height: 60px;
+}
+
+.oksrs{
+	position: relative;
+	top: 100px;
+}
+
+.postar .texto .width{
+	width: 90%;
+	position: relative;
+	left: 20px;
+	top: 10px;
+	height: 140px;
+}
+
+.postar .texto .width .fazer{
+	border: none;
+	position: relative;
+	bottom: 10px;
+	border-color: #529ecc;
+    background-color: #529ecc;
+    color: hsla(0,0%,100%,.9);
+    cursor: pointer;
+    padding: 8px;
+    float: right;
+    right: 10px;
 }
