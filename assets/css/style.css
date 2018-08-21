@@ -289,7 +289,7 @@ hr{
 }
 
 .feed .post{
-	width: calc(100% - 100px);
+	width: calc(100% - 90px);
 	height: auto;
 	background: #fff !important;
 	border: 1px solid #efefef;
@@ -297,7 +297,8 @@ hr{
 	top: 50px;
 	position: relative;
 	border-radius: 4px;
-	left: 98px;
+	left: 68px;
+	padding: 10px;
 }
 
 .status .avatar{

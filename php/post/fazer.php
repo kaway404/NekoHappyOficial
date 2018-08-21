@@ -36,13 +36,13 @@ if(empty($_POST['title'])){
 if (mysqli_query($conn, $sql)) {?>
 
 <div class="post">  
-<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;">
+<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;word-wrap: break-word;">
 	<?php echo $user['usuario'];?>
 	</p>
-<h1 style="color: #151515 !important; top: -20px; position: relative; left: 10px; font-size: 28px;">
+<h1 style="color: #151515 !important; top: -20px; position: relative; left: 10px; font-size: 28px;word-wrap: break-word;">
 	<?php echo $title;?>
 	</h1>
-<span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px;">
+<span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px;word-wrap: break-word;">
 	<?php echo $texto;?>
 	</span>
 <div class="postaaa" style="left: -100px; position: absolute;">
