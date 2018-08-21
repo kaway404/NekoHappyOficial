@@ -609,6 +609,11 @@ hr{
 
 .postar .texto{
 	display: block;
+	transition: 0.4s;
+}
+
+.postar .texto:hover{
+	background: #eee;
 }
 
 .postar .texto p{
@@ -624,6 +629,7 @@ hr{
 	font-size: 1.4em;
 	color: #565656;
 	width: 100%;
+	background: transparent;
 }
 
 .postar .texto textarea{
@@ -638,6 +644,7 @@ hr{
 	font-size: 1em;
 	outline: none;
 	height: 60px;
+	background: transparent;
 }
 
 .oksrs{
