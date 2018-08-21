@@ -115,7 +115,7 @@ foreach ($resultado_peoplede as $resultado_peoplede => $resultado_peopledes) {
 <span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px;"><?php echo $postas['texto'];?></span>
 <div class="postaaa" style="left: -100px; position: absolute;">
 <div class="avatar" style="top: -130px; position: absolute;">
-<img src="/img/user/<?php echo $user['avatar'];?>"/>
+<img src="/img/user/<?php echo $resultado_peopledes['avatar'];?>"/>
 </div>
 </div>
 </div>
