@@ -6,17 +6,17 @@
 <div class="postar">
 <div class="tipos">
 <p style="color: #565656 !important; top: 30px; position: relative; left: 20px; font-size: 1.4em;">Selecione um tipo de postagem</p>
-<div class="tipo" id="tipotexto">
+<div class="tipo" id="tipotexto" uk-tooltip="Postagem em forma de texto">
     <h1>Aa</h1>
     <p>Texto</p>
 </div>
-<div class="tipo">
+<div class="tipo" uk-tooltip="Postagem em forma de foto">
     <h1><img src="/assets/img/icons/camera.png"/></h1>
     <p>Foto</p>
 </div>
-<div class="tipo">
+<div class="tipo" uk-tooltip="Postagem em forma de gif">
     <h1><img src="/assets/img/icons/gif.png"/></h1>
-    <p style="left: 30px;">Gif</p>
+    <p style="left: 28px; top: -22px;">Gif</p>
 </div>
 </div>
 
