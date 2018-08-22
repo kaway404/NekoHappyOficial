@@ -5,13 +5,18 @@
 </div>
 <div class="postar">
 <div class="tipos">
-<div class="tipo">
+<p style="color: #565656 !important; top: 30px; position: relative; left: 20px; font-size: 1.4em;">Selecione um tipo de postagem</p>
+<div class="tipo" id="tipotexto">
     <h1>Aa</h1>
     <p>Texto</p>
 </div>
 <div class="tipo">
     <h1><img src="/assets/img/icons/camera.png"/></h1>
     <p>Foto</p>
+</div>
+<div class="tipo">
+    <h1><img src="/assets/img/icons/gif.png"/></h1>
+    <p style="left: 30px;">Gif</p>
 </div>
 </div>
 
@@ -24,9 +29,21 @@
 
 <button class="fazer" id="fazer">Publicar</button>
 </form>
+<button class="fazer" id="sair" style="float: left; left: 10px;">Fechar</button>
 
 </div>
 
 </div>
 
 </div>
+
+<script type="text/javascript">
+	$( "#tipotexto" ).click(function() {
+		$(".tipos").hide();
+		$(".texto").show();
+	});
+	$( "#sair" ).click(function() {
+		$(".texto").hide();
+		$(".tipos").show();
+	});
+</script>
