@@ -45,7 +45,7 @@ foreach ($resultado_peoplede as $resultado_peoplede => $resultado_peopledes) {
 <span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px; word-wrap: break-word;"><?php echo $postas['texto'];?></span>
 <div class="postaaa" style="left: -100px; position: absolute;">
 <div class="avatar" style="top: -130px; position: absolute;">
-<img uk-tooltip="<?php echo $resultado_peopledes['usuario'];?>" src="/img/user/<?php echo $resultado_peopledes['avatar'];?>"/>
+<a href='/profile/<?php echo $resultado_peopledes['id'];?>'><img uk-tooltip="<?php echo $resultado_peopledes['usuario'];?>" src="/img/user/<?php echo $resultado_peopledes['avatar'];?>"/></a>
 </div>
 </div>
 </div>
