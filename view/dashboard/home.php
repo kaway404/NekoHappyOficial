@@ -10,6 +10,11 @@ echo '<div class="oksrs">';
 // Feed
 require './view/dashboard/feed/post.php';
 echo '</div>';
+
+if($user['tuturial'] == 0){
+	require './view/dashboard/tuturial/index.php';
+}
+
 // Status
 require './view/dashboard/status/me.php';
 echo '</div>';
