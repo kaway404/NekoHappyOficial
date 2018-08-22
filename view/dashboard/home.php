@@ -14,4 +14,4 @@ echo '</div>';
 require './view/dashboard/status/me.php';
 echo '</div>';
 echo '</div>';
-} else{ include '../404/index.php';}?>
+ } else{ include './view/404/index.php';}?>

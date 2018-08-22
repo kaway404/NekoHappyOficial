@@ -29,7 +29,7 @@
 
 <button class="fazer" id="fazer">Publicar</button>
 </form>
-<button class="fazer" id="sair" style="float: left; left: 10px;">Fechar</button>
+<button class="fazer" id="sair">Fechar</button>
 
 </div>
 

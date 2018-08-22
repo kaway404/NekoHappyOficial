@@ -36,4 +36,4 @@ if(empty($_COOKIE['iduser']) ){
 	});
 </script>
 <?php } } ?>
-<?Php } else{ include '../404/index.php';}?>
+<?Php } else{ include './view//404/index.php';}?>
