@@ -425,7 +425,7 @@ hr{
 
 #sugeridos{
 	position: relative;
-	top: 130px;
+	top: 80px;
 	background: #fff;
 	padding: 10px;
 	border-radius: 3px;
@@ -555,7 +555,8 @@ hr{
 	border-radius: 3px;
 	float: left;
 	left: 100px;
-	transition: 1s;
+	z-index: 1000;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.40);
 }
 
 .postaaa .avatar{
@@ -651,13 +652,13 @@ hr{
 	width: 100%;
 	font-size: 1em;
 	outline: none;
-	height: 60px;
+	height: 30px;
 	background: transparent;
 }
 
 .oksrs{
 	position: relative;
-	top: 100px;
+	top: 60px;
 }
 
 .postar .texto .width{
@@ -665,7 +666,7 @@ hr{
 	position: relative;
 	left: 20px;
 	top: 10px;
-	height: 140px;
+	height: 105px;
 }
 
 .postar .texto .width .fazer{
