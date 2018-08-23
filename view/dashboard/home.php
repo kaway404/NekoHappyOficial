@@ -1,4 +1,10 @@
 <?php if(isset($template)){
+
+
+if($user['tuturial'] == 0){
+	require './view/dashboard/tuturial/index.php';
+}
+
 echo '<div class="align">';
 echo '<div class="flex">';
 echo '<div class="feed">';
@@ -10,10 +16,6 @@ echo '<div class="oksrs">';
 // Feed
 require './view/dashboard/feed/post.php';
 echo '</div>';
-
-if($user['tuturial'] == 0){
-	require './view/dashboard/tuturial/index.php';
-}
 
 // Status
 require './view/dashboard/status/me.php';

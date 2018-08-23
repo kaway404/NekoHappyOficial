@@ -21,7 +21,7 @@
 	.tuturial{
 		width: 100%;
 		height: 100%;
-		position: fixed;
+		position: absolute;
 		background: rgba(0,0,0,.40);
 		top: 0;
 		left: 0;
@@ -38,8 +38,9 @@
 	    left: 0;
 	   right: 0;
 	   position: absolute;
-	   top: 50%;
-	   padding: 5px;
+	   top: 20%;
+	   padding: 8px;
+	   border-radius: 3px;
 	}
 
 	#tuturial1 p{
@@ -104,15 +105,15 @@
 	}
 
 	#tuturial2{
-		left: -70%;
+		left: -75%;
 		display: none;
 		top: 180px;
 	}
 
 	#tuturial3{
-		left: -25%;
+		left: -15%;
 		display: none;
-		top: 350px;
+		top: 370px;
 	}
 </style>
 
