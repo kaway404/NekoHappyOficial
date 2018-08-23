@@ -86,4 +86,4 @@
 
 </script>
 
-<?Php }  } else{ include './view/404/index.php';}?>
+<?Php } else{ include './view/404/index.php';}?>
