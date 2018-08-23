@@ -1,3 +1,4 @@
+<?php if(isset($template)){?>
 <div class="notice">
     <p>Feed de nóticias</p>
 </div>
@@ -53,3 +54,4 @@ foreach ($resultado_peoplede as $resultado_peoplede => $resultado_peopledes) {
 
 
 </div>
+<?Php } else{ include '../404/index.php';}?>

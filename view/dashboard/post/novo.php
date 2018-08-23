@@ -1,3 +1,4 @@
+<?php if(isset($template)){?>
 <div class="postaaa">
 <div class="avatar">
 <img src="/img/user/<?php echo $user['avatar'];?>"/>
@@ -47,3 +48,4 @@
 		$(".tipos").show();
 	});
 </script>
+<?Php } else{ include '../404/index.php';}?>

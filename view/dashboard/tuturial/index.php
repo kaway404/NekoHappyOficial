@@ -1,3 +1,4 @@
+<?php if(isset($template)){?>
 <div class="tuturial">
 	<div class="tuturialhi" id="tuturial1">
 		<p>Seja bem vindo <?php echo $user['usuario'];?>, iremos te ensinar a usar a NekoHappy.</p>
@@ -146,3 +147,4 @@
 		return false;
 	});
 </script>
+<?Php } else{ include '../404/index.php';}?>

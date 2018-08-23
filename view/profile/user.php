@@ -9,4 +9,6 @@ echo '</div>';
 
 // Status
 require './view/dashboard/status/me.php';
+ }else{
+ 	include '../404/index.php';
  } ?>

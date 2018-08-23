@@ -1,3 +1,4 @@
+<?php if(isset($template)){?>
 <?php
 $iduser = $user['id'];
 $result_people = "SELECT * FROM user WHERE id <> '$iduser' ORDER BY RAND() LIMIT 40";
@@ -28,3 +29,4 @@ if($people){
 
 </div>
 <?php } ?>
+<?Php } else{ include '../404/index.php';}?>
