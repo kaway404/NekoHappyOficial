@@ -1,2 +1,2 @@
 <?php
-$template = 1;
+$template = 666;
