@@ -17,13 +17,13 @@
 
 <style type="text/css">
 	<?php
-	if(isset($user['cover'])){?>
+	if($user['cover'] <> ""){?>
 		.cover{
 			background-image: url('/img/cover/<?php echo $user['cover'];?>') !important;
 		}
 	<?php } ?>
 	<?php
-	if(isset($user['background'])){?>
+	if($user['background'] <> ""){?>
 		.overtt{
 			background-image: url('/img/background/<?php echo $user['background'];?>') !important;
 			position: fixed;

@@ -18,13 +18,13 @@ if(isset($stranger)){?>
 
 <style type="text/css">
 	<?php
-	if(isset($stranger['cover'])){?>
+	if($stranger['cover'] <> ""){?>
 		.cover{
 			background-image: url('/img/cover/<?php echo $stranger['cover'];?>') !important;
 		}
 	<?php } ?>
 	<?php
-	if(isset($user['background'])){?>
+	if($stranger['background'] <> ""){?>
 		.overtt{
 			background-image: url('/img/background/<?php echo $stranger['background'];?>') !important;
 			position: fixed;
