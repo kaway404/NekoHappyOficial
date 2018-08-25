@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 25-Ago-2018 às 18:51
+-- Generation Time: 25-Ago-2018 às 18:55
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -183,7 +183,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `cry`, `wtf`, `cool`, `baby`, `very`, `nani`, `email`, `password`, `usuario`, `admin`, `avatar`, `background`, `cover`, `config`, `game`, `movie`, `pincode`, `ip`, `tuturial`) VALUES
-(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_642341daaea37c4af7bfa47ad3cf7a7097185eb750bb1698f98787bf32533b47f8df5e71934b8923.png', '', 'pixel6.gif', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '177.202.215.202', 1),
+(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_642341daaea37c4af7bfa47ad3cf7a7097185eb750bb1698f98787bf32533b47f8df5e71934b8923.png', 'estra.gif', 'pixel6.gif', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '177.202.215.202', 1),
 (35, 'nekohappy_f7310e76f2d7ff0e840b570fbaf07e19bfe2f23f', '2e9ca66b0d5b55d5d19acf5d09a4c3db551093ba', 'nekohappy_89d6af6459064d78e88f573a184241ac7f9eda81', '1ad721207f4e1b32f5791728e0ee6115', '0165d10b483b47b285e3c5496793f271ebf8ab3a', 'nekohappy_7855972c424277e550ed3ed58b63dc08655f5fcc', 'kaway404@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway404', 0, 'nekohappy_9d6773aae2b0a4f9e8f33d27d1ec85119f215331bca643e9251f5302bb298c72b96764022db37303.png', '', '', 1, 'CSGO', 'A rede', '4002', '::1', 0),
 (36, 'nekohappy_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', '57846d3576f4b2eb5c494a5f8b3b11234ffef098', 'nekohappy_a1bd5bc60c796e14b937b1b0ccf990cce6caebe3', 'edd79c7b5e66321dca8210ea022645a3', 'dabe34f65b393e313a88753d6928df5d67b84e5c', 'nekohappy_7868812b47588635d9141eb86daa91b7d0115de0', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', 'anelise', 0, 'nekohappy_332fdb34e6aa36641ee1521906df01fbbdff83a80730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'paladins', 'o diario de anne frank', '2006', '127.0.0.1', 1),
 (37, 'nekohappy_150857d7eaab3d95fda9c8517663b8e99d9cf47a', 'a6b33a7fc2f6f18ec1b104356c7efbf9f1730b48', 'nekohappy_5ae31a07b367676bb0ae54e23186665e26fed604', '5816b0d763e1b50a221069eb6cfef946', '98784398d9ff359557c0d7020cbff5af3786a8ae', 'nekohappy_a641079e077719e953176ca3f6c42667e6c55cd7', 'ducdll8@gmail.com', '25e7a11fbfa48063c59190eb39676cfaff4443f6', 'vitor', 0, 'default.jpg', '', '', 1, 'EEEE', 'EE', '4002', '177.148.195.150', 1),

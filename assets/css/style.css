@@ -688,6 +688,7 @@ hr{
 	height: 200px;
 	position: relative;
 	top: -20px;
+	z-index: 10000;
 }
 
 .profile_ .avatar{
