@@ -41,7 +41,7 @@ foreach ($resultado_peoplede as $resultado_peoplede => $resultado_peopledes) {
 ?>
 
 <div class="post">  
-<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;word-wrap: break-word;"><?php echo $resultado_peopledes['usuario'];?> - publicou</p>
+<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;word-wrap: break-word;"><a href="/profile/<?php echo $resultado_peopledes['id'];?>""><?php echo $resultado_peopledes['usuario'];?></a> - publicou</p>
 <h1 style="color: #151515 !important; top: -20px; position: relative; left: 10px; font-size: 28px;word-wrap: break-word; width: 95%;"><?php echo $postas['title'];?></h1>
 <span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px; word-wrap: break-word;"><?php echo $postas['texto'];?></span>
 <div class="postaaa" style="left: -100px; position: absolute;">
