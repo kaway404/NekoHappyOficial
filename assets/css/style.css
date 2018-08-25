@@ -106,7 +106,7 @@ input{
 }
 
 .main .hora .btn{
-	background-color: #36465d !important;
+	background-color: #3d5c88 !important;
 	padding: 10px;
 	width: 20%;
 	position: relative;
@@ -157,7 +157,7 @@ input{
 }
 
 #registro{
-	background: #36393f;
+	background: #36465d !important;
 	padding: 50px;
 	border-radius: 3px;
 	height: 400px;
@@ -168,7 +168,7 @@ input{
 }
 
 #loginte{
-	background: #36393f;
+	background: #36465d !important;
 	padding: 50px;
 	border-radius: 3px;
 	height: 330px;
