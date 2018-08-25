@@ -344,7 +344,6 @@ hr{
 }
 
 .boxleft .okaysr{
-	background: #36465d;
 	position: relative;
 	bottom: 105px;
 	height: 90px;
@@ -712,4 +711,50 @@ hr{
 	background-image: url("/assets/img/background/pixel6.gif");
 	position: relative;
 	background-size: cover;
+}
+
+.myrank{
+	position: relative;
+	top: 0px;
+	z-index: 100;
+    background: #36465d !important;
+ 	width: auto;
+ 	border-radius: 10px;
+ 	left: 20px;
+}
+
+.myrank span{
+	position: relative;
+	left: 10px;
+}
+
+.okaysr a:hover{
+	text-decoration: none !important;
+}
+
+.rightup{
+	position: fixed;
+	float: right;
+	width: 150px;
+	right: 0;
+	height: 100%;
+	background: #2e3d52 !important;
+	border-left: 1px solid hsla(0,0%,100%,.2) ;
+}
+
+.vcup{
+	width: 100%;
+    position: relative;
+    top: 0px;
+    transition: 1s;
+}
+
+.rightup .after{
+	position: relative;
+	top: 75px;
+}
+
+.rightup .after p{
+	position: relative;
+	left: 5px;
 }

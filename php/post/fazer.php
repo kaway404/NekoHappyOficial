@@ -36,19 +36,18 @@ if(empty($_POST['title'])){
 if (mysqli_query($conn, $sql)) {?>
 
 <div class="post">  
-<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;word-wrap: break-word;">
-	<a href="/profile/<?php echo $user['id'];?>""><?php echo $user['usuario'];?></a>
-	</p>
-<h1 style="color: #151515 !important; top: -20px; position: relative; left: 10px; font-size: 28px;word-wrap: break-word;">
-	<?php echo $title;?>
-	</h1>
-<span style="color: #151515 !important; top: -35px; position: relative; left: 10px; font-size: 18px;word-wrap: break-word;">
-	<?php echo $texto;?>
-	</span>
+<p style="color: #151515 !important; top: 10px; position: relative; left: 10px;word-wrap: break-word;"><a href="/profile/<?php echo $user['id'];?>""><?php echo $user['usuario'];?></a> - publicou</p>
+<h1 style="color: #151515 !important; top: -15px; position: relative; left: 10px; font-size: 28px;word-wrap: break-word; width: 95%;"><?php echo $title;?></h1>
+<span style="color: #151515 !important; top: -25px; position: relative; left: 10px; font-size: 18px; word-wrap: break-word;"><?php echo $texto;?></span>
 <div class="postaaa" style="left: -100px; position: absolute;">
-<div class="avatar" style="top: -130px; position: absolute;">
-<img src="/img/user/<?php echo $user['avatar'];?>"/>
+<div class="avatar" style="top: -100px; position: absolute;">
+<a href='/profile/<?php echo $user['id'];?>'><img uk-tooltip="<?php echo $user['usuario'];?>" src="/img/user/<?php echo $user['avatar'];?>"/></a>
 </div>
+</div>
+</div>
+<?php
+include '../../php/level/up.php';
+?>
 
 <?php } } }  }?>
 

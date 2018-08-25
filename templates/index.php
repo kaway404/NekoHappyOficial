@@ -7,6 +7,7 @@ require './config/config.php';
 require './config/globals.php';
 require './autoload/requireme.php';
 
+
 if($manu == 0){
 if($template == $databasehm){
 if(!$conn){
