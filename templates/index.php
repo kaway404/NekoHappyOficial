@@ -90,7 +90,7 @@ else{
 }
 }
 else{
-	require './view/404/index.php';
+	require './view/notme/index.php';
 }
 }
 else{

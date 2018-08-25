@@ -1,2 +1,2 @@
 <?php
-$varglobal = 4002;
+$varglobal = 4000;
