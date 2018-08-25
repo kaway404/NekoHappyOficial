@@ -5,9 +5,10 @@
 require './config/config.php';
 // Iniciar variaves globals
 require './config/globals.php';
+require './autoload/requireme.php';
 
 if($manu == 0){
-if($template == $varglobal){
+if($template == $databasehm){
 if(!$conn){
   	require './view/nodb/index.php';
 }
