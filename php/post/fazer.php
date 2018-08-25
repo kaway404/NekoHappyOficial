@@ -37,7 +37,7 @@ if (mysqli_query($conn, $sql)) {?>
 
 <div class="post">  
 <p style="color: #151515 !important; top: 10px; position: relative; left: 10px;word-wrap: break-word;">
-	<?php echo $user['usuario'];?>
+	<a href="/profile/<?php echo $user['id'];?>""><?php echo $user['usuario'];?></a>
 	</p>
 <h1 style="color: #151515 !important; top: -20px; position: relative; left: 10px; font-size: 28px;word-wrap: break-word;">
 	<?php echo $title;?>
