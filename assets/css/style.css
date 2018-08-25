@@ -682,3 +682,33 @@ hr{
     right: 10px;
     margin-left: 5px;
 }
+
+.profile_{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: -20px;
+}
+
+.profile_ .avatar{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 70px;
+	left: 20px;
+	box-shadow: 2px 3px 2px rgba(0,0,0,.50);
+	background: #2e3d52 !important;
+}
+
+.profile_ .avatar img{
+	height: 100%;
+	width: 100%;
+}
+
+.profile_ .cover{
+	width: 100%;
+	height: 100%;
+	background-image: url("/assets/img/background/pixel6.gif");
+	position: relative;
+	background-size: cover;
+}
