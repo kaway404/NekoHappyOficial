@@ -13,6 +13,16 @@ if(isset($stranger)){?>
 </div>
 </div>
 </div>
+
+<style type="text/css">
+	<?php
+	if(isset($stranger['cover'])){?>
+		.cover{
+			background-image: url('/img/cover/<?php echo $stranger['cover'];?>') !important;
+		}
+	<?php } ?>
+</style>
+
 <?php } else{ ?>
 <div class="profile_">
 <div class="notice" style="top: 0;">

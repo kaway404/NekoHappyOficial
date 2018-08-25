@@ -12,6 +12,14 @@
 </div>
 </div>
 
+<style type="text/css">
+	<?php
+	if(isset($user['cover'])){?>
+		.cover{
+			background-image: url('/img/cover/<?php echo $user['cover'];?>') !important;
+		}
+	<?php } ?>
+</style>
 
 <?Php } else{
  	include '../404/index.php';
