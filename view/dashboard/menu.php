@@ -7,7 +7,7 @@
 		<input class="busca" type="text" placeholder="Buscar amigos"/>
 	</div>
 	<div class="boxleft">
-		<div class="okaysr" uk-tooltip="Seu level<?php echo $user['lvl'];?>">
+		<div class="okaysr" uk-tooltip="Seu level">
 		<a href="/profile/<?php echo $user['id'];?>">
 		<img class="avatar" src="/img/user/<?php echo $user['avatar'];?>"/>
 		<p class="myrank"><span id="lvl"><?php echo $user['lvl'];?></span></p>
