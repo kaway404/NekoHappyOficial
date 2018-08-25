@@ -16,7 +16,7 @@ if(isset($stranger)){?>
 <?php } else{ ?>
 <div class="profile_">
 <div class="notice" style="top: 0;">
-    <p>Este perfil não existe.</p>
+    <p>Este perfil não existe. Talvez essa pessoa te bloqueiou.</p>
 </div>
 </div>
 <?php } ?>
