@@ -7,8 +7,7 @@ require './config/config.php';
 require './config/globals.php';
 
 if($manu == 0){
-if($template == 4002){
-
+if($template == $varglobal){
 if(!$conn){
   	require './view/nodb/index.php';
 }
