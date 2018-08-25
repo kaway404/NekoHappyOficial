@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 25-Ago-2018 às 20:59
+-- Generation Time: 25-Ago-2018 às 21:02
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -148,9 +148,7 @@ INSERT INTO `postagem` (`id`, `iduser`, `cry`, `title`, `texto`) VALUES
 (18, 34, 'd48f8a9c4bebd2fd782ce866904d2663443114d0', 'ooo', 'pastel'),
 (19, 42, '9d15723e945ceba2ef03d42e3e50001395ae2e6b', '', 'que rede social interativa e livre para todos os publicos\n'),
 (20, 34, '88f3de75f9f51fda68fa2dddf90e5c70ad435cc9', 'Livre para todas as idades', 'hehe'),
-(21, 43, '1f4860b6f7be0e0487d2ef7abaa2a534d11b83ee', 'VEGETAAAA OLHA BEEEM', 'WOOOOOOOOO'),
-(57, 34, '12ee179bc7f4dbf01f9af66e519400bdc310204c', '', 'aaaa'),
-(58, 34, '4efd11ceb4e3024bdedce616eebdb9ad38ae8d88', '', 'teste');
+(21, 43, '1f4860b6f7be0e0487d2ef7abaa2a534d11b83ee', 'VEGETAAAA OLHA BEEEM', 'WOOOOOOOOO');
 
 -- --------------------------------------------------------
 
