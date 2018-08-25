@@ -6,6 +6,8 @@ require './config/config.php';
 // Iniciar variaves globals
 require './config/globals.php';
 
+if(isset($template)){
+
 if(!$conn){
   	require './view/nodb/index.php';
 }
@@ -84,4 +86,8 @@ else{
 	}
 }
 }
+}
+}
+else{
+	require './view/404/index.php';
 }
