@@ -1,5 +1,7 @@
 <?php
+require './autoload/why.php';
+
 // Configuração global
-$template = 1;
+$template = $varglobal;
 // Manutençao
 $manu = 0;
