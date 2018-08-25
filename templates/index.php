@@ -6,6 +6,7 @@ require './config/config.php';
 // Iniciar variaves globals
 require './config/globals.php';
 
+if($manu == 0){
 if(isset($template)){
 
 if(!$conn){
@@ -90,4 +91,8 @@ else{
 }
 else{
 	require './view/404/index.php';
+}
+}
+else{
+	require './view/manu/index.php';
 }
