@@ -14,11 +14,34 @@ if(isset($stranger)){?>
 </div>
 </div>
 
+<div class="overtt"><div class="ok"></div></div>
+
 <style type="text/css">
 	<?php
 	if(isset($stranger['cover'])){?>
 		.cover{
 			background-image: url('/img/cover/<?php echo $stranger['cover'];?>') !important;
+		}
+	<?php } ?>
+	<?php
+	if(isset($user['background'])){?>
+		.overtt{
+			background-image: url('/img/background/<?php echo $stranger['background'];?>') !important;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+		}
+
+		.ok{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0,.50);
 		}
 	<?php } ?>
 </style>
