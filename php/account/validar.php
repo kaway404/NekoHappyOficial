@@ -32,11 +32,50 @@ if(isset($_POST['pincode'])){
         echo '<script>location.href="/changepassword";</script>';
         }
         }
-        else{
-        	echo 'Pincode incorreto';
-        }	
+}
+else{
+$date = date('Y-m-d H:i:s');
+$iduser = $_COOKIE['iduser'];
+$tentativa = $conn->query("SELECT * FROM attempt_change_password WHERE iduser='" . $iduser . "'");
+if($tentativa->num_rows > 3){
+$exce = 1;
+$resultenta = "SELECT * FROM attempt_change_password WHERE iduser='" . $iduser . "' and exce = '" . $exce . "'   LIMIT 1";
+$resultentas = mysqli_query($conn, $resultenta);
+$resultentar = mysqli_fetch_assoc($resultentas);
+
+if(isset($resultentar)){
+echo 'Você pode tentar novamente em' .  '<br>' . $resultentar['datet'];
+if($date >= $resultentar['datet']){
+$remove = "DELETE FROM attempt_change_password WHERE iduser='$iduser' ";
+if ($conn->query($remove) === TRUE) {
+echo '';
 }
 }
 }
+else{
+    $limite = date('Y-m-d H:i:s', strtotime('+10 min'));
+    echo 'Tentativa esgotadas <br>';
+    $sql7 = "INSERT INTO attempt_change_password (iduser, datet, exce)
+            VALUES ('".$iduser."', '".$limite."', '".$exce."')";
+if (mysqli_query($conn, $sql7)) {
+    echo 'Tente novamente';
+}
+}
+}
+
+else{
+    $date = date('Y-m-d H:i:s');
+    $sql = "INSERT INTO attempt_change_password (iduser, datet)
+            VALUES ('".$iduser."', '".$date."')";
+ if (mysqli_query($conn, $sql)) {
+     echo 'Pincode incorreto';
+}  
+}
+
+}
+}
+
+}
+
 }
 ?>

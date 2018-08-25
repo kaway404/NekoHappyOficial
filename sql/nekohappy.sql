@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 22-Ago-2018 às 22:58
+-- Generation Time: 25-Ago-2018 às 15:31
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -21,6 +21,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `nekohappy`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `attempt_change_password`
+--
+
+CREATE TABLE `attempt_change_password` (
+  `id` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL,
+  `idpass` int(11) NOT NULL,
+  `datet` datetime NOT NULL,
+  `exce` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -118,7 +132,16 @@ INSERT INTO `postagem` (`id`, `iduser`, `cry`, `title`, `texto`) VALUES
 (1, 34, 'd202750940086586510f15f598078654bd8ebc00', 'NekoHappy oficial', 'Seja bem vindo ao NekoHappy'),
 (2, 36, '22b12122f313a7928fe37f3834d4c2a5c19939b6', 'eu  sou lgal', 'vida la vida'),
 (5, 36, '69b09167e0e962a7bc676584bf75512978ef3f8f', 'Teste', 'teste'),
-(6, 34, 'df9b1d6e4051eb28f6d82598696a49abab7642e8', 'Hey dude', 'Coe');
+(6, 34, 'df9b1d6e4051eb28f6d82598696a49abab7642e8', 'Hey dude', 'Coe'),
+(7, 37, 'b710c824ed3aa435e16c993a164b184f10d588f8', 'VAI TOMA NO CU', 'VAI TOMA NO CU, VAI PO CARALHO, VAI SE FUDE, VAI PA PUTA QUEU PARIU '),
+(8, 39, '6ffe40cd023d87ef2a96cfc77d04c898d3e85305', '', 'AAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'),
+(9, 39, '59896b5d54f36d96ae9965bb083c3257fe1ce1ea', '', 'TESTE DE TEXTOOO\n'),
+(10, 34, '9b2c0e375fe4dc149cca7ba5a0a7d180609e16ec', '', 'teste'),
+(11, 39, 'd0a265a2bfb53c036caee64a96a58e53773b0a83', 'TITULOOOOO', 'TITULO DO TITULO'),
+(12, 40, '11ea1e308bc8a4d59f321a9751c3f27200c5ac3b', 'OLÃ', 'QUE BELA REDE SOCIAL EM'),
+(13, 41, 'c335d73e6f5cef3012bc968298ac19d648e44e42', '', 'Quero dizer que o Kaway casou cmg, ehisto'),
+(14, 34, '254da7ba244fa31f78dd0a80af3fe0ab705aff04', '', 'Quero dizer que eu casei tb com o Artemis, bjo'),
+(15, 41, 'acaac64606cf02a42ece4e2165f2d361ce3a35bd', '', 'Te amo <3 ');
 
 -- --------------------------------------------------------
 
@@ -154,13 +177,24 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `cry`, `wtf`, `cool`, `baby`, `very`, `nani`, `email`, `password`, `usuario`, `admin`, `avatar`, `background`, `cover`, `config`, `game`, `movie`, `pincode`, `ip`, `tuturial`) VALUES
-(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_642341daaea37c4af7bfa47ad3cf7a7097185eb750bb1698f98787bf32533b47f8df5e71934b8923.png', '', '', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '127.0.0.1', 1),
+(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 0, 'nekohappy_642341daaea37c4af7bfa47ad3cf7a7097185eb750bb1698f98787bf32533b47f8df5e71934b8923.png', '', '', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '201.67.223.85', 1),
 (35, 'nekohappy_f7310e76f2d7ff0e840b570fbaf07e19bfe2f23f', '2e9ca66b0d5b55d5d19acf5d09a4c3db551093ba', 'nekohappy_89d6af6459064d78e88f573a184241ac7f9eda81', '1ad721207f4e1b32f5791728e0ee6115', '0165d10b483b47b285e3c5496793f271ebf8ab3a', 'nekohappy_7855972c424277e550ed3ed58b63dc08655f5fcc', 'kaway404@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway404', 0, 'nekohappy_9d6773aae2b0a4f9e8f33d27d1ec85119f215331bca643e9251f5302bb298c72b96764022db37303.png', '', '', 1, 'CSGO', 'A rede', '4002', '::1', 0),
-(36, 'nekohappy_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', '57846d3576f4b2eb5c494a5f8b3b11234ffef098', 'nekohappy_a1bd5bc60c796e14b937b1b0ccf990cce6caebe3', 'edd79c7b5e66321dca8210ea022645a3', 'dabe34f65b393e313a88753d6928df5d67b84e5c', 'nekohappy_7868812b47588635d9141eb86daa91b7d0115de0', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', 'anelise', 0, 'nekohappy_332fdb34e6aa36641ee1521906df01fbbdff83a80730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'paladins', 'o diario de anne frank', '2006', '127.0.0.1', 0);
+(36, 'nekohappy_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', '57846d3576f4b2eb5c494a5f8b3b11234ffef098', 'nekohappy_a1bd5bc60c796e14b937b1b0ccf990cce6caebe3', 'edd79c7b5e66321dca8210ea022645a3', 'dabe34f65b393e313a88753d6928df5d67b84e5c', 'nekohappy_7868812b47588635d9141eb86daa91b7d0115de0', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', 'anelise', 0, 'nekohappy_332fdb34e6aa36641ee1521906df01fbbdff83a80730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'paladins', 'o diario de anne frank', '2006', '127.0.0.1', 0),
+(37, 'nekohappy_150857d7eaab3d95fda9c8517663b8e99d9cf47a', 'a6b33a7fc2f6f18ec1b104356c7efbf9f1730b48', 'nekohappy_5ae31a07b367676bb0ae54e23186665e26fed604', '5816b0d763e1b50a221069eb6cfef946', '98784398d9ff359557c0d7020cbff5af3786a8ae', 'nekohappy_a641079e077719e953176ca3f6c42667e6c55cd7', 'ducdll8@gmail.com', '25e7a11fbfa48063c59190eb39676cfaff4443f6', 'vitor', 0, 'default.jpg', '', '', 1, 'EEEE', 'EE', '4002', '177.148.195.150', 1),
+(38, 'nekohappy_ad7d63c9e2e8b580eeeff5b54815ba85c83982b6', '7198b48be99a40dce69836d8819b6af4138fc100', 'nekohappy_03539c89021715575beda48bde55f6a887799b3b', '4721ea63db427063c6c48e9bb2feb67c', '99d5943fb9c14e0d354af844cae12bc296c5fcac', 'nekohappy_04ec542c6a18ca19c40cd77a41dde0ff1e27ce0a', 'nani@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'Joaquin', 0, 'nekohappy_52332320ac924cb1339cbeaed77c257f4ab524ac50bb1698f98787bf32533b47f8df5e71934b8923.png', '', '', 1, '23', '123', '123', '127.0.0.1', 1),
+(39, 'nekohappy_ff9358742103ddc441d6fad617497413480957f1', '9b2e899429614a97e8d42b1f1f7e8322ff9688fd', 'nekohappy_ac02524209b3638ead53fc43957d6914dbcb64ec', '37c7cc1a8c671d19f9e78ad018df95d2', '719a7d951f7623b6d4af3a4ca6e2c22abefaa7c1', 'nekohappy_5cc1173b6289eec1939110b07638b408563c60c6', 'mateusheckertg@gmail.com', '1cb09364452f9a307f94c045215ba7bb84c1b967', 'Mateus Heckert GonÃ§alves', 0, 'nekohappy_4a40685cd8f7b106284ee521f0a17267fa9766bbb55f2396c5358fe52920605e0f872cdd9bf3ecbb.png', '', '', 1, 'Tomb Raider', 'V de VinganÃ§a', '2003', '189.11.144.118', 1),
+(40, 'nekohappy_8d79f497ebc60742f4fa0eae67b68f768deaa969', '73bc3a79a3b99cefc9cdb945e6fdf3aee0784fe5', 'nekohappy_6e31fbc65a77fa8b355b751d3d47ca2391f345ba', '112825328ff5d02edfd49f6102c55392', '93f5f055a02a8ca738a66baac60cdeb190711f65', 'nekohappy_026edfe116cd5a779706723026bd56cdda5b0d79', 'pauloricardoprogramador@gmail.com', '2e6f9b0d5885b6010f9167787445617f553a735f', 'Kamisama', 0, 'default.jpg', '', '', 1, 'Nenhum', 'A Rede Social', '09920', '179.212.90.86', 1),
+(41, 'nekohappy_bea98933afb95e133573e63f08cdd4b6c4f82521', '416320d6c47b2a412d48bfe2d671502dec3c9490', 'nekohappy_acedfe17207dcaae8a54e9b61d04a9f72bd4140b', 'eed56721d042e4cb4ae3e1d552ec2695', 'afae628134946d58a77ff0f13134524884f2fb59', 'nekohappy_d17c09e983ddcc30886ffc1f436daaa35a815e96', 'exhioa@gmail.com', '6f18dcf68fad5d86f94ef30ade6a17ca12da6957', 'Ãrtemis chan', 0, 'default.jpg', '', '', 1, 'Tibia', 'Finalmente 18', '0016', '216.66.6.75', 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `attempt_change_password`
+--
+ALTER TABLE `attempt_change_password`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `background`
@@ -191,6 +225,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `attempt_change_password`
+--
+ALTER TABLE `attempt_change_password`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
+
+--
 -- AUTO_INCREMENT for table `background`
 --
 ALTER TABLE `background`
@@ -200,19 +240,19 @@ ALTER TABLE `background`
 -- AUTO_INCREMENT for table `passwordchange`
 --
 ALTER TABLE `passwordchange`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `postagem`
 --
 ALTER TABLE `postagem`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
