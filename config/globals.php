@@ -5,3 +5,5 @@ require './autoload/why.php';
 $template = $varglobal;
 // Manutençao
 $manu = 0;
+
+// Quando $manu estiver = 1, irá ficar em Manutençao
