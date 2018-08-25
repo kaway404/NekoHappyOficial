@@ -86,6 +86,7 @@ input{
     left: 0;
    right: 0;
    transition: 1s;
+   border-radius: 20px !important;
 }
 
 .main .hora h1{
@@ -190,12 +191,11 @@ hr{
 
 .hora .error{
 	position: fixed;
-	top: 0;
 	background: #da3636;
 	-webkit-transform: translateY(-50%);
    transform: translateY(-50%);
    left: 0;
-   top: 0;
+   top: 10px;
    border-radius: 3px;
    padding: 5px;
    transition: 1s;
