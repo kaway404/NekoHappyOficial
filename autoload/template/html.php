@@ -11,6 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/uikit.min.css?v=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/animation.css">
+	<link rel="icon" href="/assets/img/favicon.ico">
+	<link rel="icon" size="64x64" href="/assets/img/favicon.ico">
+	<meta name="description" content="Rede social para geek e otakus/gamers">
 </head>
 <body>
 
