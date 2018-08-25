@@ -44,7 +44,7 @@ $resultentas = mysqli_query($conn, $resultenta);
 $resultentar = mysqli_fetch_assoc($resultentas);
 
 if(isset($resultentar)){
-echo 'Você pode tentar novamente em' .  '<br>' . $resultentar['datet'];
+echo 'Você pode tentar novamente em ' . $resultentar['datet'];
 if($date >= $resultentar['datet']){
 $remove = "DELETE FROM attempt_change_password WHERE iduser='$iduser' ";
 if ($conn->query($remove) === TRUE) {
