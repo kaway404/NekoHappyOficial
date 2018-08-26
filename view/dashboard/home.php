@@ -1,6 +1,6 @@
 <?php if(isset($template)){
 // Tuturial
-if($user['tuturial'] == 0){
+if($user['tuturial'] <> 0){
 	require './view/dashboard/tuturial/index.php';
 }
 echo '<div class="align">';
