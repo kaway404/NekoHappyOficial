@@ -5,7 +5,7 @@
 		<button id="next1">Continuar</button>
 	</div>
 	<div class="okaytuturial" id="tuturial2">
-		<p>Aqui é aonde você coloca sua foto de perfil</p>
+		<p>Aqui é aonde você coloca sua foto de perfil e de capa.</p>
 		<button id="next2">Finalizar</button>
 	</div>
 </div>
