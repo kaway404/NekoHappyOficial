@@ -11,6 +11,7 @@
 	<img src="/img/user/<?php echo $user['avatar'];?>"/>
 </div>
 </div>
+
 </div>
 
 <div class="overtt"><div class="ok"></div></div>

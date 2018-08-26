@@ -15,6 +15,32 @@ p, span, h1{
 	color: hsla(0,0%,100%,.6) !important;
 }
 
+.busca::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsla(0,0%,100%,.6) !important;
+    opacity: 1; /* Firefox */
+}
+
+.busca:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: hsla(0,0%,100%,.6) !important;
+}
+
+.busca::-ms-input-placeholder { /* Microsoft Edge */
+    color: hsla(0,0%,100%,.6) !important;
+}
+
+.busca:focus::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #555 !important;
+    opacity: 1; /* Firefox */
+}
+
+.busca:focus:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #555 !important;
+}
+
+.busca:focus::-ms-input-placeholder { /* Microsoft Edge */
+    color: #555 !important;
+}
+
 input{
 	outline: 0;
 }
@@ -245,13 +271,12 @@ hr{
     text-align: center;
     border-radius: 3px;
     width: 40%;
-    transition: 1.2s;
     height: 20px;
+    transition: 0.3s;
 }
 
 .headerta .boxcenter .busca:focus{
 	text-align: left;
-	transition: 1s;
 	width: 45%;
 	background: #fff;
 }
