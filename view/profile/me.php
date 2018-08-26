@@ -1,7 +1,5 @@
 <?php if(isset($template)){
 	?>
-
-
 <div class="profile_">
 <div class="notice" style="top: 0;">
     <p>Perfil de <?php echo $user['usuario'];?></p>
