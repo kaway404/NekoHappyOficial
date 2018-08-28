@@ -26,7 +26,7 @@
 </script>
 <?php
 $iduser = $user['id'];
-$post = "SELECT * FROM postagem WHERE id ORDER BY ID DESC";
+$post = "SELECT * FROM postagem WHERE id ORDER BY id DESC";
 $posta = mysqli_query($conn, $post);
 $postar = mysqli_fetch_assoc($posta);
 foreach ($posta as $posta => $postas) {

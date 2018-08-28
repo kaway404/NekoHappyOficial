@@ -143,6 +143,7 @@ input{
 	cursor: pointer;
 	margin-left: 10px;
 	border-radius: 3px;
+	z-index: 1000;
 }
 
 .main .hora .login{
@@ -821,6 +822,89 @@ hr{
 
 .profile_ .tab{
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	background: #2e3d52;
+}
+
+.hora .svg{
+	-webkit-transition: all .5s ease;
+    bottom: 10px;
+    transition: all .5s ease;
+}
+
+.animation{
+	webkit-animation-direction: alternate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: landing;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: landing;
+    animation-timing-function: ease-in-out;
+}
+
+.hora .coin1{
+	top: 140px;
+	left: 0px;
+}
+
+.hora .coin2{
+	top: 190px;
+	left: 500px;
+}
+
+.hora .control{
+	position: absolute;
+	top: 240px;
+	left: 230px;
+}
+
+.hora .bomb{
+	position: absolute;
+	top: 170px;
+	left: 100px;
+}
+
+@keyframes landing{
+	0%{
+		-webkit-transform:translate3d(0,-4px,0);
+		transform:translate3d(0,-4px,0)
+		}
+		to{
+			-webkit-transform:translate3d(0,4px,0);
+			transform:translate3d(0,4px,0)
+		}
+}
+
+.tag{
+	position: relative;
+	width: 200px;
+	height: 40px;
+	background-size: cover;
+	left: 28%;
+	top: 3px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.50);
+	transform: scale(0.8);
+	cursor: pointer;
+	transition: 1s;
+	float: left;
+	margin-left: -30px;
+	border-radius: 3px;
+}
+
+.tag p{
+	color: #fff !important;
+	position: relative;
+	text-align: center;
+	top: 8px;
+	font-size: 18px;
+	text-shadow: 2px 1px 2px rgba(0,0,0,.50);
+	text-transform: uppercase;
+}
+
+.tag:hover{
+	box-shadow: 4px 5px 5px rgba(0,0,0,.50);
+	transform: scale(0.85);
 }

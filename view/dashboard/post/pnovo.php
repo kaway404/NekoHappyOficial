@@ -1,7 +1,7 @@
 <?php if(isset($template)){?>
 <div class="postaaa">
 </div>
-<div class="postar" style="width: 100%; left: 0; z-index: 1000; background: #2e3d52;">
+<div class="postar" style="top: 10px;width: 100%; left: 0; z-index: 1000; background: #2e3d52;">
 <div class="tipos">
 <p style="color: hsla(0,0%,100%,.6) !important; top: 20px; position: relative; left: 20px; font-size: 1.4vw;">Selecione um tipo de postagem</p>
 <div class="tipo" id="tipotexto">

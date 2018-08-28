@@ -8,8 +8,12 @@
 <div class="hora" id="lang" style="left: 0%;">
 	<h1>É hora de largar o Facebook e o Twitter.</h1>
 	<p>Uma rede social para gamers/otakus, nós somos o número 1, venha conferir.</p>
-	<div class="btn" id="cadastro">Cadastrar</div>
-	<div class="btn login" id="login">Login</div>
+	<div class="btn coin" id="cadastro">Cadastrar</div>
+	<div class="btn login coin" id="login">Login</div>
+<!-- 	<img class="svg moeda coin1" src="/assets/img/home/coin.svg">
+	<img class="svg moeda coin2" src="/assets/img/home/coin.svg">
+	<img class="svg control box moeda" src="/assets/img/home/control.svg">
+	<img class="svg bomb box moeda" src="/assets/img/home/bomb.svg"> -->
 </div>
 
 <div class="hora" id="registro" style="left: 200%;">
