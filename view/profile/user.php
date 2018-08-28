@@ -15,7 +15,7 @@ echo '</div>';
 echo '</div>';
 
 if($user['id'] == $_GET['id']){
-	if($user['tuturial'] == 2)
+	if($user['tuturial'] == 1)
 {
 	require './view/dashboard/tuturial/perfil.php';
 } 
