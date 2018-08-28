@@ -38,19 +38,18 @@ if($user['admin'] == 1){
 <?php } ?>
 
 <?php
-$iduser = $user['id'];
-$tagav = "SELECT * FROM tag WHERE id ORDER BY id";
-$tagavs = mysqli_query($conn, $tagav);
-$tagavd = mysqli_fetch_assoc($tagavs);
-foreach ($tagavs as $tagavs => $tagavss) {
-?>
-
-<?php
 $quem = $user['id'];
 $tagab = "SELECT * FROM usertag WHERE iduser = $quem LIMIT 1";
 $taga = mysqli_query($conn, $tagab);
 $tag = mysqli_fetch_assoc($taga);
 foreach ($taga as $taga => $tagas) {
+?>
+<?php
+$tag = $tagas['tipo'];
+$tagav = "SELECT * FROM tag WHERE id and tipo = '$tag' ORDER BY id";
+$tagavs = mysqli_query($conn, $tagav);
+$tagavd = mysqli_fetch_assoc($tagavs);
+foreach ($tagavs as $tagavs => $tagavss) {
 ?>
 <li><div class="tag" id="tag<?php echo $tagavss["text"];?>"></div></li>
 
