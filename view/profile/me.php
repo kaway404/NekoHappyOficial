@@ -12,11 +12,14 @@
 </div>
 <div class="tab">
 	<div class="tags">
-
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="slidertag">
+<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
 <?php 
 if($user['admin'] == 1){
 ?>
+<li>
 <div class="tag" id="tagmembro"><p>Administrador</p></div>
+</li>
 
 <style type="text/css">
 	#tagmembro{
@@ -24,7 +27,9 @@ if($user['admin'] == 1){
 	}
 </style>
 <?php } else{?>
+<li>
 <div class="tag" id="tagmembro"><p>Membro</p></div>
+</li>
 
 <style type="text/css">
 	#tagmembro{
@@ -35,7 +40,7 @@ if($user['admin'] == 1){
 
 <?php
 $iduser = $user['id'];
-$tagav = "SELECT * FROM tag WHERE id ORDER BY id DESC";
+$tagav = "SELECT * FROM tag WHERE id ORDER BY id";
 $tagavs = mysqli_query($conn, $tagav);
 $tagavd = mysqli_fetch_assoc($tagavs);
 foreach ($tagavs as $tagavs => $tagavss) {
@@ -43,20 +48,24 @@ foreach ($tagavs as $tagavs => $tagavss) {
 
 <?php
 $quem = $user['id'];
-$tagab = "SELECT * FROM usertag WHERE iduser = $quem";
+$tagab = "SELECT * FROM usertag WHERE iduser = $quem LIMIT 1";
 $taga = mysqli_query($conn, $tagab);
 $tag = mysqli_fetch_assoc($taga);
 foreach ($taga as $taga => $tagas) {
 ?>
-		<div class="tag" id="tag<?php echo $tagas["tipo"];?>"></div>
+<li><div class="tag" id="tag<?php echo $tagavss["text"];?>"></div></li>
 
 <style type="text/css">
-	#tag<?php echo $tagas["tipo"];?>{
+	#tag<?php echo $tagavss["text"];?>{
 	background-image: url('/assets/img/tags/<?php echo $tagavss['img'];?>');
 	}
 </style>
 
 <?php } }?>
+</ul>
+  <a class="haha uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="haha uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+</div>
 	</div>
 </div>
 
