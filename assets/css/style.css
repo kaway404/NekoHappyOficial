@@ -719,15 +719,18 @@ hr{
 	width: 100px;
 	height: 100px;
 	position: relative;
-	top: 70px;
+	top: 120px;
 	left: 20px;
-	box-shadow: 2px 3px 2px rgba(0,0,0,.50);
+	box-shadow: 2px 3px 4px rgba(0,0,0,.50);
 	background: #2e3d52 !important;
+	transform: scale(1.1);
+	border-radius: 10%;
 }
 
 .profile_ .avatar img{
 	height: 100%;
 	width: 100%;
+	border-radius: 10%;
 }
 
 .profile_ .cover{
@@ -782,4 +785,42 @@ hr{
 .rightup .after p{
 	position: relative;
 	left: 5px;
+}
+
+.profile_ .left_info{
+	position: relative;
+	width: 35%;
+	height: auto;
+	background: #2e3d52 !important;
+	top: 10px;
+	border-radius: 3px;
+}
+
+.profile_ .right_info{
+	width: 60%;
+	height: 100%;
+	float: right;
+	position: absolute;
+	top: 290px;
+	border-radius: 3px;
+	display: flex;
+	right: 10px;
+}
+
+.profile_ .left_info h1{
+	font-size: 1em !important;
+	padding: 10px;
+}
+
+.profile_ .left_info p{
+	position: relative;
+	top: 0px;
+	padding: 10px;
+	margin-top: -30px;
+}
+
+.profile_ .tab{
+	width: 100%;
+	height: 40px;
+	background: #2e3d52;
 }

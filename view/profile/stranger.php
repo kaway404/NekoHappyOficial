@@ -12,6 +12,21 @@ if(isset($stranger)){?>
 	<img src="/img/user/<?php echo $stranger['avatar'];?>"/>
 </div>
 </div>
+<div class="tab">
+	
+</div>
+
+<div class="left_info">
+<h1>Informações</h1>
+<p>Filme/Série/Anime favorito : <?php echo $stranger['movie'];?></p>
+<p>Jogo favorito : <?php echo $stranger['game'];?></p>
+<p>Cargo : <?php if($stranger['admin'] == 1){ echo 'Administrador';} else{ echo 'Membro';}?></p>
+</div>
+
+<div class="right_info">
+
+</div>
+
 </div>
 
 <div class="overtt"><div class="ok"></div></div>

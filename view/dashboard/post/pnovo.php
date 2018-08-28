@@ -1,15 +1,12 @@
 <?php if(isset($template)){?>
 <div class="postaaa">
-<div class="avatar">
-<img src="/img/user/<?php echo $user['avatar'];?>"/>
 </div>
-</div>
-<div class="postar">
+<div class="postar" style="width: 100%; left: 0; z-index: 1000; background: #2e3d52;">
 <div class="tipos">
-<p style="color: #565656 !important; top: 20px; position: relative; left: 20px; font-size: 1.4em;">Selecione um tipo de postagem</p>
-<div class="tipo" id="tipotexto" uk-tooltip="Postagem em forma de texto">
-    <h1>Aa</h1>
-    <p>Texto</p>
+<p style="color: hsla(0,0%,100%,.6) !important; top: 20px; position: relative; left: 20px; font-size: 1.4vw;">Selecione um tipo de postagem</p>
+<div class="tipo" id="tipotexto">
+    <h1 style="color: hsla(0,0%,100%,.6) !important;">Aa</h1>
+    <p style="color: hsla(0,0%,100%,.6) !important;">Texto</p>
 </div>
 </div>
 

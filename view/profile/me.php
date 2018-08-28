@@ -9,6 +9,23 @@
 	<img src="/img/user/<?php echo $user['avatar'];?>"/>
 </div>
 </div>
+<div class="tab">
+	
+</div>
+
+<div class="left_info">
+<h1>Informações</h1>
+<p>Filme/Série/Anime favorito : <?php echo $user['movie'];?></p>
+<p>Jogo favorito : <?php echo $user['game'];?></p>
+<p>Cargo : <?php if($user['admin'] == 1){ echo 'Administrador';} else{ echo 'Membro';}?></p>
+</div>
+
+<div class="right_info">
+<?php
+// Postagem
+require './view/dashboard/post/pnovo.php';
+?>
+</div>
 
 </div>
 

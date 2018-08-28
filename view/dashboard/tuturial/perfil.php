@@ -5,7 +5,7 @@
 		<button id="next1">Continuar</button>
 	</div>
 	<div class="okaytuturial" id="tuturial2">
-		<p>Aqui é aonde você coloca sua foto de perfil e de capa.</p>
+		<p>Aqui é o seu perfil, você pode colocar foto de perfil e de capa de background.</p>
 		<button id="next2">Finalizar</button>
 	</div>
 </div>
@@ -102,9 +102,9 @@
 	}
 
 	#tuturial2{
-		left: -50%;
+		left: 40%;
 		display: none;
-		top: 400px;
+		top: 290px;
 	}
 
 	#tuturial3{
