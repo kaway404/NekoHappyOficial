@@ -44,7 +44,7 @@ if($stranger['admin'] == 1){
 
 <?php
 $quem = $stranger['id'];
-$tagab = "SELECT * FROM usertag WHERE iduser = $quem LIMIT 1";
+$tagab = "SELECT * FROM usertag WHERE iduser = $quem";
 $taga = mysqli_query($conn, $tagab);
 $tag = mysqli_fetch_assoc($taga);
 foreach ($taga as $taga => $tagas) {
