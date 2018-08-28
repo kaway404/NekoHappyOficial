@@ -41,13 +41,6 @@ if($stranger['admin'] == 1){
 </style>
 <?php } ?>
 
-<?php
-$iduser = $stranger['id'];
-$tagav = "SELECT * FROM tag WHERE id ORDER BY id";
-$tagavs = mysqli_query($conn, $tagav);
-$tagavd = mysqli_fetch_assoc($tagavs);
-foreach ($tagavs as $tagavs => $tagavss) {
-?>
 
 <?php
 $quem = $stranger['id'];
@@ -56,10 +49,17 @@ $taga = mysqli_query($conn, $tagab);
 $tag = mysqli_fetch_assoc($taga);
 foreach ($taga as $taga => $tagas) {
 ?>
-<li><div class="tag" id="tag<?php echo $tagavss["text"];?>"></div></li>
+<?php
+$tag = $tagas['tipo'];
+$tagav = "SELECT * FROM tag WHERE id and tipo = '$tag' ORDER BY id";
+$tagavs = mysqli_query($conn, $tagav);
+$tagavd = mysqli_fetch_assoc($tagavs);
+foreach ($tagavs as $tagavs => $tagavss) {
+?>
+<li><div class="tag" id="tag<?php echo $tagavss["tipo"];?>"></div></li>
 
 <style type="text/css">
-	#tag<?php echo $tagavss["text"];?>{
+	#tag<?php echo $tagavss["tipo"];?>{
 	background-image: url('/assets/img/tags/<?php echo $tagavss['img'];?>');
 	}
 </style>
