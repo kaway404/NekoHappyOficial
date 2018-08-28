@@ -647,10 +647,6 @@ hr{
 	transition: 0.4s;
 }
 
-.postar .texto:hover{
-	background: #eee;
-}
-
 .postar .texto p{
 	color: #565656 !important;
 	padding: 10px;
