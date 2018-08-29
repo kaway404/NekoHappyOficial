@@ -22,6 +22,7 @@ if($stranger['admin'] == 1){
 ?>
 <li>
 <div class="tag" id="tagmembro"><p>Administrador</p></div>
+<div class="uk-position-center uk-panel"></div>
 </li>
 
 <style type="text/css">
@@ -57,7 +58,7 @@ $tagavs = mysqli_query($conn, $tagav);
 $tagavd = mysqli_fetch_assoc($tagavs);
 foreach ($tagavs as $tagavs => $tagavss) {
 ?>
-<li><div class="tag" id="tag<?php echo $tagavss["tipo"];?>"></div></li>
+<li><div class="tag" id="tag<?php echo $tagavss["tipo"];?>"></div><div class="uk-position-center uk-panel"></div></li>
 
 <style type="text/css">
 	#tag<?php echo $tagavss["tipo"];?>{
