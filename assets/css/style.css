@@ -985,25 +985,6 @@ hr{
 	width: 300px;
 }
 
-.newcomunidadet .back{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-image: url(/assets/img/background/pixel7.gif);
-	z-index: 0;
-	background-size: cover;
-	transition: 0s;
-	top: 0;
-	left: 0;
-}
-
-.newcomunidadet .back .after{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,.90)
-}
-
 .newcomunidade button{
 	border: none;
 	background: #a5da60 !important;
