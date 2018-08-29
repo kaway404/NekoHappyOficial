@@ -314,6 +314,7 @@ hr{
   	background: #fff;
   	border: 1px solid #efefef;
   	padding: 5px;
+  	z-index: 100000;
 }
 
 .feed .post{
@@ -942,6 +943,7 @@ hr{
   	background: #fff;
   	border: 1px solid #efefef;
   	padding: 5px;
+  	z-index: 100000;
 }
 
 .links a{
