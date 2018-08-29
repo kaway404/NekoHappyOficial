@@ -14,10 +14,16 @@ date_default_timezone_set('America/Sao_Paulo');
 
 // Conexão com banco de dados
 
-$servidor = "sql10.freemysqlhosting.net";
-$usuario = "sql10254218";
-$senha = "tD77bquKUT";
-$dbname = "sql10254218";
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
+$dbname = "nekohappy";
+
+// $servidor = "sql10.freemysqlhosting.net";
+// $usuario = "sql10254218";
+// $senha = "tD77bquKUT";
+// $dbname = "sql10254218";
+
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
     
 if(!$conn){
