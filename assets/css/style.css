@@ -302,7 +302,7 @@ hr{
 
 .status{
  	position: fixed;
- 	top: 100px;
+ 	top: 190px;
  	width: 15%;
  	height: 100px;
   	display: flex;
@@ -928,4 +928,23 @@ hr{
 #slidertag li{
 	width: 170px !important;
 	height: 40px;
+}
+
+.links{
+	position: fixed;
+ 	top: 100px;
+ 	width: 15%;
+ 	height: auto;
+  	float: right;
+  	right: 22%;
+  	background: #fff;
+  	border: 1px solid #efefef;
+  	padding: 5px;
+}
+
+.links a{
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	color: #269265 !important;
 }

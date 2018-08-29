@@ -14,7 +14,6 @@ if(!$conn){
   	require './view/nodb/index.php';
 }
 else{
-
 if(isset($_COOKIE['cry']) ){
 if(empty($_COOKIE['iduser']) ){
 	require './autoload/user/user.php';
@@ -74,6 +73,10 @@ else{
 	if(isset($_GET['profile'])){
 	require './view/dashboard/menu.php';
 	require './view/profile/user.php';
+	}
+	else if(isset($_GET['createpage'])){
+		require './view/dashboard/menu.php';
+		require './view/page/create.php';
 	}
 	else{
 	require './view/dashboard/menu.php';
