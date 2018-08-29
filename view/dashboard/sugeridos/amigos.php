@@ -17,7 +17,7 @@ if($people){
     	foreach ($resultado_people as $resultado_people => $resultado_peoples) {
     	?>
         <a class="ok" href="/profile/<?php echo $resultado_peoples['id'];?>">
-        	<li uk-tooltip="<?php echo $resultado_peoples['usuario'];?>">
+        	<li>
             <img src="/img/user/<?php echo $resultado_peoples['avatar'];?>" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li></a>

@@ -18,6 +18,7 @@ if($user['admin'] == 1){
 ?>
 <li>
 <div class="tag" id="tagmembro"><p>Administrador</p></div>
+<div class="uk-position-center uk-panel"></div>
 </li>
 
 <style type="text/css">

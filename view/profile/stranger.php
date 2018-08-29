@@ -32,6 +32,7 @@ if($stranger['admin'] == 1){
 <?php } else{?>
 <li>
 <div class="tag" id="tagmembro"><p>Membro</p></div>
+<div class="uk-position-center uk-panel"></div>
 </li>
 
 <style type="text/css">
