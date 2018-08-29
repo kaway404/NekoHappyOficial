@@ -8,7 +8,7 @@
 <br>
 <a href="/toprank">Top rank</a>
 <br>
-<a>Loja</a>
+<a href="/loja">Loja</a>
 </center>
 </div>
 
