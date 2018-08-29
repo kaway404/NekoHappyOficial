@@ -48,7 +48,7 @@
 		border: none;
 		position: relative;
 		bottom: 10px;
-		border-color: #529ecc;
+		border-color: #a5da60;
 	    background-color: #529ecc;
 	    color: hsla(0,0%,100%,.9);
 	    cursor: pointer;
@@ -56,11 +56,11 @@
 	}
 
 	#tuturial1 button:focus{
-		background-color: #729ecc;
+		background-color: #a5da60;
 	}
 
 	#tuturial1 button:hover{
-		background-color: #729ecc;
+		background-color: #a5da60;
 	}
 
 	.okaytuturial{
@@ -86,19 +86,19 @@
 		border: none;
 		position: relative;
 		bottom: 10px;
-		border-color: #529ecc;
-	    background-color: #529ecc;
+		border-color: #a5da60;
+	    background-color: #a5da60;
 	    color: hsla(0,0%,100%,.9);
 	    cursor: pointer;
 	    padding: 8px;
 	}
 
 	.okaytuturial button:focus{
-		background-color: #729ecc;
+		background-color: #a5da60;
 	}
 
 	.okaytuturial button:hover{
-		background-color: #729ecc;
+		background-color: #a5da60;
 	}
 
 	#tuturial2{
