@@ -916,6 +916,11 @@ hr{
 	border-radius: 3px;
 }
 
+#slidertag a{
+	color: #fff !important;
+	background: rgba(0,0,0,.50);
+}
+
 .tag p{
 	color: #fff !important;
 	position: relative;
