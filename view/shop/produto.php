@@ -23,7 +23,7 @@ foreach ($result_produto as $result_produto => $result_produtos) {
 <h2>Personalizar perfil</h2>
 <p style="font-size: 1.3em">Estilos para todos os gostos</p>
 
-<div uk-tooltip="Comprar por 500 coins" class="items"><p>Avatar bordar redonda</div>
+<div uk-tooltip="Comprar por 500 coins" class="items"><p>Avatar borda redonda</div>
 	<div uk-tooltip="Comprar por 1000 coins" class="items"><p>Perfil verificado</div>
 
 <p style="font-size: 1.4em">Seus coins: <?php echo $user['money'];?></p>
