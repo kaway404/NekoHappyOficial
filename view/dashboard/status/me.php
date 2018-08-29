@@ -18,7 +18,7 @@
 <p class="user"><?php echo $user['usuario'];?></p>
 </a>
 <hr style="position: absolute; top: 40px">
-<a href="/logout" uk-tooltip="Sair da conta" class="logout">Sair</a>
+<a uk-tooltip="Sair dessa conta" href="/logout" uk-tooltip="Sair da conta" class="logout">Sair</a>
 </div>
 
 

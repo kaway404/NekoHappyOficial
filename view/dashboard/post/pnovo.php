@@ -4,7 +4,7 @@
 <div class="postar" style="top: 10px;width: 100%; left: 0; z-index: 1000; background: #fff;">
 <div class="tipos">
 <p style="color: #151515 !important; top: 20px; position: relative; left: 20px; font-size: 1.4vw;">Selecione um tipo de postagem</p>
-<div class="tipo" id="tipotexto">
+<div class="tipo" id="tipotexto" uk-tooltip="Publique em forma de texto">
     <h1 style="color: #151515 !important;">Aa</h1>
     <p style="color: #151515 !important;">Texto</p>
 </div>
