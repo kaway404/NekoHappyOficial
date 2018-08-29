@@ -78,6 +78,10 @@ else{
 		require './view/dashboard/menu.php';
 		require './view/page/create.php';
 	}
+	else if(isset($_GET['lojinha'])){
+		require './view/dashboard/menu.php';
+		require './view/shop/loja.php';
+	}
 	else{
 	require './view/dashboard/menu.php';
 	require './view/dashboard/home.php';
