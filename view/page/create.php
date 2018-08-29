@@ -15,4 +15,9 @@ echo '</div>';
 require './view/dashboard/status/me.php';
 echo '</div>';
 echo '</div>';
+
+echo '<div class="newcomunidadet">
+<div class="back"><div class="after"></div></div>
+</div>';
+
  } else{ include '../404/index.php';}?>
