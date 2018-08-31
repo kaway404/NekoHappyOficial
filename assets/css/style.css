@@ -1043,3 +1043,41 @@ hr{
 	color: #fff !important;
 	height: 100%;
 }
+
+.bottomh{
+	position: fixed;
+	bottom: 0;
+	background: #a5da60;
+	height: 40px;
+	width: 100%;
+	z-index: 100000000;
+}
+
+.bottomh .profile{
+	width: auto;
+	float: right;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	background: #8ebb54;
+	padding-right: 100px;
+}
+
+.bottomh .profile .avatar{
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	position: absolute;
+	float: right;
+	right: 0px;
+	background-size: contain;
+}
+
+.bottomh .profile p{
+	float: left;
+	position: relative;
+	top: -15px;
+	left: 10px;
+	color: #fff !important;
+	font-size: 1.3em;
+}
