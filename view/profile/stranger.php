@@ -2,7 +2,7 @@
 ?>
 <?php
 if(isset($stranger)){
-require './autoload/user/stranger.php'
+require './autoload/user/stranger.php';
 	?>
 <div class="profile_">
 <div class="notice" style="top: 0;">
