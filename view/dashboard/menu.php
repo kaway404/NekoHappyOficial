@@ -35,7 +35,7 @@ $exp = $user['exp'];
 			<div class="exp" uk-tooltip="Progresso">
 				<div uk-tooltip="EXP atual <?Php echo $exp;?> de 10" class="atual"></div>
 			</div>
-			<div class="avatar">
+			<div class="avatar" uk-tooltip="Foto de avatar">
 			</div>
 			<p><a href="/profile/<?php echo $user['id'];?>"><?php echo $user['usuario'];?></a> / Coins <?php echo $user['money'];?></p>
 		</div>

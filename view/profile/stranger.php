@@ -1,8 +1,9 @@
 <?php if(isset($template)){
-require './autoload/user/stranger.php'
 ?>
 <?php
-if(isset($stranger)){?>
+if(isset($stranger)){
+require './autoload/user/stranger.php'
+	?>
 <div class="profile_">
 <div class="notice" style="top: 0;">
     <p>Perfil de <?php echo $stranger['usuario'];?></p>
