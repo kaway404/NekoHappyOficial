@@ -58,7 +58,7 @@ $exp = $user['exp'];
 
 	.exp .atual{
 		width: <?php echo $expatual;?>%;
-		background: #f4f5f4;
+		background: #555;
 		height: 100%;
 		box-shadow: 1px 1px 1px rgba(0,0,0,0.50);
 	}

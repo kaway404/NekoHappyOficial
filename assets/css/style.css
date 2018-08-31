@@ -258,7 +258,7 @@ hr{
 .headerta .align{
 	position: relative;
 	margin: 0px auto;
-	width: 70%;
+	width: 80%;
 }
 
 .headerta .boxcenter{
@@ -293,7 +293,7 @@ hr{
 .align{
 	position: relative;
 	margin: 0px auto;
-	width: 70%;
+	width: 80%;
 }
 
 .flex{
@@ -316,7 +316,7 @@ hr{
   	display: flex;
   	align-items: flex-end;
   	float: right;
-  	right: 22%;
+  	right: 19%;
   	background: #fff;
   	border: 1px solid #efefef;
   	padding: 5px;
@@ -958,7 +958,7 @@ hr{
  	width: 15%;
  	height: auto;
   	float: right;
-  	right: 22%;
+  	right: 19%;
   	background: #fff;
   	border: 1px solid #efefef;
   	padding: 5px;
