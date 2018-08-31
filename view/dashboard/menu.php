@@ -37,7 +37,7 @@ $exp = $user['exp'];
 			</div>
 			<div class="avatar">
 			</div>
-			<p><?php echo $user['usuario'];?></p>
+			<p><a href="/profile/<?php echo $user['id'];?>"><?php echo $user['usuario'];?></a> / Coins <?php echo $user['money'];?></p>
 		</div>
 	</div>
 </div>
