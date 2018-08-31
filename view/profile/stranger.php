@@ -1,8 +1,8 @@
 <?php if(isset($template)){
 ?>
 <?php
-if(isset($stranger)){
 require './autoload/user/stranger.php';
+if(isset($stranger)){
 	?>
 <div class="profile_">
 <div class="notice" style="top: 0;">
