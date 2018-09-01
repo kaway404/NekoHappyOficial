@@ -10,6 +10,7 @@ foreach ($usertopt as $usertopt => $usertopts) {
 
 <li class="cool"><p><?php echo '<img src="/img/user/'.$usertopts['avatar'].'"/>' .  '<span>' . $usertopts['usuario'] . ' - ' . 'Level '  . $usertopts['lvl'] . '</span>';?></p></li>
 
+
 <?php } ?>
 </div>
 
