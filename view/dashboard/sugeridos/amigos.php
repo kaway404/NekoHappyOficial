@@ -15,12 +15,38 @@ if($people){
 	    $resultado_people = mysqli_query($conn, $result_people);
 	    $people = mysqli_fetch_assoc($resultado_people);
     	foreach ($resultado_people as $resultado_people => $resultado_peoples) {
+        $status = $resultado_peoples['status'];
+        $statusatual = null;
+
+        if($status >= $dataAtual){
+            $statusatual = "1";
+        }
+        else{
+            $statusatual = "0";
+        }
     	?>
         <a class="ok" href="/profile/<?php echo $resultado_peoples['id'];?>">
         	<li uk-tooltip="<?php echo $resultado_peoples['usuario'];?>">
+            <div class="online" style="top: 10px; height: 20px; width: 20px; background: #151515;"><div class="verificar" uk-tooltip="<?php if($statusatual == "1"){ echo 'Usuario online';}else{ echo 'Usuario Offline';} ?>" id="verificando<?php echo $resultado_peoples['id'];?>"></div></div>
             <img src="/img/user/<?php echo $resultado_peoples['avatar'];?>" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li></a>
+        <style type="text/css">
+        <?php if($statusatual == "1"){?>
+            #verificando<?php echo $resultado_peoples['id'];?>{
+                background: #8dbd4e;
+                height: 100%;
+                width: 100%;
+            }
+        <?php } ?>
+        <?php if($statusatual == "0"){?>
+            #verificando<?php echo $resultado_peoples['id'];?>{
+                background: #ce2525;
+                height: 100%;
+                width: 100%;
+            }
+        <?php } ?>
+        </style>
     <?php }?>
     </ul>
 
