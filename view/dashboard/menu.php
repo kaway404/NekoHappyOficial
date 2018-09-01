@@ -8,14 +8,36 @@
 	</div>
 	<div class="boxleft">
 		<div class="okaysr" uk-tooltip="Seu level">
-		<a href="/profile/<?php echo $user['id'];?>">
 		<img class="avatar" src="/img/user/<?php echo $user['avatar'];?>"/>
 		<p class="myrank"><span id="lvl"><?php echo $user['lvl'];?></span></p>
-		</a>
+		<div class="menu">
+			<p>Funções rapidas</p>
+			<center>
+			<a href="/profile/<?php echo $user['id'];?>">Meu perfil</a>
+			<br>
+			<a href="/config">Configurações de perfil</a>
+			<br>
+			<a href="/create_page">Criar nova comunidade</a>
+			<br>
+			<a href="/loja">Loja</a>
+			<br>
+			<a href="/logout">Sair</a>
+			</center>
+		</div>
 		</div>
 	</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$( ".okaysr" ).click(function() {
+if( $('.menu').is(':visible') ) {
+  $('.menu').css('display', 'none');
+} else {
+  $('.menu').css('display', 'block');
+}
+	});
+</script>
 
 <div class="rightup">
 	<div class="after">
