@@ -26,7 +26,7 @@
 		background: rgba(0,0,0,.70);
 		top: 0;
 		left: 0;
-		z-index: 10000000;
+		z-index: 1000000000000;
 	}
 
 	#tuturial1{
@@ -131,7 +131,7 @@
 		$("#tuturial2").hide();
 		$("#tuturial3").show();
 		$(".postar").css("z-index", "100");
-		$(".oksrs").css("z-index", "100000000");
+		$(".oksrs").css("z-index", "10000000000000");
 	});
 
 	$( "#next3" ).click(function() {

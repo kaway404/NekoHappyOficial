@@ -22,7 +22,7 @@
 		background: rgba(0,0,0,.70);
 		top: 0;
 		left: 0;
-		z-index: 10000000;
+		z-index: 1000000000000;
 	}
 
 	#tuturial1{

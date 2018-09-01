@@ -258,7 +258,7 @@ hr{
 .headerta .align{
 	position: relative;
 	margin: 0px auto;
-	width: 80%;
+	width: 900px;
 }
 
 .headerta .boxcenter{
@@ -293,7 +293,7 @@ hr{
 .align{
 	position: relative;
 	margin: 0px auto;
-	width: 80%;
+	width: 900px;
 }
 
 .flex{
@@ -1052,7 +1052,7 @@ hr{
 	background: #a5da60;
 	height: 40px;
 	width: 100%;
-	z-index: 100000000;
+	z-index: 100000000000;
 }
 
 .bottomh .profile{
