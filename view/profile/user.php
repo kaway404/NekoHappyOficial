@@ -2,6 +2,7 @@
 echo '<div class="align">';
 echo '<div class="flex">';
 echo '<div class="feed">';
+echo '<div id="perfil">';
 
 if($user['id'] == $_GET['id']){
 	require './view/profile/me.php';
@@ -10,6 +11,7 @@ else{
 	require './view/profile/stranger.php';
 }
 
+echo '</div>';
 echo '</div>';
 echo '</div>';
 echo '</div>';

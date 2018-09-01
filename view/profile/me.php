@@ -19,7 +19,7 @@ else{
 </div>
 <div class="cover">
 <div class="avatar">
-	<div class="online"><div class="verificar"></div></div>
+	<div class="online"><div uk-tooltip="<?php if($statusatual == "1"){ echo 'Usuario online';}else{ echo 'Usuario Offline';} ?>" class="verificar"></div></div>
 	<img src="/img/user/<?php echo $user['avatar'];?>"/>
 	<p class="myrank" style="width: auto; top: -40px !important;"><span id="lvl">Level <?php echo $user['lvl'];?></span></p>
 </div>
@@ -117,7 +117,6 @@ require './view/dashboard/post/pnovo.php';
 
 </div>
 
-<div class="overtt"><div class="ok"></div></div>
 
 <style type="text/css">
 	<?php

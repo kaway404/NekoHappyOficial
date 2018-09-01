@@ -11,10 +11,10 @@ $status = $stranger['status'];
 $statusatual = null;
 
 if($status >= $dataAtual){
-	$statusatual = "Online";
+	$statusatual = "1";
 }
 else{
-	$statusatual = "Offline";
+	$statusatual = "0";
 }
 ?>
 
@@ -24,21 +24,21 @@ else{
 </div>
 <div class="cover">
 <div class="avatar">
-	<div class="online"><div class="verificar"></div></div>
+	<div class="online"><div uk-tooltip="<?php if($statusatual == "1"){ echo 'Usuario online';}else{ echo 'Usuario Offline';} ?>" class="verificar"></div></div>
 	<img src="/img/user/<?php echo $stranger['avatar'];?>"/>
 	<p class="myrank" style="width: auto; top: -40px !important;"><span id="lvl">Level <?php echo $stranger['lvl'];?></span></p>
 </div>
 </div>
 
 <style type="text/css">
-<?php if($statusatual == "Online"){?>
+<?php if($statusatual == "1"){?>
 	.verificar{
 		background: #8dbd4e;
 		height: 100%;
 		width: 100%;
 	}
 <?php } ?>
-<?php if($statusatual == "Offline"){?>
+<?php if($statusatual == "0"){?>
 	.verificar{
 		background: #ce2525;
 		height: 100%;
