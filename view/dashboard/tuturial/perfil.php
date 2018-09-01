@@ -120,7 +120,7 @@
 	$( "#next1" ).click(function() {
 		$("#tuturial1").hide();
 		$("#tuturial2").show();
-		$(".profile_").css("z-index", "1000000000000");
+		$(".profile_").css("z-index", "10000000000000");
 	});
 
 	$( "#next2" ).click(function() {
