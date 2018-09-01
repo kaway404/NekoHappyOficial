@@ -8,7 +8,7 @@ $usertopts = mysqli_fetch_assoc($usertopt);
 foreach ($usertopt as $usertopt => $usertopts) {
 ?>
 
-<li class="cool"><p><?php echo '<img src="/img/user/'.$usertopts['avatar'].'"/>' .  '<span>' . $usertopts['usuario'] . ' - ' . 'Level '  . $usertopts['lvl'] . '</span>';?></p></li>
+<a href="/profile/<?php echo $usertopts['id'];?>"><li class="cool"><p><?php echo '<img src="/img/user/'.$usertopts['avatar'].'"/>' .  '<span>' . $usertopts['usuario'] . ' - ' . 'Level '  . $usertopts['lvl'] . '</span>';?></p></li></a>
 
 
 <?php } ?>
