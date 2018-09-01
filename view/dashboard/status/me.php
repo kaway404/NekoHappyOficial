@@ -1,6 +1,7 @@
 <?php if(isset($template)){?>
 
 <div class="links">
+<p>Atalhos</p>	
 <center>
 <a href="/create_page">Nova comunidade</a>
 <br>

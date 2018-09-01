@@ -258,7 +258,7 @@ hr{
 .headerta .align{
 	position: relative;
 	margin: 0px auto;
-	width: 900px;
+	width: 65%;
 }
 
 .headerta .boxcenter{
@@ -293,7 +293,7 @@ hr{
 .align{
 	position: relative;
 	margin: 0px auto;
-	width: 900px;
+	width: 65%;
 }
 
 .flex{
@@ -310,7 +310,7 @@ hr{
 
 .status{
  	position: fixed;
- 	top: 200px;
+ 	top: 230px;
  	width: 15%;
  	height: 50px;
   	display: flex;
@@ -965,11 +965,17 @@ hr{
   	z-index: 100000;
 }
 
+.links p{
+	top: 0px;
+	position: relative;
+}
+
 .links a{
 	text-align: center;
 	position: relative;
 	text-transform: uppercase;
 	color: #476323 !important;
+	top: -20px;
 }
 
 .newcomunidade p{
