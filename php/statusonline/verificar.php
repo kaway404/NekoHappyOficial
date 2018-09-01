@@ -1,7 +1,7 @@
 <?php
 require '../../config/config.php';
 $iduser = $_COOKIE['iduser'];
-$dateagora = date('d/m/Y H:i:s', strtotime('+240 sec'));
+$dateagora = date('d/m/Y H:i:s', strtotime('+30 sec'));
 $sql = "UPDATE user SET status= '$dateagora' WHERE id='$iduser'";
 
 if ($conn->query($sql) === TRUE) {
