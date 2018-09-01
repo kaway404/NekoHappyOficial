@@ -10,6 +10,8 @@ echo '<div class="feed">';
 require './view/dashboard/post/novo.php';
 // Amigos sugeridos
 require './view/dashboard/sugeridos/amigos.php';
+// Comunidades sugeridos
+require './view/dashboard/sugeridos/paginas.php';
 echo '<div class="oksrs">';
 // Feed
 require './view/dashboard/feed/post.php';
