@@ -24,7 +24,7 @@ else{
 </div>
 <div class="cover">
 <div class="avatar">
-	<div class="online"><div uk-tooltip="Online" class="verificar"></div></div>
+	<div class="online"><div class="verificar"></div></div>
 	<img src="/img/user/<?php echo $stranger['avatar'];?>"/>
 	<p class="myrank" style="width: auto; top: -40px !important;"><span id="lvl">Level <?php echo $stranger['lvl'];?></span></p>
 </div>
