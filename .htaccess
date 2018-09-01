@@ -26,4 +26,5 @@ RewriteRule ^publish /php/post/fazer.php
 RewriteRule ^tuturial /php/tuturial/terminar.php
 RewriteRule ^create_page /index.php?&createpage=1 [L]
 RewriteRule ^loja /index.php?&lojinha=1 [L]
+RewriteRule ^buzz /php/statusonline/verificar.php
 </IfModule>

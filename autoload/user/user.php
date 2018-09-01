@@ -89,7 +89,16 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) ) ){
 
 
     if(isset($user)){
-    	echo '';
+    	echo
+        '
+        <div class="result_online"></div>
+        <script>
+        window.setInterval(function(){
+            $.post( "/buzz", function( data ) {
+              $( ".result_online" ).html( data );
+            });
+          }, 5000);
+        </script>';
     }
     else{
     	setcookie("iduser", "", time()+7200);

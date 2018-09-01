@@ -1088,3 +1088,19 @@ hr{
 .bottomh .profile a{
 	color: #eee !important;
 }
+
+.online{
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	position: absolute;
+	float: right;
+	right: 0;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.50);
+	border-radius: 50%;
+	top: -5px;
+}
+
+.verificar{
+	border-radius: 50%;
+}

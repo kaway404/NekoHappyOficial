@@ -1,15 +1,47 @@
 <?php if(isset($template)){
 	?>
+
+<?php
+$status = $user['status'];
+$statusatual = null;
+
+if($status >= $dataAtual){
+	$statusatual = "1";
+}
+else{
+	$statusatual = "0";
+}
+?>
+
 <div class="profile_">
 <div class="notice" style="top: 0;">
     <p>Perfil de <?php echo $user['usuario'];?></p>
 </div>
 <div class="cover">
 <div class="avatar">
+	<div class="online"><div class="verificar"></div></div>
 	<img src="/img/user/<?php echo $user['avatar'];?>"/>
 	<p class="myrank" style="width: auto; top: -40px !important;"><span id="lvl">Level <?php echo $user['lvl'];?></span></p>
 </div>
 </div>
+
+<style type="text/css">
+<?php if($statusatual == "1"){?>
+	.verificar{
+		background: #8dbd4e;
+		height: 100%;
+		width: 100%;
+	}
+<?php } ?>
+<?php if($statusatual == "0"){?>
+	.verificar{
+		background: #ce2525;
+		height: 100%;
+		width: 100%;
+	}
+<?php } ?>
+</style>
+
 <div class="tab">
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="slidertag">
 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">

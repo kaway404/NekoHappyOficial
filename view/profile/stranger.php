@@ -4,16 +4,49 @@
 require './autoload/user/stranger.php';
 if(isset($stranger)){
 	?>
+
+
+<?php
+$status = $stranger['status'];
+$statusatual = null;
+
+if($status >= $dataAtual){
+	$statusatual = "Online";
+}
+else{
+	$statusatual = "Offline";
+}
+?>
+
 <div class="profile_">
 <div class="notice" style="top: 0;">
     <p>Perfil de <?php echo $stranger['usuario'];?></p>
 </div>
 <div class="cover">
 <div class="avatar">
+	<div class="online"><div uk-tooltip="Online" class="verificar"></div></div>
 	<img src="/img/user/<?php echo $stranger['avatar'];?>"/>
 	<p class="myrank" style="width: auto; top: -40px !important;"><span id="lvl">Level <?php echo $stranger['lvl'];?></span></p>
 </div>
 </div>
+
+<style type="text/css">
+<?php if($statusatual == "Online"){?>
+	.verificar{
+		background: #8dbd4e;
+		height: 100%;
+		width: 100%;
+	}
+<?php } ?>
+<?php if($statusatual == "Offline"){?>
+	.verificar{
+		background: #ce2525;
+		height: 100%;
+		width: 100%;
+	}
+<?php } ?>
+</style>
+
 <div class="tab">
 	<div class="tags">
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="slidertag">
