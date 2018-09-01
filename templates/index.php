@@ -82,6 +82,10 @@ else{
 		require './view/dashboard/menu.php';
 		require './view/shop/loja.php';
 	}
+	else if(isset($_GET['comunidade'])){
+	require './view/dashboard/menu.php';
+	require './view/page/vendo.php';
+	}
 	else{
 	require './view/dashboard/menu.php';
 	require './view/dashboard/home.php';

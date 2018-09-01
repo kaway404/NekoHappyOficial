@@ -15,15 +15,15 @@ $dataAtual = date('d/m/Y H:i:s');
 
 // Conexão com banco de dados
 
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$dbname = "nekohappy";
+// $servidor = "localhost";
+// $usuario = "root";
+// $senha = "";
+// $dbname = "nekohappy";
 
-// $servidor = "sql10.freemysqlhosting.net";
-// $usuario = "sql10254218";
-// $senha = "tD77bquKUT";
-// $dbname = "sql10254218";
+$servidor = "sql10.freemysqlhosting.net";
+$usuario = "sql10254218";
+$senha = "tD77bquKUT";
+$dbname = "sql10254218";
 
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
     

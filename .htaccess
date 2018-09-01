@@ -28,4 +28,5 @@ RewriteRule ^create_page /index.php?&createpage=1 [L]
 RewriteRule ^loja /index.php?&lojinha=1 [L]
 RewriteRule ^buzz /php/statusonline/verificar.php
 RewriteRule ^createcommunity /php/comunidade/new.php
+RewriteRule ^comunidade/(.*)$ /index.php?id=$1&comunidade=1 [L]
 </IfModule>

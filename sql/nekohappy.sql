@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql10.freemysqlhosting.net
--- Tempo de geração: 01/09/2018 às 14:15
+-- Tempo de geração: 01/09/2018 às 15:11
 -- Versão do servidor: 5.5.58-0ubuntu0.14.04.1
 -- Versão do PHP: 7.0.30-0ubuntu0.16.04.1
 
@@ -110,6 +110,27 @@ INSERT INTO `background` (`id`, `url`, `quem`, `ativo`) VALUES
 (33, 'pokemon.jpg', 'kaway', 1),
 (34, 'one.png', 'kaway', 1),
 (35, 'one.gif', 'kaway', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `comunidade`
+--
+
+CREATE TABLE `comunidade` (
+  `id` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL,
+  `nome` text NOT NULL,
+  `sobre` text NOT NULL,
+  `verificado` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Fazendo dump de dados para tabela `comunidade`
+--
+
+INSERT INTO `comunidade` (`id`, `iduser`, `nome`, `sobre`, `verificado`) VALUES
+(2, 34, 'NekoHappy Oficial', 'Comunidade Oficial', 0);
 
 -- --------------------------------------------------------
 
@@ -273,9 +294,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `cry`, `wtf`, `cool`, `baby`, `very`, `nani`, `email`, `password`, `usuario`, `admin`, `avatar`, `background`, `cover`, `config`, `game`, `movie`, `pincode`, `ip`, `tuturial`, `exp`, `lvl`, `tag`, `money`, `status`) VALUES
-(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 1, 'nekohappy_642341daaea37c4af7bfa47ad3cf7a7097185eb750bb1698f98787bf32533b47f8df5e71934b8923.png', 'estra.gif', 'pixel6.gif', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '201.67.147.70', 2, 6, 14, 0, 0, '01/09/2018 11:19:23'),
+(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 1, 'nekohappy_642341daaea37c4af7bfa47ad3cf7a7097185eb750bb1698f98787bf32533b47f8df5e71934b8923.png', 'estra.gif', 'pixel6.gif', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '201.67.147.70', 2, 6, 14, 0, 0, '01/09/2018 12:11:51'),
 (35, 'nekohappy_f7310e76f2d7ff0e840b570fbaf07e19bfe2f23f', '2e9ca66b0d5b55d5d19acf5d09a4c3db551093ba', 'nekohappy_89d6af6459064d78e88f573a184241ac7f9eda81', '1ad721207f4e1b32f5791728e0ee6115', '0165d10b483b47b285e3c5496793f271ebf8ab3a', 'nekohappy_7855972c424277e550ed3ed58b63dc08655f5fcc', 'kaway404@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway404', 0, 'nekohappy_9d6773aae2b0a4f9e8f33d27d1ec85119f215331bca643e9251f5302bb298c72b96764022db37303.png', '', '', 1, 'CSGO', 'A rede', '4002', '::1', 0, 0, 0, 0, 0, ''),
-(36, 'nekohappy_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', '57846d3576f4b2eb5c494a5f8b3b11234ffef098', 'nekohappy_a1bd5bc60c796e14b937b1b0ccf990cce6caebe3', 'edd79c7b5e66321dca8210ea022645a3', 'dabe34f65b393e313a88753d6928df5d67b84e5c', 'nekohappy_7868812b47588635d9141eb86daa91b7d0115de0', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', 'anelise', 0, 'nekohappy_332fdb34e6aa36641ee1521906df01fbbdff83a80730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'paladins', 'o diario de anne frank', '2006', '127.0.0.1', 2, 1, 0, 0, 0, ''),
+(36, 'nekohappy_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', '57846d3576f4b2eb5c494a5f8b3b11234ffef098', 'nekohappy_a1bd5bc60c796e14b937b1b0ccf990cce6caebe3', 'edd79c7b5e66321dca8210ea022645a3', 'dabe34f65b393e313a88753d6928df5d67b84e5c', 'nekohappy_7868812b47588635d9141eb86daa91b7d0115de0', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', 'anelise', 0, 'nekohappy_332fdb34e6aa36641ee1521906df01fbbdff83a80730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'paladins', 'o diario de anne frank', '2006', '127.0.0.1', 2, 1, 0, 0, 0, '01/09/2018 11:32:51'),
 (37, 'nekohappy_150857d7eaab3d95fda9c8517663b8e99d9cf47a', 'a6b33a7fc2f6f18ec1b104356c7efbf9f1730b48', 'nekohappy_5ae31a07b367676bb0ae54e23186665e26fed604', '5816b0d763e1b50a221069eb6cfef946', '98784398d9ff359557c0d7020cbff5af3786a8ae', 'nekohappy_a641079e077719e953176ca3f6c42667e6c55cd7', 'ducdll8@gmail.com', '25e7a11fbfa48063c59190eb39676cfaff4443f6', 'vitor', 0, 'default.jpg', '', '', 1, 'EEEE', 'EE', '4002', '177.148.195.150', 1, 0, 0, 0, 0, ''),
 (38, 'nekohappy_ad7d63c9e2e8b580eeeff5b54815ba85c83982b6', '7198b48be99a40dce69836d8819b6af4138fc100', 'nekohappy_03539c89021715575beda48bde55f6a887799b3b', '4721ea63db427063c6c48e9bb2feb67c', '99d5943fb9c14e0d354af844cae12bc296c5fcac', 'nekohappy_04ec542c6a18ca19c40cd77a41dde0ff1e27ce0a', 'nani@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'Joaquin', 0, 'nekohappy_52332320ac924cb1339cbeaed77c257f4ab524ac50bb1698f98787bf32533b47f8df5e71934b8923.png', '', '', 1, '23', '123', '123', '127.0.0.1', 1, 0, 0, 0, 0, ''),
 (39, 'nekohappy_ff9358742103ddc441d6fad617497413480957f1', '9b2e899429614a97e8d42b1f1f7e8322ff9688fd', 'nekohappy_ac02524209b3638ead53fc43957d6914dbcb64ec', '37c7cc1a8c671d19f9e78ad018df95d2', '719a7d951f7623b6d4af3a4ca6e2c22abefaa7c1', 'nekohappy_5cc1173b6289eec1939110b07638b408563c60c6', 'mateusheckertg@gmail.com', '1cb09364452f9a307f94c045215ba7bb84c1b967', 'Mateus Heckert GonÃ§alves', 1, 'nekohappy_4a40685cd8f7b106284ee521f0a17267fa9766bbb55f2396c5358fe52920605e0f872cdd9bf3ecbb.png', '', '', 1, 'Tomb Raider', 'V de VinganÃ§a', '2003', '189.11.144.118', 1, 0, 0, 0, 0, ''),
@@ -338,6 +359,12 @@ ALTER TABLE `background`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices de tabela `comunidade`
+--
+ALTER TABLE `comunidade`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices de tabela `passwordchange`
 --
 ALTER TABLE `passwordchange`
@@ -387,6 +414,11 @@ ALTER TABLE `attempt_change_password`
 --
 ALTER TABLE `background`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+--
+-- AUTO_INCREMENT de tabela `comunidade`
+--
+ALTER TABLE `comunidade`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de tabela `passwordchange`
 --
