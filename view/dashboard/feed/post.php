@@ -55,7 +55,7 @@ else{
 <span style="color: #151515 !important; top: -25px; position: relative; left: 10px; font-size: 18px; word-wrap: break-word;"><?php echo $postas['texto'];?></span>
 <div class="postaaa" style="left: -100px; position: absolute;">
 <div class="avatar" style="top: -100px; position: absolute;">
-<div class="online" style="top: 0px; height: 15px; z-index: 1000; right: 5px; width: 15px; background: #151515;"><div class="verificar" uk-tooltip="<?php if($statusatual == "1"){ echo 'Usuario online';}else{ echo 'Usuario Offline';} ?>" id="verificando<?php echo $resultado_peopledes['id'];?>"></div></div>
+<div class="online" style="top: 0px; height: 15px; z-index: 1000; right: 5px; width: 15px; background: #151515;"><div class="verificar" uk-tooltip="<?php if($statusatual == "1"){ echo 'Usuario online';}else{ echo 'Usuario Offline';} ?>" id="verificando<?php echo $resultado_peopledes['id']; echo $postas['id'];?>"></div></div>
 <a href='/profile/<?php echo $resultado_peopledes['id'];?>'><img uk-tooltip="<?php echo $resultado_peopledes['usuario'];?>" src="/img/user/<?php echo $resultado_peopledes['avatar'];?>"/></a>
 </div>
 </div>
@@ -63,14 +63,14 @@ else{
 
    <style type="text/css">
         <?php if($statusatual == "1"){?>
-            #verificando<?php echo $resultado_peopledes['id'];?>{
+            #verificando<?php echo $resultado_peopledes['id']; echo $postas['id'];?>{
                 background: #8dbd4e;
                 height: 100%;
                 width: 100%;
             }
         <?php } ?>
         <?php if($statusatual == "0"){?>
-            #verificando<?php echo $resultado_peopledes['id'];?>{
+            #verificando<?php echo $resultado_peopledes['id']; echo $postas['id'];?>{
                 background: #ce2525;
                 height: 100%;
                 width: 100%;
