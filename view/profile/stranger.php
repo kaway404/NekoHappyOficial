@@ -121,8 +121,6 @@ foreach ($tagavs as $tagavs => $tagavss) {
 
 </div>
 
-<div class="overtt"><div class="ok"></div></div>
-
 <style type="text/css">
 	<?php
 	if($stranger['cover'] <> ""){?>
