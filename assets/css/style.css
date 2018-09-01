@@ -1187,3 +1187,32 @@ hr{
 	position: absolute;
 	left: 5px;
 }
+
+.toprank li{
+	background: #a5da60;
+	list-style: none;
+	padding: 5px;
+	margin-top: 10px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.toprank li:hover{
+	color: #a5da60 !important;
+	background: #fff;
+	box-shadow: 1px 2px 1px rgba(0,0,0,.50);
+}
+
+.toprank .cool img{
+	width: 45px;
+	padding: 2px;
+	position: relative;
+	top: 10px;
+}
+
+.toprank .cool span{
+	position: relative;
+	left: 20px;
+	top: 15px;
+	font-size: 22px;
+}

@@ -86,6 +86,10 @@ else{
 	require './view/dashboard/menu.php';
 	require './view/page/vendo.php';
 	}
+	else if(isset($_GET['toprank'])){
+	require './view/dashboard/menu.php';
+	require './view/rank/top.php';
+	}
 	else{
 	require './view/dashboard/menu.php';
 	require './view/dashboard/home.php';
