@@ -11,3 +11,4 @@ Feito por uma pessoa.
 ![alt text](https://raw.githubusercontent.com/kaway404/NekoHappyOficial/master/demo/4.png)
 ![alt text](https://raw.githubusercontent.com/kaway404/NekoHappyOficial/master/demo/5.png)
 ![alt text](https://raw.githubusercontent.com/kaway404/NekoHappyOficial/master/demo/7.png)
+![alt text](https://raw.githubusercontent.com/kaway404/NekoHappyOficial/master/demo/8.png)
