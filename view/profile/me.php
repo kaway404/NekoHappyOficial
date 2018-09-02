@@ -9,7 +9,7 @@ if($status >= $dataAtual){
 	$statusatual = "1";
 }
 else{
-	$statusatual = "0";
+	$statusatual = "1";
 }
 ?>
 
