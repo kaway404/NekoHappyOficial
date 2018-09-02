@@ -97,7 +97,7 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) ) ){
             $.post( "/buzz", function( data ) {
               $( ".result_online" ).html( data );
             });
-          }, 5000);
+          }, 2000);
         </script>';
     }
     else{
