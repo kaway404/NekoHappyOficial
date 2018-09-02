@@ -51,7 +51,7 @@ else{
 
 <div class="post">  
 <p style="color: #151515 !important; top: 10px; position: relative; left: 10px;word-wrap: break-word;"><a href="/profile/<?php echo $resultado_peopledes['id'];?>""><?php echo $resultado_peopledes['usuario'];?></a> - publicou</p>
-<h1 style="color: #151515 !important; top: -15px; position: relative; left: 10px; font-size: 28px;word-wrap: break-word; width: 95%;"><?php echo $postas['title'];?></h1>
+<h1 style="color: #151515 !important; top: -15px; position: relative; left: 2px; font-size: 28px;word-wrap: break-word; width: 95%;"><?php echo $postas['title'];?></h1>
 <span style="color: #151515 !important; top: -25px; position: relative; left: 2px; font-size: 18px; word-wrap: break-word;"><?php echo $postas['texto'];?></span>
 <div class="postaaa" style="left: -100px; position: absolute;">
 <div class="avatar" style="top: -100px; position: absolute;">
