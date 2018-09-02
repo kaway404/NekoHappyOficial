@@ -13,6 +13,7 @@ RewriteRule ^verificando /php/account/verificar.php
 RewriteRule ^configurando /php/config/config.php
 RewriteRule ^logout /php/logout.php
 RewriteRule ^changephoto /photochange.php
+RewriteRule ^changecover /changep.php
 RewriteRule ^notme /php/notme.php
 RewriteRule ^esquecer /php/account/esqueci.php
 RewriteRule ^validar /php/account/validar.php

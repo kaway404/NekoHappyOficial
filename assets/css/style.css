@@ -1217,3 +1217,60 @@ hr{
 	top: 15px;
 	font-size: 22px;
 }
+
+.changephoto{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,.50);
+	border-radius: 10%;
+	opacity: 0;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.changephoto:hover{
+	opacity: 1;
+}
+
+.changephoto span{
+	color: #fff !important;
+	position: relative;
+	left: 40px;
+	top: 20px;
+	cursor: pointer;
+	transition: 1s;
+	transform: scale(1.2);
+}
+
+.changephoto span:hover{
+	transform: scale(1.3);
+}
+
+.changecover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,.50);
+	opacity: 0;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.changecover:hover{
+	opacity: 1;
+}
+
+.changecover span{
+	color: #fff !important;
+	position: relative;
+	left: 20px;
+	top: 10px;
+	cursor: pointer;
+	transition: 1s;
+	transform: scale(1.2);
+}
+
+.changecover span:hover{
+	transform: scale(1.3);
+}
