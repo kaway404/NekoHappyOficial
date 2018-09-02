@@ -17,7 +17,16 @@ if(isset($_POST['pincode'])){
 		$result_usuario = "SELECT * FROM user WHERE id = '$iduser' and pincode = '$pincode' LIMIT 1";
         $resultado_usuario = mysqli_query($conn, $result_usuario);
         $resultado = mysqli_fetch_assoc($resultado_usuario);
-        if(isset($resultado)){
+if(isset($resultado)){
+$exce = 1; 
+$resultenta = "SELECT * FROM attempt_change_password WHERE iduser='" . $iduser . "' and exce = '" . $exce . "'   LIMIT 1";
+$resultentas = mysqli_query($conn, $resultenta);
+$resultentar = mysqli_fetch_assoc($resultentas);
+
+if(isset($resultentar)){
+    echo 'Você pode tentar novamente em ' . $resultentar['datet'];
+}
+else{
         $n = sha1(rand (0, 10000000));
         $nekohappy = sha1('nekhappy') . $n;
         $crya = $nekohappy . $n;
@@ -32,6 +41,7 @@ if(isset($_POST['pincode'])){
         echo '<script>location.href="/changepassword";</script>';
         }
         }
+    }
 }
 else{
 $date = date('Y-m-d H:i:s');
