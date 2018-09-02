@@ -977,6 +977,8 @@ hr{
 	text-transform: uppercase;
 	color: #476323 !important;
 	top: -20px;
+	left: 0px;
+	width: 100%;
 }
 
 .newcomunidade p{

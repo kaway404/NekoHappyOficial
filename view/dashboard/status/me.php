@@ -2,7 +2,6 @@
 
 <div class="links">
 <p>Atalhos</p>	
-<center>
 <a href="/create_page">Nova comunidade</a>
 <br>
 <a href="/profile/<?php echo $user['id'];?>">Meu perfil</a>
@@ -10,7 +9,6 @@
 <a href="/toprank">Top rank</a>
 <br>
 <a href="/loja">Loja</a>
-</center>
 </div>
 
 <div class="status">
