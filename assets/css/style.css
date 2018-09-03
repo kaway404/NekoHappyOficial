@@ -1179,6 +1179,7 @@ hr{
 	position: relative;
 	top: 25px;
 	width: 100%;
+	left: 10px;
 }
 
 .menu a:hover{

@@ -12,7 +12,6 @@
 		<p class="myrank"><span id="lvl"><?php echo $user['lvl'];?></span></p>
 		<div class="menu">
 			<p>Funções rapidas</p>
-			<center>
 			<a href="/profile/<?php echo $user['id'];?>">Meu perfil</a>
 			<br>
 			<a href="/config">Configurações de perfil</a>
@@ -22,7 +21,6 @@
 			<a href="/loja">Loja</a>
 			<br>
 			<a href="/logout">Sair</a>
-			</center>
 		</div>
 		</div>
 	</div>
