@@ -1203,13 +1203,14 @@ hr{
 }
 
 .toprank li:hover{
-	color: #a5da60 !important;
-	background: #fff;
+	color: #fff !important;
+	background: #a5da60;
 	box-shadow: 1px 2px 1px rgba(0,0,0,.50);
 }
 
 .toprank .cool img{
 	width: 45px;
+	max-height: 100px;
 	padding: 2px;
 	position: relative;
 	top: 10px;
