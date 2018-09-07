@@ -12,7 +12,7 @@ body{
 }
 
 a{
-	color: #476323 !important;
+	color: #151515 !important;
 }
 
 html{
@@ -1190,6 +1190,7 @@ hr{
 .menu p{
 	position: absolute;
 	left: 5px;
+	color: #fff !important;
 }
 
 .toprank li{
