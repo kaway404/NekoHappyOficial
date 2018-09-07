@@ -71,14 +71,14 @@ $exp = $user['exp'];
 	.exp{
 		width: 100%;
 		height: 10px;
-		background: #57772c;
+		background: #503777;
 		position: absolute;
 		top: -10px;
 	}
 
 	.exp .atual{
 		width: <?php echo $expatual;?>%;
-		background: #917123;
+		background: #a58eca;
 		height: 100%;
 		box-shadow: 1px 1px 1px rgba(0,0,0,0.50);
 	}

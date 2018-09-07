@@ -193,7 +193,7 @@ input{
 }
 
 #registro{
-	background: #a5da60e0 !important;
+	background: #8f60dae0 !important;
 	padding: 50px;
 	border-radius: 3px;
 	height: 400px;
@@ -204,7 +204,7 @@ input{
 }
 
 #loginte{
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	padding: 50px;
 	border-radius: 3px;
 	height: 330px;
@@ -242,7 +242,7 @@ hr{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #a5da60;
+	background: #8f60da;
 	border-bottom: 1px solid hsla(0,0%,100%,.2);;
 	z-index: 100000000;
 }
@@ -398,7 +398,7 @@ hr{
 .notice{
 	width: 100%;
 	height: 40px;
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	border-radius: 4px;
 	margin-top: 20px;
 	top: 20px;
@@ -414,7 +414,7 @@ hr{
 .menuoptionsfeed{
 	width: 44.8%;
 	height: 40px;
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	position: fixed;
 	z-index: 1000000;
 	top: 75px;
@@ -440,7 +440,7 @@ hr{
 .logout{
 	width: 90%;
 	padding: 5px;
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	color: #fff;
 	text-align: center;
 	position: relative;
@@ -541,7 +541,7 @@ hr{
 }
 
 .configusa .btn{
-	background-color: #a5da60 !important;
+	background-color: #8f60da !important;
 	padding: 10px;
 	width: 20%;
 	position: relative;
@@ -573,14 +573,14 @@ hr{
 
 .subprogress{
 	height: 100%;
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	transition: 0.5s;
 	border-radius: 20px;
 	width: 0%;
 }
 
 .configusa .error{
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	color: #fff;
 	padding: 5px;
 	top: 10px;
@@ -710,8 +710,8 @@ hr{
 	border: none;
 	position: relative;
 	bottom: 10px;
-	border-color: #a5da60;
-    background-color: #a5da60;
+	border-color: #8f60da;
+    background-color: #8f60da;
     color: hsla(0,0%,100%,.9);
     cursor: pointer;
     padding: 8px;
@@ -757,7 +757,7 @@ hr{
 	position: relative;
 	top: 0px;
 	z-index: 100;
-    background: #a5da60 !important;
+    background: #8f60da !important;
  	width: auto;
  	border-radius: 10px;
  	left: 20px;
@@ -779,7 +779,7 @@ hr{
 	width: 150px;
 	right: 0;
 	height: 100%;
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	border-left: 1px solid hsla(0,0%,100%,.2) ;
 	display: none;
 }
@@ -844,7 +844,7 @@ hr{
 .profile_ .tab{
 	width: 100%;
 	height: 50px;
-	background: #a5da60;
+	background: #8f60da;
 }
 
 .hora .svg{
@@ -998,7 +998,7 @@ hr{
 
 .newcomunidade button{
 	border: none;
-	background: #a5da60 !important;
+	background: #8f60da !important;
 	color: #fff;
 	padding: 10px;
 	font-size: 1em;
@@ -1016,7 +1016,7 @@ hr{
 .produtos .items{
 	width: 200px;
 	height: 40px;
-	background: #a5da60;
+	background: #8f60da;
 	border-radius: 3px;
 	cursor: pointer;
 	text-align: center;
@@ -1040,7 +1040,7 @@ hr{
 .produto_a{
 	width: 200px;
 	height: 40px;
-	background: #a5da60;
+	background: #8f60da;
 	margin-top: 10px;
 	position: relative;
 	cursor: pointer;
@@ -1058,7 +1058,7 @@ hr{
 .bottomh{
 	position: fixed;
 	bottom: 0;
-	background: #a5da60;
+	background: #8f60da;
 	height: 40px;
 	width: 100%;
 	z-index: 100000000000;
@@ -1070,7 +1070,7 @@ hr{
 	height: 40px;
 	position: absolute;
 	right: 0;
-	background: #8ebb54;
+	background: #7a50bd;
 	padding-right: 100px;
 }
 
@@ -1165,7 +1165,7 @@ hr{
 	position: absolute;
 	width: 150px;
 	height: auto;
-	background: #a5da60;
+	background: #8f60da;
 	top: 90px;
 	right: -40px;
 	box-shadow: 1px 2px 3px rgba(0,0,0,.50);
@@ -1205,7 +1205,7 @@ hr{
 
 .toprank li:hover{
 	color: #fff !important;
-	background: #a5da60;
+	background: #8f60da;
 	box-shadow: 1px 2px 1px rgba(0,0,0,.50);
 }
 
