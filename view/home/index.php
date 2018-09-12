@@ -28,6 +28,16 @@
 </div>
 </div>	
 
+<div class="apresentacao longe">
+<div class="align">
+<div class="pin"></div>
+<div class="left">
+<h1>CONECTE-SE COM A SUA GALERA</h1>
+<h2>Conheça pessoas iguais a você por todo o mundo.</h2>
+</div>
+</div>
+</div>	
+
 
 <div class="hora" id="registro" style="left: 200%;">
 	<h1>Cadastra-se!! <br>É gratuito e sempre será.</h1>

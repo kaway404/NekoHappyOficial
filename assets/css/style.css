@@ -1306,7 +1306,12 @@ hr{
 
 .main .gostas{
 	background: #68479c !important;
-	height: 270px;
+	height: 320px;
+}
+
+.main .longe{
+	background: #f6a623 !important;
+	height: 320px;
 }
 
 .main .gostas .right{
@@ -1322,7 +1327,24 @@ hr{
 	float: left;
 	left: 0;
 	width: 600px;
-	height: 300px;
+	height: 350px;
 	background-image: url("/assets/img/bubbles.svg");
 	background-size: cover;
+}
+
+.main .longe .pin{
+	position: absolute;
+	float: right;
+	right: 0;
+	width: 600px;
+	height: 350px;
+	background-image: url("/assets/img/pin.svg");
+	background-size: cover;
+}
+
+.main .longe .left{
+	position: relative;
+	float: left;
+	left: 0;
+	top: 80px;
 }
