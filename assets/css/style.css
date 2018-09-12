@@ -110,7 +110,7 @@ input{
 	width: 600px;
 	background: transparent;
 	height: 200px;
-	top: 50%;
+	top: 40%;
 	color: #fff;
 	text-align: center;
 	z-index: 1000;
@@ -1290,7 +1290,7 @@ hr{
 	height: auto;
 	background: #009df8;;
 	z-index: 20000000000;
-	top: 630px;
+	top: 650px;
 	padding: 30px;
 }
 
