@@ -13,7 +13,7 @@
 	<br>
 	<a href="/esqueci" style="position: relative;top: 10px; color: #7289da;">Esqueci minha senha</a>
 	<br>
-	<div class="btn coin" id="cadastro">Login</div>
+	<div class="btn coin" id="logar">Login</div>
 	<a href="/"><div class="btn login" id="cancel_lo">Cancelar</div></a>
 	<div class="error" id="error2"></div>
 </div>
