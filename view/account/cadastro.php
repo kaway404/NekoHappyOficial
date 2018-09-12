@@ -12,7 +12,7 @@
 	<input class="input" id="user-r" type="text" name="user" placeholder="Usuario"/>
 	<input class="input" id="senha-r" type="password" name="senha" placeholder="Senha"/>
 	<br>
-	<a href="/cadastro"><div class="btn coin" id="cadastro">Cadastrar</div></a>
+	<div class="btn coin" id="cadastro">Cadastrar</div>
 	<a href="/"><div class="btn login" id="cancel_re">Cancelar</div></a>
 	<div class="error" id="error1"></div>
 </div>
