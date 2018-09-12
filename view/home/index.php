@@ -2,19 +2,32 @@
 <?php if(empty($_COOKIE['iduser']) && (empty($_COOKIE['cry']) )){?>
 <div class="main">
 <div class="header bluebar">
-	<img id="logo" class="logo" src="/assets/img/logo.png"/>
+	<a href="/"><img id="logo" class="logo" src="/assets/img/logo.png"/></a>
 </div>
 
 <div class="hora" id="lang" style="left: 0%;">
 	<h1>É hora de largar o Facebook e o Twitter.</h1>
 	<p>Uma rede social para gamers/otakus, nós somos o número 1, venha conferir.</p>
-	<div class="btn coin" id="cadastro">Cadastrar</div>
-	<div class="btn login coin" id="login">Login</div>
-<!-- 	<img class="svg moeda coin1" src="/assets/img/home/coin.svg">
-	<img class="svg moeda coin2" src="/assets/img/home/coin.svg">
-	<img class="svg control box moeda" src="/assets/img/home/control.svg">
-	<img class="svg bomb box moeda" src="/assets/img/home/bomb.svg"> -->
+	<a href="/cadastro"><div class="btn coin" id="cadastro">Cadastrar</div></a>
+	<a href="/login"><div class="btn login coin" id="login">Login</div></a>
 </div>
+
+<div class="apresentacao">
+<center>
+<h1>SEUS INTERESSES... VEZES INFINITO</h1>
+<h2>No NekoHappy você encontra comunidades sobre tudo que você mais gosta.</h2>
+</center>
+</div>
+<div class="apresentacao gostas">
+<div class="align">
+<div class="budle"></div>
+<div class="right">
+<h1>MERGULHE FUNDO NO QUE MAIS GOSTA</h1>
+<h2>Chats, blogs, favoritos, enquetes e muito mais.</h2>
+</div>
+</div>
+</div>	
+
 
 <div class="hora" id="registro" style="left: 200%;">
 	<h1>Cadastra-se!! <br>É gratuito e sempre será.</h1>
@@ -44,36 +57,6 @@
 <div class="back"><div class="after"></div></div>
 
 </div>
-
-<script type="text/javascript">
-	$( "#cadastro" ).click(function() {
-		$('#lang').css('left', '-200%');
-		$('#registro').css('left', '0%');
-		window.history.pushState("Cadastro", "NekoHappy", "/cadastro");
-	});
-	$( "#cancel_re" ).click(function() {
-		$('#lang').css('left', '0%');
-		$('#registro').css('left', '200%');
-		window.history.pushState("Cadastro", "NekoHappy", "/");
-	});
-	$( "#login" ).click(function() {
-		$('#lang').css('left', '-200%');
-		$('#loginte').css('left', '0%');
-		window.history.pushState("Cadastro", "NekoHappy", "/login");
-	});
-	$( "#cancel_lo" ).click(function() {
-		$('#lang').css('left', '0%');
-		$('#loginte').css('left', '200%');
-		window.history.pushState("Cadastro", "NekoHappy", "/");
-	});
-
-		$( "#logo" ).click(function() {
-		$('#lang').css('left', '0%');
-		$('#registro').css('left', '200%');
-		$('#loginte').css('left', '200%');
-		window.history.pushState("Cadastro", "NekoHappy", "/");
-	});
-</script>
 
 <script type="text/javascript">
 	$( "#logar" ).click(function() {

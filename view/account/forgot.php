@@ -2,7 +2,7 @@
 
 <div class="main">
 <div class="header bluebar">
-	<img id="logo" class="logo" src="/assets/img/logo.png"/>
+	<a href="/"><img id="logo" class="logo" src="/assets/img/logo.png"/></a>
 </div>
 
 <div class="hora" id="loginte" style="left: 0%; height: auto;">
