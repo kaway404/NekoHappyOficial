@@ -734,8 +734,6 @@ hr{
 	position: relative;
 	top: 80px;
 	left: 20px;
-	box-shadow: 2px 3px 4px rgba(0,0,0,.50);
-	background: #2e3d52 !important;
 	transform: scale(1.1);
 	border-radius: 10%;
 }

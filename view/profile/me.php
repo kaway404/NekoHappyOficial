@@ -187,6 +187,10 @@ foreach ($anime as $anime => $animes) {
 <?php
 // Postagem
 require './view/dashboard/post/pnovo.php';
+//Feed
+echo '<div style="position: relative; left: 0; top: 140px;">';
+require './view/profile/feed.php';
+echo '</div>';
 ?>
 </div>
 

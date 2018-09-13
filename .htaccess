@@ -16,7 +16,7 @@ RewriteRule ^changephoto /photochange.php
 RewriteRule ^changecover /changep.php
 RewriteRule ^notme /php/notme.php
 RewriteRule ^esquecer /php/account/esqueci.php
-RewriteRule ^validar /php/account/validar.php
+RewriteRule ^validar /php/account/validar.phpf
 RewriteRule ^novasenha /php/account/novasenha.php
 RewriteRule ^changepassword /index.php?changepassword [L]
 RewriteRule ^checksession /index.php?checksession [L]
@@ -24,6 +24,7 @@ RewriteRule ^esqueci /index.php?esqueci [L]
 RewriteRule ^verify /php/account/sessao.php
 RewriteRule ^profile/(.*)$ /index.php?id=$1&profile=1 [L]
 RewriteRule ^publish /php/post/fazer.php
+RewriteRule ^newp /php/post/fazerp.php
 RewriteRule ^tuturial /php/tuturial/terminar.php
 RewriteRule ^create_page /index.php?&createpage=1 [L]
 RewriteRule ^loja /index.php?&lojinha=1 [L]
