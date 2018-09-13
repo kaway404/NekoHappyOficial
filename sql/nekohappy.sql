@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 13-Set-2018 às 20:35
+-- Generation Time: 14-Set-2018 às 01:58
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -2113,7 +2113,8 @@ INSERT INTO `attempt_change_password` (`id`, `iduser`, `idpass`, `datet`, `exce`
 (2, 46, 0, '2018-08-26 16:26:44', 0),
 (3, 46, 0, '2018-08-26 16:26:44', 0),
 (4, 46, 0, '2018-08-26 16:26:44', 0),
-(5, 46, 0, '2018-08-26 16:36:44', 1);
+(5, 46, 0, '2018-08-26 16:36:44', 1),
+(6, 34, 0, '2018-09-13 15:59:29', 0);
 
 -- --------------------------------------------------------
 
@@ -2180,15 +2181,17 @@ CREATE TABLE `comunidade` (
   `iduser` int(11) NOT NULL,
   `nome` text NOT NULL,
   `sobre` text NOT NULL,
-  `verificado` int(11) NOT NULL
+  `verificado` int(11) NOT NULL,
+  `avatar` varchar(255) NOT NULL,
+  `cover` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `comunidade`
 --
 
-INSERT INTO `comunidade` (`id`, `iduser`, `nome`, `sobre`, `verificado`) VALUES
-(2, 34, 'NekoHappy Oficial', 'Comunidade Oficial', 0);
+INSERT INTO `comunidade` (`id`, `iduser`, `nome`, `sobre`, `verificado`, `avatar`, `cover`) VALUES
+(2, 34, 'NekoHappy Oficial', 'Comunidade Oficial', 0, 'nekohappy_7931f6ab84493338316d4fd88ab258df318e2d900d1fa1d5a26039b0e9e927720115d451af4fed18.png', 'nekohappy_72d59a912c01c5c9247c17233b8e668c0c6ba7a13f7d5c46994877ccef643e80edb378f825711920.png');
 
 -- --------------------------------------------------------
 
@@ -2257,7 +2260,8 @@ INSERT INTO `postagem` (`id`, `iduser`, `cry`, `title`, `texto`) VALUES
 (27, 41, '366d3d15abf5fabc471cb2aedb1a94c7bbda6e6b', 'LÃ¡ vai um poeminha', 'Eu amo a lua, eu amo o luar, mas amo o Kaway em primeiro lugar :3 '),
 (28, 48, '027d2c611e7fd0784779357d2afcb9a45aba3596', 'LÃ¡ vai um poeminha', 'Eu amo a lua, eu amo o luar, mas o lucro da empresa vai entrar na minha conta n adianta aceita ou surta bb'),
 (29, 41, 'a5ced9e19c11974150e0112886933683b0915ea6', 'uma verdad', 'O mark zumki bergue vai querer matar o kaway, essa rede social vai superar a bolsa de valores atuais omg '),
-(46, 50, 'c09dc907f69eee86a8fc12be4ca5d08b2666d00f', '', 'Black cat');
+(46, 50, 'c09dc907f69eee86a8fc12be4ca5d08b2666d00f', '', 'Black cat'),
+(47, 53, '44c7d95ee42d7b613e6c7460eabe708cd8d520f0', 'Sou um beta-tester.', 'Isso Ã© um teste. \n\nnÃºmeros: 1,2,3,4,5,6,7,8,9\nletras: a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z\n');
 
 -- --------------------------------------------------------
 
@@ -2346,13 +2350,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `cry`, `wtf`, `cool`, `baby`, `very`, `nani`, `email`, `password`, `usuario`, `admin`, `avatar`, `background`, `cover`, `config`, `game`, `movie`, `pincode`, `ip`, `tuturial`, `exp`, `lvl`, `tag`, `money`, `status`, `anime_favorito`) VALUES
-(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 1, 'nekohappy_642341daaea37c4af7bfa47ad3cf7a7097185eb750bb1698f98787bf32533b47f8df5e71934b8923.png', 'estra.gif', 'pixel6.gif', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '127.0.0.1', 2, 3, 14, 0, 0, '13/09/2018 15:35:45', 22),
+(34, 'nekohappy_85d9235d10cf197950d843e56b47021ff02b0cee', 'bf992983549deddabbf86febd0394232c945a65e', 'nekohappy_481b14b71a290ee3cc676def49270be7dd371242', 'e476b9430485135b6825ca3ca3b5b68e', '524c7e4905d1b8c38b4acb9ef869c279e0faa35b', 'nekohappy_a71d59175cc145b0e90023f8c8b29d65ba9f209b', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway', 1, 'nekohappy_c8281c18b5f148b2484b015191bf61340db2be50a38e337fc21616c005534cf44c94e56f4e180545.png', 'estra.gif', 'nekohappy_bd4a7e0ae5c7fd82acb92735a24889c9268fcf473e039af9dc4e7687eb9d4d42e3538be394fd6d29.png', 1, 'Counter Strike Global Offensive', 'A rede social', '4002', '127.0.0.1', 2, 3, 14, 0, 0, '13/09/2018 20:58:52', 22),
 (35, 'nekohappy_f7310e76f2d7ff0e840b570fbaf07e19bfe2f23f', '2e9ca66b0d5b55d5d19acf5d09a4c3db551093ba', 'nekohappy_89d6af6459064d78e88f573a184241ac7f9eda81', '1ad721207f4e1b32f5791728e0ee6115', '0165d10b483b47b285e3c5496793f271ebf8ab3a', 'nekohappy_7855972c424277e550ed3ed58b63dc08655f5fcc', 'kaway404@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'kaway404', 0, 'nekohappy_9d6773aae2b0a4f9e8f33d27d1ec85119f215331bca643e9251f5302bb298c72b96764022db37303.png', '', '', 1, 'CSGO', 'A rede', '4002', '::1', 0, 0, 0, 0, 0, '', 0),
 (36, 'nekohappy_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', '57846d3576f4b2eb5c494a5f8b3b11234ffef098', 'nekohappy_a1bd5bc60c796e14b937b1b0ccf990cce6caebe3', 'edd79c7b5e66321dca8210ea022645a3', 'dabe34f65b393e313a88753d6928df5d67b84e5c', 'nekohappy_7868812b47588635d9141eb86daa91b7d0115de0', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', 'anelise', 0, 'nekohappy_332fdb34e6aa36641ee1521906df01fbbdff83a80730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'paladins', 'o diario de anne frank', '2006', '127.0.0.1', 2, 1, 0, 0, 0, '01/09/2018 11:57:44', 0),
 (37, 'nekohappy_150857d7eaab3d95fda9c8517663b8e99d9cf47a', 'a6b33a7fc2f6f18ec1b104356c7efbf9f1730b48', 'nekohappy_5ae31a07b367676bb0ae54e23186665e26fed604', '5816b0d763e1b50a221069eb6cfef946', '98784398d9ff359557c0d7020cbff5af3786a8ae', 'nekohappy_a641079e077719e953176ca3f6c42667e6c55cd7', 'ducdll8@gmail.com', '25e7a11fbfa48063c59190eb39676cfaff4443f6', 'vitor', 0, 'default.jpg', '', '', 1, 'EEEE', 'EE', '4002', '177.148.195.150', 1, 0, 0, 0, 0, '', 0),
 (38, 'nekohappy_ad7d63c9e2e8b580eeeff5b54815ba85c83982b6', '7198b48be99a40dce69836d8819b6af4138fc100', 'nekohappy_03539c89021715575beda48bde55f6a887799b3b', '4721ea63db427063c6c48e9bb2feb67c', '99d5943fb9c14e0d354af844cae12bc296c5fcac', 'nekohappy_04ec542c6a18ca19c40cd77a41dde0ff1e27ce0a', 'nani@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', 'Joaquin', 0, 'nekohappy_52332320ac924cb1339cbeaed77c257f4ab524ac50bb1698f98787bf32533b47f8df5e71934b8923.png', '', '', 1, '23', '123', '123', '127.0.0.1', 1, 0, 0, 0, 0, '', 0),
 (39, 'nekohappy_ff9358742103ddc441d6fad617497413480957f1', '9b2e899429614a97e8d42b1f1f7e8322ff9688fd', 'nekohappy_ac02524209b3638ead53fc43957d6914dbcb64ec', '37c7cc1a8c671d19f9e78ad018df95d2', '719a7d951f7623b6d4af3a4ca6e2c22abefaa7c1', 'nekohappy_5cc1173b6289eec1939110b07638b408563c60c6', 'mateusheckertg@gmail.com', '1cb09364452f9a307f94c045215ba7bb84c1b967', 'Mateus Heckert GonÃ§alves', 1, 'nekohappy_4a40685cd8f7b106284ee521f0a17267fa9766bbb55f2396c5358fe52920605e0f872cdd9bf3ecbb.png', '', '', 1, 'Tomb Raider', 'V de VinganÃ§a', '2003', '189.11.144.118', 1, 0, 0, 0, 0, '', 0),
-(40, 'nekohappy_8d79f497ebc60742f4fa0eae67b68f768deaa969', '73bc3a79a3b99cefc9cdb945e6fdf3aee0784fe5', 'nekohappy_6e31fbc65a77fa8b355b751d3d47ca2391f345ba', '112825328ff5d02edfd49f6102c55392', '93f5f055a02a8ca738a66baac60cdeb190711f65', 'nekohappy_026edfe116cd5a779706723026bd56cdda5b0d79', 'pauloricardoprogramador@gmail.com', '2e6f9b0d5885b6010f9167787445617f553a735f', 'Kamisama', 0, 'default.jpg', '', '', 1, 'Nenhum', 'A Rede Social', '09920', '179.212.90.86', 1, 0, 0, 0, 0, '', 0),
+(40, 'nekohappy_8d79f497ebc60742f4fa0eae67b68f768deaa969', '73bc3a79a3b99cefc9cdb945e6fdf3aee0784fe5', 'nekohappy_6e31fbc65a77fa8b355b751d3d47ca2391f345ba', '112825328ff5d02edfd49f6102c55392', '93f5f055a02a8ca738a66baac60cdeb190711f65', 'nekohappy_026edfe116cd5a779706723026bd56cdda5b0d79', 'pauloricardoprogramador@gmail.com', '2e6f9b0d5885b6010f9167787445617f553a735f', 'Kamisama', 0, 'default.jpg', '', '', 1, 'Nenhum', 'A Rede Social', '09920', '179.212.90.86', 2, 0, 0, 0, 0, '13/09/2018 16:14:34', 0),
 (41, 'nekohappy_bea98933afb95e133573e63f08cdd4b6c4f82521', '416320d6c47b2a412d48bfe2d671502dec3c9490', 'nekohappy_acedfe17207dcaae8a54e9b61d04a9f72bd4140b', 'eed56721d042e4cb4ae3e1d552ec2695', 'afae628134946d58a77ff0f13134524884f2fb59', 'nekohappy_d17c09e983ddcc30886ffc1f436daaa35a815e96', 'exhioa@gmail.com', '6f18dcf68fad5d86f94ef30ade6a17ca12da6957', 'Ãrtemis chan', 1, 'artemis.png', '', '', 1, 'Tibia', 'Finalmente 18', '0016', '189.59.120.118', 2, 3, 0, 0, 0, '', 0),
 (42, 'nekohappy_794f5911b98ef8e5bc8ab033adb6cc202a0158ac', 'd590c7586d14963af399d5f9e93efb2f82552a3c', 'nekohappy_1b720f89cad5e70963c4c55c900d31653613c3f5', 'c387055f92010513ac5bba8bbcd0a4af', '3ea4ece00d160084615febe4a460cdc59181d6eb', 'nekohappy_c2857edf4f87c98ebb5535aa0683ac3fd359f09e', 'ozumratotfm@gmail.com', '3ec641500cb7c60517aa8530180a061fc6d74f5a', 'RhuaN', 0, 'nekohappy_336b40e615e2f8c3352504340c5892477fa0a3858df12240574de834d6f381ab157a41ae5d9c265e.png', '', '', 1, 'CSGO', 'Titanic', '2005', '177.40.186.255', 1, 0, 0, 0, 0, '', 0),
 (43, 'nekohappy_4ad8bc0f9d52b43c50b80067f4f4f0aa6d795ab0', 'db41fa85f4efb905cec204ec3a92cf0ccc5d67db', 'nekohappy_9136eae5fa47ad21ce50601a84c3c22f94a68fe2', 'c8cba29a8638b28b6224b174a03ca8f6', '65cb1d72689a6815b4bd07bdaaec664abaa3d988', 'nekohappy_f3b654a81d8a57faa72fd93af80323775b53b849', 'athenasiqueira@gmail.com', '513e47278ae23abea3183830c2b31334531b850d', 'Gin-chan', 0, 'nekohappy_4c89f20cfb5d85aa89c63ce98c74637935eb434b74d1252f07f31356e3267f11cee99d20984c977a.png', '', '', 1, 'Way of the Samurai 3', 'O Auto da Compadecida', '0108', '177.10.131.59', 1, 0, 0, 0, 0, '', 0),
@@ -2363,7 +2367,9 @@ INSERT INTO `user` (`id`, `cry`, `wtf`, `cool`, `baby`, `very`, `nani`, `email`,
 (48, 'nekohappy_38d7ae0d6d56cb7e0ba4fc53c5a600d63783b867', 'aea2d968166c23e7641445e7dc8a2f71d9479891', 'nekohappy_7b34695d70d8924c1ec4d0c3284f2148b7396a0d', '20153bcbc2933057f77d86ed33125c64', '666a374c95833502bce4ea9a1b4659b0987e1d4a', 'nekohappy_37f953d950023232f9fb865666ed89feffe014fe', 'cauabar26@gmail.com', '8191d9a31272d5e1405f60470269c17bc5380f46', 'cauabar', 0, 'nekohappy_522d4932f778e97005015401fafb3cceb16ea885201aea88ba307fe4a6778d87a810c3046c1e57a3.png', '', '', 1, 'League of legends', 'Boruto', '4002', '45.236.239.56', 2, 3, 0, 0, 0, '', 0),
 (49, 'nekohappy_52245ed4e1a26c93324223fd0cbb2b202840ad9c', '224adb8f595816d61793ee46b0725c8f599668dc', 'nekohappy_1141ccce7620174b00ea88b559dd503aed916667', '73d962c5a4e832230533b8e13f393faf', 'c11cca6448d6566ee31e9d46dcaa7728e5a5db06', 'nekohappy_ec7bd7223597041856adaf74efc0252cef7a4eb0', 'nondb@hotmail.con', 'a0b48bf6735b085374fa984535372a8025210e45', 'nondb', 0, 'nekohappy_423687725aae6377371a37770b5c779524f57269bca643e9251f5302bb298c72b96764022db37303.png', '', '', 1, 'WTF', 'WTF', '4002', '127.0.0.1', 2, 0, 0, 0, 0, '13/09/2018 12:43:37', 2),
 (50, 'nekohappy_87da29302b2c46e12b4b64856cb32eb87bae1f0f', 'c3e623788a6fbe7a2a72c349731614ed79a95f2f', 'nekohappy_006cdd7167c8dbbea418e22c7c1767660ab5618c', '1b088ac8f2f9457b0af41bb7d9f18607', '2c389d567a54508bc41a5b1426ae79a222cca7e5', 'nekohappy_0033c15015df147a6ee1c735adb87f4d51ad9f10', 'anelisenaiara@gmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', 'anelise31', 0, 'nekohappy_62fedc0dc094bc7aef21a150402a2a0fbf7cedcbbaec9c15b077d7e7d945ff1fc9d4da0db1cff413.png', '', '', 1, 'neon genenis', 'neon genenis', 'genesis', '127.0.0.1', 2, 5, 1, 0, 0, '13/09/2018 15:11:40', 22),
-(51, 'nekohappy_ed94f04ed40fe2aa5e0380eb48bce256c9c0dc73', 'd39997c229266c4cbdda45ffb5b5922c8141a558', 'nekohappy_5f5322ba5f7d42f878af84954c80d3dc6ee511b0', '64c67e99b70cb899d263c747c1aad07a', '8d2944e873bcc4c2893aab88606b2a955defa8d7', 'nekohappy_70ae4094d5019ba0a1f3cb1b98f95b2db9c4ffb7', 'ok@hotmail.com', '7a85f4764bbd6daf1c3545efbbf0f279a6dc0beb', 'ok', 0, 'nekohappy_059d301ff3c120806d39d6a445d0ac4f794dfa310730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'CSGO', 'A rede Social', '4002', '127.0.0.1', 2, 0, 0, 0, 0, '13/09/2018 15:17:22', 466);
+(51, 'nekohappy_ed94f04ed40fe2aa5e0380eb48bce256c9c0dc73', 'd39997c229266c4cbdda45ffb5b5922c8141a558', 'nekohappy_5f5322ba5f7d42f878af84954c80d3dc6ee511b0', '64c67e99b70cb899d263c747c1aad07a', '8d2944e873bcc4c2893aab88606b2a955defa8d7', 'nekohappy_70ae4094d5019ba0a1f3cb1b98f95b2db9c4ffb7', 'ok@hotmail.com', '7a85f4764bbd6daf1c3545efbbf0f279a6dc0beb', 'ok', 0, 'nekohappy_059d301ff3c120806d39d6a445d0ac4f794dfa310730e99d1dc7f0e7227e45646929b3075744a9e7.png', '', '', 1, 'CSGO', 'A rede Social', '4002', '127.0.0.1', 2, 0, 0, 0, 0, '13/09/2018 15:17:22', 466),
+(52, 'nekohappy_56fbefd9b8a32f366a9339f2bf11225458098127', '1ceb05538357cbc2cd468d1647f80aadd428d9c2', 'nekohappy_c032f09d2947e1851b141df06e463bf1221e373b', '65161724044133197d16bde0e40fb02e', '47af6e1b2de8323c9ca64bece0ba655bb968bba7', 'nekohappy_29f10650ac9f35e13584658173041e7c971658b0', 'johny.soares55@gmail.com', '6c2b86d3e7679f180802c14595cbcd273c460a25', 'johny.soares55@gmail.com', 0, 'nekohappy_7e7e61fbf356346c1da62237b72e3fe3d1fa868dca85fe6de5bad1f2ac2c92b38d7929fa13a50b00.png', '', '', 1, 'Fortnite', 'Gotham', 'jo25112001', '179.107.82.81', 2, 0, 0, 0, 0, '13/09/2018 16:18:03', 801),
+(53, 'nekohappy_1611fa272e53ece7cbc8c9a5ff4280177aa9e6ee', 'b1dd8541347948309ed3d868d313358972f5e9fc', 'nekohappy_a2cc48254518ebb21993700194885abfb6a7aec6', '1f6c344fc3fb4a1640cf3ce9bce584de', '00b155e5dbf7de0e7f39f387d3a1c2b7088a104d', 'nekohappy_b71a4359e7a6387fb2f01df69898e3a2ee27c9ed', 'teste123@gmail.com', '66c24b38dafed5531f5966a8d72622d3474c8c71', 'teste123@gmail.com', 0, 'default.jpg', '', '', 1, '', '', '4002', '201.0.94.22', 2, 1, 0, 0, 0, '13/09/2018 18:08:35', 7881);
 
 -- --------------------------------------------------------
 
@@ -2471,7 +2477,7 @@ ALTER TABLE `anime`
 -- AUTO_INCREMENT for table `attempt_change_password`
 --
 ALTER TABLE `attempt_change_password`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `background`
@@ -2495,7 +2501,7 @@ ALTER TABLE `passwordchange`
 -- AUTO_INCREMENT for table `postagem`
 --
 ALTER TABLE `postagem`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `produtos`
@@ -2513,7 +2519,7 @@ ALTER TABLE `tag`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `usertag`

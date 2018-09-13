@@ -14,6 +14,8 @@ RewriteRule ^configurando /php/config/config.php
 RewriteRule ^logout /php/logout.php
 RewriteRule ^changephoto /photochange.php
 RewriteRule ^changecover /changep.php
+RewriteRule ^coverchangep/(.*)$ /changecc.php?id=$1 [L]
+RewriteRule ^sourcemoder/(.*)$ /changecp.php?id=$1 [L]
 RewriteRule ^notme /php/notme.php
 RewriteRule ^esquecer /php/account/esqueci.php
 RewriteRule ^validar /php/account/validar.php
