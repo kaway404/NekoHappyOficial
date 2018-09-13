@@ -61,6 +61,10 @@ else if(isset($_GET['profile'])){
 	require './view/dashboard/menu_not.php';
 	require './view/profile/user.php';
 }
+else if(isset($_GET['title'])){
+	require './view/dashboard/menu_not.php';
+	require './view/anime/title.php';
+	}
 else{
 	require './view/home/index.php';
 }

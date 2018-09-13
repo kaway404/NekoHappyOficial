@@ -24,8 +24,13 @@ echo '</div>';
 echo '</div>';
 echo '</div>';
 
+if(isset($_COOKIE['iduser'],$_COOKIE['cry'])){
 // Status
 require './view/dashboard/status/me.php';
+}
+else{
+	require './view/dashboard/status/account.php';
+}
  }else{
  	include '../404/index.php';
  } ?>
