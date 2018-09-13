@@ -1321,11 +1321,17 @@ hr{
 .main .apresentacao h1{
 	color: #fff !important;
 	padding: 5px;
+	background: rgba(0,0,0,.80);
+	border-radius: 20px;
+	width: 50%;
 }
 
 .main .apresentacao h2{
 	color: #fff !important;
-	padding: 1px;
+	padding: 10px;
+	background: rgba(0,0,0,.80);
+	border-radius: 20px;
+	width: 90%;
 }
 
 .main .gostas{
