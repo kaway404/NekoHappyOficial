@@ -26,7 +26,7 @@
 </script>
 <?php
 $iduser = $user['id'];
-$post = "SELECT * FROM postagem WHERE id ORDER BY id DESC";
+$post = "SELECT * FROM postagem WHERE iduser = $iduser ORDER BY id DESC";
 $posta = mysqli_query($conn, $post);
 $postar = mysqli_fetch_assoc($posta);
 foreach ($posta as $posta => $postas) {
@@ -38,15 +38,6 @@ $result_peopledt = "SELECT * FROM user WHERE id = $quem LIMIT 1";
  $resultado_peoplede = mysqli_query($conn, $result_peopledt);
 $peoplesa = mysqli_fetch_assoc($resultado_peoplede);
 foreach ($resultado_peoplede as $resultado_peoplede => $resultado_peopledes) {
-$status = $resultado_peopledes['status'];
-$statusatual = null;
-
-if($status >= $dataAtual){
-            $statusatual = "1";
-}
-else{
-            $statusatual = "0";
-}
 ?>
 
 <div class="post">  
