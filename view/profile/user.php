@@ -26,7 +26,7 @@ require './view/dashboard/status/me.php';
 }
 else{
 	echo '<div class="notice" style="top: -20px;">
-    <p>Faça o <a href="/login" style="color: #ddd !important;">login</a> ou <a style="color: #ddd !important; href="/cadastro">registra-se</a> para ver está página.</p>
+    <p>Faça o <a href="/login" style="color: #ddd !important;">login</a> ou <a style="color: #ddd !important; href="/cadastro">registra-se</a> para ver está página completa.</p>
 	</div>';
 	require './view/dashboard/status/account.php';
 	require './view/profile/stranger.php';

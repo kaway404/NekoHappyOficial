@@ -5,6 +5,9 @@ echo '<div class="flex">';
 echo '<div class="feed">';
 echo '<div id="perfil">';
 if(isset($anime)){
+echo '<div class="notice" style="top: -20px;">
+    <p>Faça o <a href="/login" style="color: #ddd !important;">login</a> ou <a style="color: #ddd !important; href="/cadastro">registra-se</a> para ver está página completa.</p>
+	</div>';	
 echo '<h1 style="font-size: 1.6em;">' . 'Anime ' .$anime['slug'] . '</h1>';
 echo '<p>Genero: ' . $anime['age_rating_guide']. ' |';
 echo ' Rating: ' . $anime['age_rating'] . '</p>' ;
