@@ -14,7 +14,7 @@
 <input type="" id="filme" name="" placeholder="Exemplo: A rede social">
 <hr>
 <p>Qual seu anime favorito? Entre eles</p>
-<select class="animef">
+<select class="animef" id="animefavorito">
 <?php
 $anim = "SELECT * FROM anime WHERE id ORDER BY id ASC";
 $anime = mysqli_query($conn, $anim);

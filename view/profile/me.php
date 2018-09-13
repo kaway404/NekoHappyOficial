@@ -172,7 +172,7 @@ foreach ($tagavs as $tagavs => $tagavss) {
 <p>Jogo favorito : <?php echo $user['game'];?></p>
 <p><?php
 $meuanime = $user['anime_favorito'];
-$anim = "SELECT * FROM anime WHERE id = '$meuanime' ORDER BY id ASC LIMIT 1";
+$anim = "SELECT * FROM anime WHERE id = '$meuanime' ORDER BY id";
 $anime = mysqli_query($conn, $anim);
 $animed = mysqli_fetch_assoc($anime);
 if(isset($animed)){
