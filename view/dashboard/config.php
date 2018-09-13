@@ -21,7 +21,7 @@ $anime = mysqli_query($conn, $anim);
 $animed = mysqli_fetch_assoc($anime);
 foreach ($anime as $anime => $animes) {
 ?>
-<option value="<?php echo $animes['id'];?>"><?php echo $animes['slug'];?></option>
+<option id="animefavorito" value="<?php echo $animes['id'];?>"><?php echo $animes['slug'];?></option>
 <?php } ?>
 </select>
 <p>Qual vai ser seu pin-code? <span uk-tooltip="Irá ser usado para proteger sua conta de invasores e também será usado para recuperar sua conta." style="color: #151515 !important; cursor: pointer;">Para que serve?</span></p>
@@ -77,7 +77,9 @@ foreach ($anime as $anime => $animes) {
         var filmePost = filme.val();
         var pin = $("#pin");
         var pinPost = pin.val();
-        $.post("/configurando", {game: gamePost, filme: filmePost, pin: pinPost},
+        var anime = $("#animefavorito");
+        var animePost = anime.val();
+        $.post("/configurando", {game: gamePost, filme: filmePost, pin: pinPost, anime: animePost},
         function(data){
          $(".error").html(data);
          }
