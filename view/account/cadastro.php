@@ -12,7 +12,7 @@
 	<input class="input" id="user-r" type="text" name="user" placeholder="Usuario"/>
 	<input class="input" id="senha-r" type="password" name="senha" placeholder="Senha"/>
 	<br>
-	<div class="btn coin" id="cadastro">Cadastrar</div>
+	<div class="btn coin" id="cadastrar">Cadastrar</div>
 	<a href="/"><div class="btn login" id="cancel_re">Cancelar</div></a>
 	<div class="error" id="error1"></div>
 </div>
@@ -23,20 +23,6 @@
 </div>
 
 <script type="text/javascript">
-	$( "#logar" ).click(function() {
-
-		var email = $("#email-l");
-        var emailPost = email.val();
-        var senha = $("#senha-l");
-        var senhaPost = senha.val();
-        $.post("/logando", {email: emailPost, senha: senhaPost},
-        function(data){
-         $("#error2").html(data);
-         }
-         , "html");
-         return false;
-
-	});
 	$( "#cadastrar" ).click(function() {
 
 	    var email = $("#email-r");
