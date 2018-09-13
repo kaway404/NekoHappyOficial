@@ -57,6 +57,10 @@ else if(isset($_GET['login'])){
 else if(isset($_GET['esqueci'])){
 	require './view/account/forgot.php';
 }
+else if(isset($_GET['profile'])){
+	require './view/dashboard/menu_not.php';
+	require './view/profile/user.php';
+}
 else{
 	require './view/home/index.php';
 }

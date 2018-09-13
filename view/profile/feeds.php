@@ -25,7 +25,6 @@
     });
 </script>
 <?php
-$iduser = $user['id'];
 $stran = $stranger['id'];
 $post = "SELECT * FROM postagem WHERE id and iduser = '$stran' ORDER BY id DESC";
 $posta = mysqli_query($conn, $post);

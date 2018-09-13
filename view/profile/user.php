@@ -6,18 +6,14 @@ echo '<div id="perfil">';
 $stran = $_GET['id'];
 $pontos = array(",", ".", "'");
 $strangert = str_replace($pontos, "", $stran);
+
+if(isset($_COOKIE['iduser'],$_COOKIE['cry'])){
 if($user['id'] == $strangert){
 	require './view/profile/me.php';
 }
 else{
 	require './view/profile/stranger.php';
 }
-
-echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-
 if($user['id'] == $_GET['id']){
 	if($user['tuturial'] == 1)
 {
@@ -27,6 +23,20 @@ if($user['id'] == $_GET['id']){
 
 // Status
 require './view/dashboard/status/me.php';
+}
+else{
+	echo '<div class="notice" style="top: -20px;">
+    <p>Faça o <a href="/login" style="color: #ddd !important;">login</a> ou <a style="color: #ddd !important; href="/cadastro">registra-se</a> para ver está página.</p>
+	</div>';
+	require './view/profile/stranger.php';
+}
+
+
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+
  }else{
  	include '../404/index.php';
  } ?>
