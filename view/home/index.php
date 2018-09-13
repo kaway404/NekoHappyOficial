@@ -19,7 +19,7 @@
 </center>
 </div>
 <div class="apresentacao gostas">
-<div class="align" style="width: 90%;">
+<div class="align" style="width: 80%;">
 <div class="budle"></div>
 <div class="right">
 <h1>MERGULHE FUNDO NO QUE MAIS GOSTA</h1>
@@ -29,7 +29,7 @@
 </div>	
 
 <div class="apresentacao longe">
-<div class="align" style="width: 90%;">
+<div class="align" style="width: 75%;">
 <div class="pin"></div>
 <div class="left">
 <h1>CONECTE-SE COM A SUA GALERA</h1>
