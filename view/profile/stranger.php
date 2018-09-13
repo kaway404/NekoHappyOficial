@@ -127,7 +127,7 @@ foreach ($anime as $anime => $animes) {?>
 <div class="right_info">
 <?php
 //Feed
-echo '<div style="position: relative; left: 0; top: -20px;">';
+echo '<div style="position: relative; left: 0; width: 100%; top: -20px;">';
 require './view/profile/feeds.php';
 echo '</div>';
 ?>
