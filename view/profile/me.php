@@ -170,6 +170,13 @@ foreach ($tagavs as $tagavs => $tagavss) {
 <h1>Informações</h1>
 <p>Filme/Série/Anime favorito : <?php echo $user['movie'];?></p>
 <p>Jogo favorito : <?php echo $user['game'];?></p>
+<p>Anime que gosto: <?php
+$meuanime = $user['anime_favorito'];
+$anim = "SELECT * FROM anime WHERE id = '$meuanime' ORDER BY id ASC LIMIT 1";
+$anime = mysqli_query($conn, $anim);
+$animed = mysqli_fetch_assoc($anime);
+foreach ($anime as $anime => $animes) {
+ echo $animes['slug']; } ?></p>
 <p>Cargo : <?php if($user['admin'] == 1){ echo 'Administrador';} else{ echo 'Membro';}?></p>
 </div>
 
