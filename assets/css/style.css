@@ -1080,7 +1080,7 @@ hr{
 	position: absolute;
 	float: right;
 	right: 0px;
-	background-size: contain;
+	background-size: cover;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.50);
 }
 
