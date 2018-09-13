@@ -3,8 +3,10 @@ echo '<div class="align">';
 echo '<div class="flex">';
 echo '<div class="feed">';
 echo '<div id="perfil">';
-
-if($user['id'] == $_GET['id']){
+$stran = $_GET['id'];
+$pontos = array(",", ".", "'");
+$strangert = str_replace($pontos, "", $stran);
+if($user['id'] == $strangert){
 	require './view/profile/me.php';
 }
 else{
