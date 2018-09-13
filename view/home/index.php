@@ -19,7 +19,7 @@
 </center>
 </div>
 <div class="apresentacao gostas">
-<div class="align" style="width: 80%;">
+<div class="align" style="width: 1300px;">
 <div class="budle"></div>
 <div class="right">
 <h1>MERGULHE FUNDO NO QUE MAIS GOSTA</h1>
@@ -29,7 +29,7 @@
 </div>	
 
 <div class="apresentacao longe">
-<div class="align" style="width: 75%;">
+<div class="align" style="width: 1300px;">
 <div class="pin"></div>
 <div class="left">
 <h1>CONECTE-SE COM A SUA GALERA</h1>
@@ -37,32 +37,6 @@
 </div>
 </div>
 </div>	
-
-
-<div class="hora" id="registro" style="left: 200%;">
-	<h1>Cadastra-se!! <br>É gratuito e sempre será.</h1>
-	<hr>
-	<input class="input" id="email-r" type="email" name="email" placeholder="E-mail"/>
-	<input class="input" id="user-r" type="text" name="user" placeholder="Usuario"/>
-	<input class="input" id="senha-r" type="password" name="senha" placeholder="Senha"/>
-	<br>
-	<div class="btn" id="cadastrar">Cadastrar</div>
-	<div class="btn login" id="cancel_re">Cancelar</div>
-	<div class="error" id="error1"></div>
-</div>
-
-<div class="hora" id="loginte" style="left: 200%;">
-	<h1>Faça o login</h1>
-	<hr>
-	<input class="input" id="email-l" type="email" name="email" placeholder="E-mail"/>
-	<input class="input" id="senha-l" type="password" name="senha" placeholder="Senha"/>
-	<br>
-	<a href="/esqueci" style="position: relative;top: 10px; color: #7289da;">Esqueci minha senha</a>
-	<br>
-	<div class="btn" id="logar">Login</div>
-	<div class="btn login" id="cancel_lo">Cancelar</div>
-	<div class="error" id="error2"></div>
-</div>
 
 <div class="back"><div class="after"></div></div>
 
