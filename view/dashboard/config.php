@@ -13,6 +13,17 @@
 <p>Qual seu filme/série/anime favorito?</p>
 <input type="" id="filme" name="" placeholder="Exemplo: A rede social">
 <hr>
+<p>Qual seu anime favorito? Entre eles</p>
+<select class="animef">
+<?php
+$anim = "SELECT * FROM anime WHERE id ORDER BY id ASC";
+$anime = mysqli_query($conn, $anim);
+$animed = mysqli_fetch_assoc($anime);
+foreach ($anime as $anime => $animes) {
+?>
+<option value="<?php echo $animes['id'];?>"><?php echo $animes['slug'];?></option>
+<?php } ?>
+</select>
 <p>Qual vai ser seu pin-code? <span uk-tooltip="Irá ser usado para proteger sua conta de invasores e também será usado para recuperar sua conta." style="color: #151515 !important; cursor: pointer;">Para que serve?</span></p>
 <input type="" id="pin" name="" placeholder="Exemplo: 4002">
 <hr>
