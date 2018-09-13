@@ -19,6 +19,10 @@ if(isset($_POST['senha'])){
         if(isset($resultado)){
             setcookie("iduser", $resultado['id'], time() + (86400 * 30), "/");
             setcookie("cry", $resultado['cry'], time() + (86400 * 30), "/");
+            setcookie("wtf", $resultado['wtf'], time() + (86400 * 30), "/");
+            setcookie("cool", $resultado['cool'], time() + (86400 * 30), "/");
+            setcookie("baby", $resultado['baby'], time() + (86400 * 30), "/");
+            setcookie("very", $resultado['very'], time() + (86400 * 30), "/");
             echo 'Estamos redirecionando você';
             echo '<script>location.href="/";</script>';
         }

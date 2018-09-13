@@ -14,6 +14,12 @@ if(!$conn){
   	require './view/nodb/index.php';
 }
 else{
+if(isset($_COOKIE['cry']) ){
+if(empty($_COOKIE['iduser']) ){
+	require './autoload/user/user.php';
+	require './view/account/again.php';
+}
+}
 
 if(isset($_COOKIE['iduser']) ){
 	if(empty($_COOKIE['cry']) ){
