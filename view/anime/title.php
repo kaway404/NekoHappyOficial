@@ -6,8 +6,8 @@ echo '<div class="feed">';
 echo '<div id="perfil">';
 
 echo '<h1 style="font-size: 1.6em;">' . 'Anime ' .$anime['slug'] . '</h1>';
-echo '<p>Genero: ' . $anime['age_rating_guide']. ' ,';
-echo ' Rating: ' . $anime['age_rating'] . ' , ' ;
+echo '<p>Genero: ' . $anime['age_rating_guide']. ' |';
+echo ' Rating: ' . $anime['age_rating'] . ' | ' ;
 echo 'Episodios: ' . $anime['episode_count'] . '</p>';
 echo '<p>Sinopse: ' . $anime['synopsis'];
 echo '<p>Trailer</p>';
