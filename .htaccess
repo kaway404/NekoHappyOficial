@@ -32,4 +32,5 @@ RewriteRule ^buzz /php/statusonline/verificar.php
 RewriteRule ^createcommunity /php/comunidade/new.php
 RewriteRule ^comunidade/(.*)$ /index.php?id=$1&comunidade=1 [L]
 RewriteRule ^toprank /index.php?toprank [L]
+RewriteRule ^anime/(.*)$ /index.php?title=$1&anime=1 [L]
 </IfModule>

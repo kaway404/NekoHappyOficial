@@ -120,9 +120,8 @@ $animed = mysqli_fetch_assoc($anime);
 if(isset($animed)){
 	echo 'Anime que gosto: ';
 }
-foreach ($anime as $anime => $animes) {
- echo $animes['slug']; } ?></p>
-<p>Cargo : <?php if($stranger['admin'] == 1){ echo 'Administrador';} else{ echo 'Membro';}?></p>
+foreach ($anime as $anime => $animes) {?>
+ <a href="/anime/<?php echo $animes['id'];?>"><?php echo $animes['slug']; } ?></a></p>
 </div>
 
 <div class="right_info">

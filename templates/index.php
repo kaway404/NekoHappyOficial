@@ -90,6 +90,10 @@ else{
 	require './view/dashboard/menu.php';
 	require './view/rank/top.php';
 	}
+	else if(isset($_GET['title'])){
+	require './view/dashboard/menu.php';
+	require './view/anime/title.php';
+	}
 	else{
 	require './view/dashboard/menu.php';
 	require './view/dashboard/home.php';
