@@ -6,6 +6,9 @@ if($user['tuturial'] == 0){
 echo '<div class="align">';
 echo '<div class="flex">';
 echo '<div class="feed">';
+
+// Saudacao
+require './view/dashboard/saudacao/ola.php';
 // Postagem
 require './view/dashboard/post/novo.php';
 // Amigos sugeridos

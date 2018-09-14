@@ -1,6 +1,8 @@
 <?php if(isset($template)){?>
 <div class="tuturial">
-	<div class="tuturialhi" id="tuturial1">
+
+</div>
+	<div class="tuturialhi okaytuturial" id="tuturial1">
 		<p>Seja bem vindo <?php echo $user['usuario'];?>, iremos te ensinar a usar a NekoHappy.</p>
 		<button id="next1">Continuar</button>
 	</div>
@@ -12,7 +14,6 @@
 		<p>Aqui é o feed de nóticias. Irá aparecer feed de todos que publicar aqui.</p>
 		<button id="next3">Finalizar</button>
 	</div>
-</div>
 
 <style type="text/css">
 	body{
@@ -22,7 +23,7 @@
 	.tuturial{
 		width: 100%;
 		height: 100%;
-		position: absolute;
+		position: fixed;
 		background: rgba(0,0,0,.70);
 		top: 0;
 		left: 0;
@@ -80,6 +81,7 @@
 	   top: 50%;
 	   padding: 5px;
 	   box-shadow: 4px 1px 3px rgba(0,0,0,.50);
+	   z-index: 100000000000000;
 	}
 
 	.okaytuturial p{

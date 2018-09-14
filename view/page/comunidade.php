@@ -29,7 +29,7 @@
 			<img src="/img/comunidade/avatar/default.png" alt="">
 			<?php } ?>
 			<hr>
-			<h2><?php echo $comunidade['nome'];?></h2>
+			<h2 style="left: -5px; font-size: 1.45em;"><?php echo $comunidade['nome'];?></h2>
 		</div>
 	</div>
 
@@ -49,7 +49,9 @@
 			</div>
 			<?php } ?>	
 			</div>
+			<hr>
 			<p style="font-size: 1.2em;">Descrição : <?php echo $comunidade['sobre'];?></p>
+			<hr>
 		</div>
 	</div>
 </div>

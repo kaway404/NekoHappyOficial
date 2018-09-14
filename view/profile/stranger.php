@@ -19,7 +19,7 @@ else{
 ?>
 
 <div class="profile_">
-<div class="notice" style="top: 0;">
+<div class="notice" style="top: 0;border-radius: 0px !important;">
     <p>Perfil de <?php echo $stranger['usuario'];?></p>
 </div>
 <div class="cover">

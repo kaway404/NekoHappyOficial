@@ -27,7 +27,7 @@ html{
 }
 
 p, span, h1, h2{
-	color: #476323 !important;
+	color: #565656 !important;
 }
 
 .busca::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -163,7 +163,7 @@ input{
 
 .main .hora .login{
 	background: #fff !important;
-	color: #476323;
+	color: #565656;
 }
 
 .main .hora .btn:active{
@@ -389,7 +389,7 @@ hr{
 	top: 0px;
 	left: 60px;
 	font-weight: bold;
-	color: #476323 !important;
+	color: #565656 !important;
 }
 
 .boxleft{
@@ -508,7 +508,6 @@ hr{
 
 #sugeridos span{
 	padding: 5px;
-	color: #444 !important;
 	font-size: 19px;
 	position: relative;
 	bottom: 5px;
@@ -516,6 +515,7 @@ hr{
 
 #sugeridos .haha{
 	background: rgba(0,0,0,.80);
+	color: #fff !important;
 }
 
 #sugeridos img{
@@ -666,7 +666,7 @@ hr{
 }
 
 .postar .tipo h1{
-	color: #476323 !important;
+	color: #565656 !important;
 	padding: 0px;
 	font-size: 2.5em;
 	left: 15px;
@@ -674,7 +674,7 @@ hr{
 }
 
 .postar .tipo p{
-	color: #476323 !important;
+	color: #565656 !important;
 	position: relative;
 	top: -30px;
 	left: 20px;
@@ -843,11 +843,11 @@ hr{
 }
 
 .profile_ .left_info h1{
-	color: #476323 !important;
+	color: #565656 !important;
 }
 
 .profile_ .left_info p{
-	color: #476323 !important;
+	color: #565656 !important;
 }
 
 .profile_ .right_info{
@@ -1007,7 +1007,7 @@ hr{
 	text-align: center;
 	position: relative;
 	text-transform: uppercase;
-	color: #476323 !important;
+	color: #565656 !important;
 	top: -20px;
 	left: 0px;
 	width: 100%;
@@ -1154,9 +1154,7 @@ hr{
 
 .comunidade .left-info{
 	width: 20%;
-	height: 400px;
-	background: #fff;
-	box-shadow: 1px 2px 3px rgba(0,0,0,.50);
+	height: auto;
 	top: 60px;
 	position: absolute;
 	padding: 10px;
@@ -1187,15 +1185,13 @@ hr{
 	float: right;
 	right: 0;
 	height: 400px;
-	background: #fff;
 	top: 20px;
 	position: relative;
-	box-shadow: 1px 2px 3px rgba(0,0,0,.50);
 }
 
 .menu{
 	position: absolute;
-	width: 150px;
+	width: 200px;
 	height: auto;
 	background: #8f60da;
 	top: 90px;
@@ -1212,11 +1208,6 @@ hr{
 	top: 25px;
 	width: 100%;
 	left: 10px;
-}
-
-.menu a:hover{
-	color: #476323 !important;
-	background: #fff;
 }
 
 .menu p{
@@ -1238,7 +1229,7 @@ hr{
 
 .toprank li:hover{
 	color: #fff !important;
-	background: #8f60da;
+	background: #fff;
 	box-shadow: 1px 2px 1px rgba(0,0,0,.50);
 }
 

@@ -19,7 +19,7 @@ else{
 <script src="/assets/js/jquery.fileupload.js" type="text/javascript"></script>
 
 <div class="profile_">
-<div class="notice" style="top: 0;">
+<div class="notice" style="top: 0; border-radius: 0px !important;">
     <p>Perfil de <?php echo $user['usuario'];?></p>
 </div>
 <div class="cover">

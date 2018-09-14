@@ -1,6 +1,8 @@
 <?php if(isset($template)){?>
 <div class="tuturial">
-	<div class="tuturialhi" id="tuturial1">
+
+</div>
+	<div class="tuturialhi okaytuturial" id="tuturial1">
 		<p>Seja bem vindo <?php echo $user['usuario'];?>, ao seu perfil. Iremos te ensinar a usar o seu perfil.</p>
 		<button id="next1">Continuar</button>
 	</div>
@@ -8,7 +10,6 @@
 		<p>Aqui é o seu perfil, você pode colocar foto de perfil e de capa de background.</p>
 		<button id="next2">Finalizar</button>
 	</div>
-</div>
 
 <style type="text/css">
 	body{
@@ -76,6 +77,7 @@
 	   top: 50%;
 	   padding: 5px;
 	   box-shadow: 4px 1px 3px rgba(0,0,0,.50);
+	   z-index: 1000000000000;
 	}
 
 	.okaytuturial p{
