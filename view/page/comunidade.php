@@ -24,7 +24,7 @@
 			</div>
 			<?php } ?>
 			<?php if($comunidade['avatar'] <> ""){?>
-			<img src="/img/comunidade/avatar/<?php echo $comunidade['avatar'];?>" alt="">
+			<div style="background-image: url(/img/comunidade/avatar/<?php echo $comunidade['avatar'];?>); width: 100%; height: 200px; background-size: cover;" alt=""></div>
 			<?php  } else{ ?>
 			<img src="/img/comunidade/avatar/default.png" alt="">
 			<?php } ?>
