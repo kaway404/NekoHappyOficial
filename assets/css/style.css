@@ -837,17 +837,17 @@ hr{
 	position: relative;
 	width: 35%;
 	height: auto;
-	background: #fff !important;
+	background: #fff;
 	top: 10px;
 	border-radius: 3px;
 }
 
 .profile_ .left_info h1{
-	color: #565656 !important;
+	color: #565656;
 }
 
 .profile_ .left_info p{
-	color: #565656 !important;
+	color: #565656;
 }
 
 .profile_ .right_info{
@@ -1386,4 +1386,39 @@ hr{
 	top: 0;
 	background-size: cover;
 	box-shadow: 2px 2px 4px rgba(0,0,0,.70);
+}
+
+.tour{
+	box-shadow: 1px 2px 3px rgba(0,0,0,.50);
+	background: #8f60da !important;
+}
+
+.tour h1{
+	color: #fff !important;
+}
+
+.tour input{
+	width: 83%;
+	position: relative;
+	left: 20px;
+	bottom: 20px;
+	padding: 5px;
+}
+
+.tour p{
+	color: #fff !important;
+	position: relative;
+	left: 10px;
+}
+
+.tour .continuar{
+	border: none;
+	background: #503777;
+	color: #fff;
+	padding: 6px;
+	cursor: pointer;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.50);
+	position: absolute;
+	bottom: -20px;
+	right: 10px;
 }

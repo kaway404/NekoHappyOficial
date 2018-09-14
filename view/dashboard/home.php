@@ -7,6 +7,13 @@ echo '<div class="align">';
 echo '<div class="flex">';
 echo '<div class="feed">';
 
+if($user['banido'] == 1){
+	echo '<div class="notice" style="top: -20px;">
+    <p>Você está banido.</p>
+	</div>';
+}
+else{
+
 // Saudacao
 require './view/dashboard/saudacao/ola.php';
 // Postagem
@@ -19,6 +26,7 @@ echo '<div class="oksrs">';
 // Feed
 require './view/dashboard/feed/post.php';
 echo '</div>';
+}
 
 // Status
 require './view/dashboard/status/me.php';

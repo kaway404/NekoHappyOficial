@@ -3,6 +3,12 @@
 <?php
 require './autoload/user/stranger.php';
 if(isset($stranger)){
+if($stranger['banido'] == 1){
+	echo '<div class="notice" style="top: -20px;">
+    <p>Este usuario está banido.</p>
+	</div>';
+}
+else{
 	?>
 
 
@@ -164,7 +170,7 @@ echo '</div>';
 		}
 	<?php } ?>
 </style>
-
+<?php } ?>
 <?php } else{ ?>
 <div class="profile_">
 <div class="notice" style="top: 0;">

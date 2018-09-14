@@ -9,7 +9,14 @@ $strangert = str_replace($pontos, "", $stran);
 
 if(isset($_COOKIE['iduser'],$_COOKIE['cry'])){
 if($user['id'] == $strangert){
+	if($user['banido'] == 0){
 	require './view/profile/me.php';
+	}
+	else{
+		echo '<div class="notice" style="top: -20px;">
+    <p>Você está banido.</p>
+	</div>';
+	}
 }
 else{
 	require './view/profile/stranger.php';

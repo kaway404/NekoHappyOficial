@@ -166,6 +166,15 @@ foreach ($tagavs as $tagavs => $tagavss) {
 	</div>
 
 
+<div class="left_info tour">
+<h1>Tour (<?php echo $user['usuario'];?>)</h1>
+<input type="text" name="" placeholder="Oque gostas de fazer nas horas livre?">
+<p>Exemplo: Jogar jogos eletronicos</p>
+<button class="continuar">Continuar</button>
+</div>
+
+<br>
+
 <div class="left_info">
 <h1>Informações</h1>
 <p>Filme/Série/Anime favorito : <?php echo $user['movie'];?></p>
