@@ -7,9 +7,11 @@
 	</div>
 	<div class="left-info">
 		<div class="avatar">
+			<?php if($comunidade['verificado'] == 1){?>
 			<div class="verificado" uk-tooltip="Comunidade verificada" style=" background: #8f60da; padding: 5px; box-shadow: 2px 2px 2px rgba(0,0,0,.70); width: 20px; height: 20px; position: absolute; right: 20px; top: 10px; border-radius: 50%;">
 				<span style="left: 0px; color: #fff !important;" uk-icon="icon: check" aria-hidden="true"></span>
 			</div>
+		<?php } ?>
 			<?php if($user['id'] == $comunidade['iduser']){?>
 			<div class="changephoto" style="height: 80%; border-radius: 0%;">
 			<label for="uploade">
