@@ -30,6 +30,14 @@ p, span, h1, h2{
 	color: #565656 !important;
 }
 
+.busca{
+	color: #fff;
+}
+
+.busca:focus{
+	color: #555 !important;
+}
+
 .busca::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: hsla(0,0%,100%,.6) !important;
     opacity: 1; /* Firefox */
@@ -55,6 +63,7 @@ p, span, h1, h2{
 .busca:focus::-ms-input-placeholder { /* Microsoft Edge */
     color: #555 !important;
 }
+
 
 input{
 	outline: 0;
@@ -1421,4 +1430,36 @@ hr{
 	position: absolute;
 	bottom: -20px;
 	right: 10px;
+}
+
+#box-s-h{
+	width: 600px;
+	background: #fff;
+	position: absolute;
+	height: auto;
+	z-index: 1000;
+	top: 76px;
+	box-shadow: 1px 4px 3px rgba(0,0,0,.50);
+	padding: 0;
+}
+
+#box-s-h .novo{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+#box-s-h .novo a{
+	margin-left: 0px;
+	margin-top: 2px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+#box-s-h .novo li{
+	list-style: none;
+}
+
+#box-s-h .novo li:hover{
+	background: #8f60da;
+	color: #fff;
 }
