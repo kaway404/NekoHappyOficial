@@ -13,7 +13,7 @@
 			</div>
 		<?php } ?>
 			<?php if($user['id'] == $comunidade['iduser']){?>
-			<div class="changephoto" style="height: 80%; border-radius: 0%;">
+			<div class="changephoto" style="height: 100%; border-radius: 0%;">
 			<label for="uploade">
 			      <span style="left: 10px; top: 5px;" uk-tooltip="Mudar foto de capa" uk-icon="icon: camera" aria-hidden="true"></span>
 			      <input type="file" id="uploade" style="display:none" type="file" name="FilesPic" multiple data-url="/sourcemoder/<?php echo $comunidade['id'];?>">
