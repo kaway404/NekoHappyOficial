@@ -117,7 +117,7 @@ input{
 	width: 600px;
 	background: transparent;
 	height: 200px;
-	top: 370px;
+	top: 50%;
 	color: #fff;
 	text-align: center;
 	z-index: 1000;
@@ -172,7 +172,7 @@ input{
 }
 
 .main .back{
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	background-image: url(/assets/img/background/back.jpg);

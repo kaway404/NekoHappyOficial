@@ -5,7 +5,7 @@
 	<a href="/"><img id="logo" class="logo" src="/assets/img/logo.png"/></a>
 </div>
 
-<div class="hora" id="lang" style="left: 0%;">
+<div class="hora" id="lang" style="left: 0%; top: 35% !important;">
 	<h1>É hora de largar o Facebook e o Twitter.</h1>
 	<p>Uma rede social para gamers/otakus, nós somos o número 1, venha conferir.</p>
 	<a href="/cadastro"><div class="btn coin" id="cadastro">Cadastrar</div></a>
