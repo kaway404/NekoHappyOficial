@@ -8,7 +8,7 @@
 	<div class="left-info">
 		<div class="avatar">
 			<?php if($comunidade['verificado'] == 1){?>
-			<div class="verificado" uk-tooltip="Comunidade verificada" style=" background: #8f60da; padding: 5px; box-shadow: 2px 2px 2px rgba(0,0,0,.70); width: 20px; height: 20px; position: absolute; right: 20px; top: 10px; border-radius: 50%;">
+			<div class="verificado" uk-tooltip="Comunidade verificada" style=" background: #8f60da; padding: 5px; box-shadow: 2px 2px 2px rgba(0,0,0,.70); width: 20px; height: 20px; position: absolute; right: 10px; top: 10px; border-radius: 50%;">
 				<span style="left: 0px; color: #fff !important;" uk-icon="icon: check" aria-hidden="true"></span>
 			</div>
 		<?php } ?>
@@ -24,7 +24,7 @@
 			</div>
 			<?php } ?>
 			<?php if($comunidade['avatar'] <> ""){?>
-			<div style="background-image: url(/img/comunidade/avatar/<?php echo $comunidade['avatar'];?>); width: 100%; height: 200px; background-size: cover;" alt=""></div>
+			<div style="background-image: url(/img/comunidade/avatar/<?php echo $comunidade['avatar'];?>); width: 100%; height: 200px; background-size: cover; box-shadow: 3px 2px 4px rgba(0,0,0,.50);" alt=""></div>
 			<?php  } else{ ?>
 			<img src="/img/comunidade/avatar/default.png" alt="">
 			<?php } ?>
