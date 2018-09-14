@@ -4,7 +4,12 @@
 		<a href="/"><img class="logo" src="/assets/img/friends.png"/></a>
 	<div class="boxcenter">
 		<input class="busca" type="text" placeholder="Buscar amigos"/>
+		<div id="box-s-h">
+		    <ul class="novo">
+			</ul>
+		</div>
 	</div>
+	<script type="text/javascript" src="/assets/js/search.js"></script>
 	<div class="boxleft">
 		<div class="okaysr">
 		<img class="avatar" src="/img/user/default.jpg"/>
