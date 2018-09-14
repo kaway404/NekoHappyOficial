@@ -1441,6 +1441,9 @@ hr{
 	top: 76px;
 	box-shadow: 1px 4px 3px rgba(0,0,0,.50);
 	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 400px;
 }
 
 #box-s-h .novo{

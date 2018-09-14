@@ -4,16 +4,18 @@ $user = $_POST['user'];
 if(empty($user)){
 	echo "";
 }else{
-$user = "SELECT * FROM user WHERE usuario LIKE '%$user%' ORDER BY id DESC LIMIT 9";
-$usera = mysqli_query($conn, $user);
+echo 'Resultados para ' . $user . '<br>';
+$userd = "SELECT * FROM user WHERE usuario LIKE '%$user%' ORDER BY id DESC LIMIT 30";
+$usera = mysqli_query($conn, $userd);
 $userar = mysqli_fetch_assoc($usera);
+if(isset($userar)){
 foreach ($usera as $usera => $useras) {?>
 
 
 <a href="/profile/<?php echo $useras['id'];?>"><img src="/img/user/<?php echo $useras['avatar'];?>" style="width: 40px; height: 40px; margin-right: 10px;"><?php echo $useras['usuario'];?></a>
 
 <br>
-<?php } ?>
+<?php } } else{ echo 'Nenhum resultado para ' . $user;} ?>
 
 
 <?php  } ?>
