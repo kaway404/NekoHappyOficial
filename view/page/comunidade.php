@@ -26,7 +26,7 @@
 			<?php if($comunidade['avatar'] <> ""){?>
 			<div style="background-image: url(/img/comunidade/avatar/<?php echo $comunidade['avatar'];?>); width: 100%; height: 200px; background-size: cover; box-shadow: 3px 2px 4px rgba(0,0,0,.50);" alt=""></div>
 			<?php  } else{ ?>
-			<img src="/img/comunidade/avatar/default.png" alt="">
+			<div style="background-image: url(/img/comunidade/avatar/default.png); width: 100%; height: 200px; background-size: cover; box-shadow: 3px 2px 4px rgba(0,0,0,.50);" alt=""></div>
 			<?php } ?>
 			<hr>
 			<h2 style="left: -5px; font-size: 1.45em;"><?php echo $comunidade['nome'];?></h2>

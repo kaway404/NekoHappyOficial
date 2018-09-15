@@ -16,7 +16,7 @@ if($comunidade){
         ?>
         <a class="ok" href="/comunidade/<?php echo $resultado_comunidades['id'];?>">
             <li uk-tooltip="<?php echo $resultado_comunidades['nome'];?>">
-            <img src="/img/comunidade/avatar/<?php echo $resultado_comunidades['avatar'];?>" alt="">
+            <img src="/img/comunidade/avatar/<?php if($resultado_comunidades['avatar'] <> ""){ echo $resultado_comunidades['avatar'];} else{ echo 'default.png'; }?>" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li></a>
     <?php }?>
